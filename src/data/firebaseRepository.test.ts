@@ -250,6 +250,7 @@ describe("firebaseRepository", () => {
       emptySnapshot(),
       snapshot(
         document("department-01", {
+          departmentId: "department-01",
           htmlContent: "<p>내용</p>",
           plainText: "내용",
           version: 1,
@@ -261,6 +262,39 @@ describe("firebaseRepository", () => {
     );
 
     await expect(firebaseRepository.load("2026-09-07")).rejects.toThrow();
+  });
+
+  it("Given a persisted entry includes its department id, when loading, then the workspace accepts it", async () => {
+    // Given
+    firebaseState.snapshots.push(
+      snapshot(weekDocument("2026-09-07", [])),
+      emptySnapshot(),
+      snapshot(
+        document("department-01", {
+          departmentId: "department-01",
+          htmlContent: "<p>내용</p>",
+          plainText: "내용",
+          version: 1,
+          updatedAt: "2026-09-07T00:00:00.000Z",
+          updatedByRole: "contributor",
+        }),
+      ),
+    );
+
+    // When
+    const loaded = await firebaseRepository.load("2026-09-07");
+
+    // Then
+    expect(loaded.entries).toEqual([
+      {
+        departmentId: "department-01",
+        htmlContent: "<p>내용</p>",
+        plainText: "내용",
+        version: 1,
+        updatedAt: "2026-09-07T00:00:00.000Z",
+        updatedByRole: "contributor",
+      },
+    ]);
   });
 
   it("Given an invalid timestamp string, when loading, then the timestamp boundary rejects it", async () => {

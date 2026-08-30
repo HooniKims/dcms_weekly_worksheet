@@ -58,7 +58,7 @@ const saveResultSchema = z.discriminatedUnion("status", [
 ]);
 const rawDepartmentSchema = departmentSchema.omit({ id: true }).strict();
 const rawEntrySchema = entrySchema
-  .omit({ departmentId: true, updatedAt: true })
+  .omit({ updatedAt: true })
   .extend({ updatedAt: z.unknown() })
   .strict();
 const rawWeekSchema = z
@@ -111,7 +111,7 @@ function parseDepartment(id: string, data: Readonly<Record<string, unknown>>): D
 
 function parseEntry(id: string, data: Readonly<Record<string, unknown>>): Entry {
   const raw = rawEntrySchema.parse(data);
-  return entrySchema.parse({ departmentId: id, ...raw, updatedAt: toIsoString(raw.updatedAt) });
+  return entrySchema.parse({ ...raw, departmentId: id, updatedAt: toIsoString(raw.updatedAt) });
 }
 
 function parseWeek(id: string, data: Readonly<Record<string, unknown>>): Week {
