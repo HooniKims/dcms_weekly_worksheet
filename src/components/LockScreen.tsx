@@ -47,9 +47,9 @@ export function LockScreen({ onUnlock, showDemoHint }: LockScreenProps) {
         <h1 id="lock-title">
           등촌중학교
           <br />
-          <span className="headline-phrase">
-            주간업무 추진사항 <em>수합 사이트</em>
-          </span>
+          <span className="headline-phrase">주간업무 추진사항</span>
+          <br />
+          <em className="headline-phrase">수합 사이트</em>
         </h1>
         <p className="lock-description">
           부서별 추진사항을 작성하고 함께 확인하는 교직원 업무 공간입니다.

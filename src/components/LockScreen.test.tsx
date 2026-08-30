@@ -18,9 +18,11 @@ describe("LockScreen", () => {
       "src",
       "/deungchon-logo.png",
     );
-    expect(
-      screen.getByRole("heading", { name: "등촌중학교 주간업무 추진사항 수합 사이트" }),
-    ).toBeInTheDocument();
+    const heading = screen.getByRole("heading", {
+      name: "등촌중학교 주간업무 추진사항 수합 사이트",
+    });
+    expect(heading).toBeInTheDocument();
+    expect(heading.querySelectorAll("br")).toHaveLength(2);
     expect(screen.getAllByRole("heading")).toHaveLength(1);
   });
 
