@@ -1,0 +1,82 @@
+[
+  {
+    "departmentId": "department-07",
+    "htmlContent": "<p>* 고사기간 디벗 가정학습 사용 안내 : 6/15<span>(</span><span>월</span><span lang=\"EN-US\">)</span>~7/1<span>(</span><span>수</span><span lang=\"EN-US\">)</span> 시험종료일에 충전함에 넣기</p><p>  - 디벗 분실/파손 시 비용 본인 부담 지속적으로 훈화 부탁</p><p>* 종례 시 에어컨/전자칠판/선풍기 전원 종료<span>(!)</span> : 화재 위험 </p><p>  - 청소 시 충전함 주위/콘센트 주변 먼지 제거 담당 학생 지정해서 지도 부탁</p><p>* 1학년 AI윤리교육 : 6/29<span>(</span><span>월</span><span lang=\"EN-US\">)</span>, 6/30<span>(</span><span>화</span><span lang=\"EN-US\">)</span></p><p>  - 각 요일 1, 2교시 담당 교과 선생님 임장지도</p>",
+    "plainText": "* 고사기간 디벗 가정학습 사용 안내 : 6/15(월)~7/1(수) 시험종료일에 충전함에 넣기\n- 디벗 분실/파손 시 비용 본인 부담 지속적으로 훈화 부탁\n* 종례 시 에어컨/전자칠판/선풍기 전원 종료(!) : 화재 위험\n- 청소 시 충전함 주위/콘센트 주변 먼지 제거 담당 학생 지정해서 지도 부탁\n* 1학년 AI윤리교육 : 6/29(월), 6/30(화)\n- 각 요일 1, 2교시 담당 교과 선생님 임장지도",
+    "version": 1,
+    "updatedAt": "2026-06-26T08:56:01+09:00",
+    "updatedByRole": "migration"
+  },
+  {
+    "departmentId": "department-03",
+    "htmlContent": "<p>&lt;기말고사 일정&gt;</p><p> *수행평가 점수 입력 완료일: 7/10<span>(</span><span>금</span><span lang=\"EN-US\">)</span> *서술형 채점 및 입력 완료일: 7/8<span>(</span><span>수</span><span lang=\"EN-US\">)</span>    </p><p> *정오표 배부: 7/13<span>(</span><span>월</span><span lang=\"EN-US\">)</span>               *정정기간: 7/13<span>(</span><span>월</span><span lang=\"EN-US\">)</span>~7/15<span>(</span><span>수</span><span lang=\"EN-US\">)</span>            </p><p> *성적 결재: 7/20<span>(</span><span>월</span><span lang=\"EN-US\">)</span>                 *성적표 배부: 7/23<span>(</span><span>목</span><span lang=\"EN-US\">)</span></p><p>*1학년 담당선생님들</p><p> -모든 학생 과세특 입력 7/10<span>(</span><span>금</span><span lang=\"EN-US\">)</span>까지,  학교생활통지표 입력 7/13<span>(</span><span>월</span><span lang=\"EN-US\">)</span>까지<br>* 생활기록부 담당 장학사 정검일 :&nbsp; 7월 22일 수요일 오전 9시&nbsp;</p><p> * 시험기간 3일 동안 급식이 있습니다.</p><p>   -채점 시간이 종료한 후 12시부터 3학년 –2학년 –1학년 순서로 식사</p><p>   -학년별 식사 종료 상태를 보고 방송으로 종례시간 안내해드리겠습니다</p><p>  <span>(</span><span>예상 </span><span lang=\"EN-US\">: 3</span><span>학년</span><span lang=\"EN-US\">- 12</span><span>시 </span><span lang=\"EN-US\">35</span><span>분</span><span lang=\"EN-US\">/ 2</span><span>학년</span><span lang=\"EN-US\">- 12</span><span>시 </span><span lang=\"EN-US\">40</span><span>분</span><span lang=\"EN-US\">/ 1</span><span>학년 </span><span lang=\"EN-US\">- 12</span><span>시 </span><span lang=\"EN-US\">45</span><span>분 부터 종례 및                 교실 청소</span><span lang=\"EN-US\">, </span><span>정리 정돈 끝난 반은 하교 지도 부탁드립니다</span><span lang=\"EN-US\">.)</span></p><p>* 담임선생님 시험 준비 체크 상황을 보고 교실 정리정돈 부탁드립니다.&nbsp;<span>(</span><span>휴대폰 수거하여 조회 후 학생자치실</span><span lang=\"EN-US\">)</span></p>",
+    "plainText": "<기말고사 일정>\n*수행평가 점수 입력 완료일: 7/10(금) *서술형 채점 및 입력 완료일: 7/8(수)\n*정오표 배부: 7/13(월) *정정기간: 7/13(월)~7/15(수)\n*성적 결재: 7/20(월) *성적표 배부: 7/23(목)\n*1학년 담당선생님들\n-모든 학생 과세특 입력 7/10(금)까지, 학교생활통지표 입력 7/13(월)까지\n* 생활기록부 담당 장학사 정검일 : 7월 22일 수요일 오전 9시\n* 시험기간 3일 동안 급식이 있습니다.\n-채점 시간이 종료한 후 12시부터 3학년 –2학년 –1학년 순서로 식사\n-학년별 식사 종료 상태를 보고 방송으로 종례시간 안내해드리겠습니다\n(예상 : 3학년- 12시 35분/ 2학년- 12시 40분/ 1학년 - 12시 45분 부터 종례 및 교실 청소, 정리 정돈 끝난 반은 하교 지도 부탁드립니다.)\n* 담임선생님 시험 준비 체크 상황을 보고 교실 정리정돈 부탁드립니다. (휴대폰 수거하여 조회 후 학생자치실)",
+    "version": 1,
+    "updatedAt": "2026-06-25T12:21:59+09:00",
+    "updatedByRole": "migration"
+  },
+  {
+    "departmentId": "department-04",
+    "htmlContent": "<div>* 자유학기제 진로체험 활동 <span>(임장지도 필수)</span></div><div>&nbsp;- 6/29<span>(월)</span> 1-4교시 각 교실 디지털 리터러시 역량 강화 교육<br>&nbsp;- 6/30<span>(화)</span> 1-2교시 각 교실 찾아가는 AI 윤리교육<br>&nbsp;- 7/1<span>(수)</span><font face=\"함초롬돋움\">&nbsp; 1교시 꿈마루관 진로 특강&nbsp;<br></font>&nbsp;-&nbsp;2-4교시 등마루관 각 교실 진로 컨설팅</div><div>* 기말고사 41조 연수 신청 부탁드립니다. 6월20-교과별, 6월 30일- 부서별, 7월 1일 학년별 신청 입니다.<br><p>(0, 0, 0); line-height: 16px;\"&gt;* 2026 교내 스포츠리그전<span>(</span><span>피구</span><span lang=\"EN-US\">)</span> 운영 안내(체육과 진행<br>&nbsp; 학생들의 건강한 학교 생활과 학급 간 화합을 위해 2026학년도 교내 스포츠리그 피구 대회를 운영합니다.&nbsp;운영 기간: 1,3학년 <br>&nbsp;7월 2일 ~ / 2학년 8월 ~ 9월<span><span><span><span>(</span><span>예정</span><span lang=\"EN-US\"><font face=\"Malgun Gothic\">)</font></span></span></span></span><font face=\"Malgun Gothic\"><br></font><font face=\"Malgun Gothic\">&nbsp;</font>종목: 피구<br>&nbsp;방법: 학급 대항 리그전<br>&nbsp;장소: 체육관<br>&nbsp;진행 및 심판: 체육교사&nbsp;</p><div><br></div><br><br></div>",
+    "plainText": "* 자유학기제 진로체험 활동 (임장지도 필수)\n- 6/29(월) 1-4교시 각 교실 디지털 리터러시 역량 강화 교육\n- 6/30(화) 1-2교시 각 교실 찾아가는 AI 윤리교육\n- 7/1(수) 1교시 꿈마루관 진로 특강\n- 2-4교시 등마루관 각 교실 진로 컨설팅\n* 기말고사 41조 연수 신청 부탁드립니다. 6월20-교과별, 6월 30일- 부서별, 7월 1일 학년별 신청 입니다.\n(0, 0, 0); line-height: 16px;\">* 2026 교내 스포츠리그전(피구) 운영 안내(체육과 진행\n학생들의 건강한 학교 생활과 학급 간 화합을 위해 2026학년도 교내 스포츠리그 피구 대회를 운영합니다. 운영 기간: 1,3학년\n7월 2일 ~ / 2학년 8월 ~ 9월(예정)\n종목: 피구\n방법: 학급 대항 리그전\n장소: 체육관\n진행 및 심판: 체육교사",
+    "version": 1,
+    "updatedAt": "2026-06-26T10:48:19+09:00",
+    "updatedByRole": "migration"
+  },
+  {
+    "departmentId": "department-02",
+    "htmlContent": "<p>* 고사 기간 중 2.3학년 조례 시 부정행위 예방 매일 강조 부탁드립니다.<span><span><span>(</span><span>교실 정리 및 청소도 부탁</span><span lang=\"EN-US\">. </span><span>특히 학부모 감독 앉는 뒷부분</span><span lang=\"EN-US\">&lt;</span><span>쓰레기통</span><span lang=\"EN-US\">, </span><span>청소도구함</span><span lang=\"EN-US\">, </span><span>사물함 등</span><span lang=\"EN-US\">&gt; </span><span>청결히 관리</span><span lang=\"EN-US\">)</span><br></span></span></p><p>* 각 학급 종례 후 하교 시 교실 창문뿐 아니라 <u>복도 창문도 꼭 닫도록</u> 지도해 주세요.</p><p><span>* 기말고사 이후 모든 교육활동에 반드시 임장지도 해주시고 폭력 사안 발생하지 않도록 매일 교육해 주세요</span></p><p>  <!--[if !supportEmptyParas]-->&nbsp;<!--[endif]-->  </p>",
+    "plainText": "* 고사 기간 중 2.3학년 조례 시 부정행위 예방 매일 강조 부탁드립니다.(교실 정리 및 청소도 부탁. 특히 학부모 감독 앉는 뒷부분<쓰레기통, 청소도구함, 사물함 등> 청결히 관리)\n* 각 학급 종례 후 하교 시 교실 창문뿐 아니라 복도 창문도 꼭 닫도록 지도해 주세요.\n* 기말고사 이후 모든 교육활동에 반드시 임장지도 해주시고 폭력 사안 발생하지 않도록 매일 교육해 주세요",
+    "version": 1,
+    "updatedAt": "2026-06-26T14:38:02+09:00",
+    "updatedByRole": "migration"
+  },
+  {
+    "departmentId": "department-05",
+    "htmlContent": "<b>* 학교생활 교육</b><br>- 산책로 출입 금지(폐기물, 위험물 주의)&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; - 식사 전 손 씻기(수돗가 이용 후 급식실로 이동)<br>- 운동장 통행 금지(오염된 먼지 주의)&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; - 올바른 복장 착용(책임 사복 데이)<br><b>- 지각하지 않기(지각생이 많음)</b><b>&nbsp; &nbsp; &nbsp; &nbsp;</b>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;- 교실이나 복도에서 공놀이 금지(손가락 골절 사고 발생)<br>- 교실, 특별구역 청소 점검<br><br><b>* 도박예방교육 예정</b> : 7월 10일 금요일 2교시, 방송으로 진행",
+    "plainText": "* 학교생활 교육\n- 산책로 출입 금지\n(폐기물, 위험물 주의)\n- 식사 전 손 씻기\n(수돗가 이용 후 급식실로 이동)\n- 운동장 통행 금지\n(오염된 먼지 주의)\n- 올바른 복장 착용\n(책임 사복 데이)\n- 지각하지 않기(지각생이 많음)\n- 교실이나 복도에서 공놀이 금지\n(손가락 골절 사고 발생)\n- 교실, 특별구역 청소 점검\n* 도박예방교육 예정\n: 7월 10일 금요일 2교시, 방송으로 진행",
+    "version": 1,
+    "updatedAt": "2026-06-25T09:18:17+09:00",
+    "updatedByRole": "migration"
+  },
+  {
+    "departmentId": "department-08",
+    "htmlContent": "<p><span>*</span>&nbsp;5월&nbsp;8일<span>(</span><span>금</span><span lang=\"EN-US\">)</span>&nbsp;등촌 갓모닝<span>(</span><span>금요 아침 예배</span><span lang=\"EN-US\">)</span>&nbsp;실시</p><p>*&nbsp;청렴 관련 의무 연수<span>(2</span><span>시간 이상</span><span lang=\"EN-US\">)</span>&nbsp;가급적&nbsp;1학기 내로 수강하시고 이수증 제출 바랍니다.<span>(9</span><span>월 실적 보고 예정</span><span lang=\"EN-US\">)</span></p>",
+    "plainText": "* 5월 8일(금) 등촌 갓모닝(금요 아침 예배) 실시\n* 청렴 관련 의무 연수(2시간 이상) 가급적 1학기 내로 수강하시고 이수증 제출 바랍니다.(9월 실적 보고 예정)",
+    "version": 1,
+    "updatedAt": "2026-06-26T08:43:52+09:00",
+    "updatedByRole": "migration"
+  },
+  {
+    "departmentId": "department-10",
+    "htmlContent": "* 진로상담실 아침 공부방 운영 안내<div>기간 : 6월15일<span>(월)</span> ~ 7월1일<span>(수)</span>&nbsp;&nbsp;8시00분 ~ 8시40분까지<br>간식 제공, 참여 우수자에게 진로체험 우선권 부여 및 상점 부여<br>* 점심시간 공부방은 상설로 계속 개방 됩니다.</div>",
+    "plainText": "*\n진로상담실 아침 공부방 운영 안내기간 : 6월15일(월) ~ 7월1일(수) 8시00분 ~ 8시40분까지\n간식 제공, 참여 우수자에게 진로체험 우선권 부여 및 상점 부여\n* 점심시간 공부방은 상설로 계속 개방 됩니다.",
+    "version": 1,
+    "updatedAt": "2026-06-25T08:23:00+09:00",
+    "updatedByRole": "migration"
+  },
+  {
+    "departmentId": "department-06",
+    "htmlContent": "* 합창 페스티벌 안내(7/15)&nbsp;<br>&nbsp;- 반마다 합창곡은 선정 완료.<br>&nbsp;- 각 반 회장 오리엔테이션 및 순서 추첨(7/3일 3시 15분, 꿈마루관)&nbsp;&nbsp;<br>*&nbsp;3학년 2학기 창진 수업 - 아르떼 디자인 강사 수업 확정<br>",
+    "plainText": "* 합창 페스티벌 안내\n(7/15)\n- 반마다 합창곡은 선정 완료.\n- 각 반 회장 오리엔테이션 및 순서 추첨\n(7/3일 3시 15분, 꿈마루관)\n* 3학년 2학기 창진 수업 - 아르떼 디자인 강사 수업 확정",
+    "version": 1,
+    "updatedAt": "2026-06-26T12:10:47+09:00",
+    "updatedByRole": "migration"
+  },
+  {
+    "departmentId": "department-09",
+    "htmlContent": "<div><span><span>(보건계)</span><br></span>1학년 대상 마약류 예방교육 실시</div><div>- 7월 3일 <span>(금)</span> 2교시&nbsp;</div><div>- 한국마약퇴치운동본부 강사 5명&nbsp;</div><div>- 각 교실에서 교육 진행 예정<br><span>(기초학력계)</span><br>-7월 6일<span>(월)</span> 기초학력대상학생<span>(53명)</span>만 기초학력 향상도평가 1차 실시 예정<span>(방과후 실시)</span></div>",
+    "plainText": "(보건계)\n1학년 대상 마약류 예방교육 실시\n- 7월 3일 (금) 2교시\n- 한국마약퇴치운동본부 강사 5명\n- 각 교실에서 교육 진행 예정\n(기초학력계)\n-7월 6일(월) 기초학력대상학생(53명)만 기초학력 향상도평가 1차 실시 예정(방과후 실시)",
+    "version": 1,
+    "updatedAt": "2026-06-26T14:12:22+09:00",
+    "updatedByRole": "migration"
+  },
+  {
+    "departmentId": "department-11",
+    "htmlContent": "제178차 학교운영위원회 개최 예정입니다.<br>일자 및 시간:&nbsp; 2026년7월7일 3시 30분",
+    "plainText": "제178차 학교운영위원회 개최 예정입니다.\n일자 및 시간: 2026년7월7일 3시 30분",
+    "version": 1,
+    "updatedAt": "2026-06-26T11:57:24+09:00",
+    "updatedByRole": "migration"
+  }
+]

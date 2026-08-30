@@ -1,0 +1,75 @@
+@page {
+  size: A4 portrait;
+  margin: 0.1in 0.01in 0.04in;
+}
+
+.print-preview {
+  width: var(--report-width);
+  margin: 0 auto;
+  padding: 0;
+}
+
+@media print {
+  :root {
+    --report-width: 756px;
+    --report-title-size: 13.54pt;
+    --report-meta-size: 11.45pt;
+    --report-body-size: 9.37pt;
+    --report-table-size: 8.33pt;
+    --report-title-height: 22.91px;
+    --report-meta-height: 18.74px;
+    --report-divider-height: 1.04px;
+    --report-content-min-height: 9.37px;
+    --report-empty-min-height: 7.29px;
+    --report-cell-padding: 1.04px 2.08px;
+    --report-list-indent: 18.74px;
+  }
+
+  html,
+  body,
+  #root {
+    background: var(--print-paper);
+  }
+
+  .workspace-page {
+    min-height: auto;
+    padding: 0;
+    background: var(--print-paper);
+  }
+
+  .workspace-header,
+  .workspace-nav,
+  .mobile-selectors,
+  .content-heading,
+  .edit-panel,
+  .dialog-backdrop {
+    display: none;
+  }
+
+  .workspace-grid,
+  .workspace-main {
+    display: block;
+    min-height: 0;
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .report-sheet,
+  .print-preview {
+    width: var(--report-width);
+    max-width: none;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .report-form {
+    print-color-adjust: exact;
+  }
+
+  .report-form thead {
+    display: table-row-group;
+  }
+}

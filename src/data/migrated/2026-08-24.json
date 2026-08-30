@@ -1,0 +1,74 @@
+[
+  {
+    "departmentId": "department-07",
+    "htmlContent": "* 디벗 활용 수업 시 주의 사항 : 학생들이 디벗으로 개인 SNS 접속 않도록 지도 부탁.<br>&nbsp; &nbsp; 수업이 종료되면 디벗을 충전함에 넣고 닫기까지 선생님들께서 지도 부탁.<br>&nbsp; &nbsp; (쉬는 시간에는 디벗 충전함이 닫혀 있어야 함)<br>* 2학년 디벗 충전함 케이블 교체 완료<br>* 점심시간 학생 식판 이미지 데이터 수집 예정 : 8/25(화), 8/28(금). AI 그린로드 동아리학생 활동<br>",
+    "plainText": "* 디벗 활용 수업 시 주의 사항 : 학생들이 디벗으로 개인 SNS 접속 않도록 지도 부탁.\n수업이 종료되면 디벗을 충전함에 넣고 닫기까지 선생님들께서 지도 부탁.\n(쉬는 시간에는 디벗 충전함이 닫혀 있어야 함)\n* 2학년 디벗 충전함 케이블 교체 완료\n* 점심시간 학생 식판 이미지 데이터 수집 예정 : 8/25\n(화)\n, 8/28\n(금)\n. AI 그린로드 동아리학생 활동",
+    "version": 1,
+    "updatedAt": "2026-08-21T14:22:39+09:00",
+    "updatedByRole": "migration"
+  },
+  {
+    "departmentId": "department-03",
+    "htmlContent": "<p>* 정보공시수시실시 일정  </p><p> - 업무 담당자 및 확인자 자료 입력 및 자료 보완: 8월24일<span>(</span><span>월</span><span lang=\"EN-US\">)</span>~9월 7일<span>(</span><span>월</span><span lang=\"EN-US\">)</span></p><p> - 정보공시 담당자 자료 확인 및 제출: 9월9일<span>(</span><span>수</span><span lang=\"EN-US\">)</span></p><p>* 2학기 교과 평가계획서 제출 : 8월 26일 수요일</p><p>* 8월 26일 수요일 : 금요수업 / 퇴임예배 <span>(</span><span>꿈마루관 실시</span><span lang=\"EN-US\">)</span></p><p>* 2026학년도 2학기 시간표 확정<span>(8월 21일 금요일부터)</span></p><p>  <!--[if !supportEmptyParas]-->&nbsp;<!--[endif]-->  </p>",
+    "plainText": "* 정보공시수시실시 일정\n- 업무 담당자 및 확인자 자료 입력 및 자료 보완: 8월24일(월)~9월 7일(월)\n- 정보공시 담당자 자료 확인 및 제출: 9월9일(수)\n* 2학기 교과 평가계획서 제출 : 8월 26일 수요일\n* 8월 26일 수요일 : 금요수업 / 퇴임예배 (꿈마루관 실시)\n* 2026학년도 2학기 시간표 확정(8월 21일 금요일부터)",
+    "version": 1,
+    "updatedAt": "2026-08-21T08:38:05+09:00",
+    "updatedByRole": "migration"
+  },
+  {
+    "departmentId": "department-04",
+    "htmlContent": "<b>*&nbsp;권영재 교장선생님정혜정 보건선생님 퇴임 예배 가 있을 예정 입니다.&nbsp;</b><p><b><span>&nbsp;&nbsp;</span>퇴임 예배 : 26.8.26.<span>(</span><span>수</span><span lang=\"EN-US\">)</span> 15시30분~16시30분 꿈마루관&nbsp;식당 이동 : 16시 30분</b><b>~&nbsp;<br></b><br><br><br></p><p><br></p>",
+    "plainText": "* 권영재 교장선생님정혜정 보건선생님 퇴임 예배 가 있을 예정 입니다.\n퇴임 예배 : 26.8.26.(수) 15시30분~16시30분 꿈마루관 식당 이동 : 16시 30분~",
+    "version": 1,
+    "updatedAt": "2026-08-21T14:34:53+09:00",
+    "updatedByRole": "migration"
+  },
+  {
+    "departmentId": "department-02",
+    "htmlContent": "* 학기초 학생들 생활지도 및 안전교육(계단에서 뛰지 않기 등) 매일 훈화 해주시고 특히 친구에게 상처주는 언어폭력 주의하게 해주세요<br>*&nbsp; 수업 시 출석부 꼭 지참해 주시고 에어컨, 형광등 및 선풍기 담당학생 지정하시어 관리해 주세요<br>* 수요일 행사에 모두 참석 부탁드립니다",
+    "plainText": "* 학기초 학생들 생활지도 및 안전교육\n(계단에서 뛰지 않기 등)\n매일 훈화 해주시고 특히 친구에게 상처주는 언어폭력 주의하게 해주세요\n* 수업 시 출석부 꼭 지참해 주시고 에어컨, 형광등 및 선풍기 담당학생 지정하시어 관리해 주세요\n* 수요일 행사에 모두 참석 부탁드립니다",
+    "version": 1,
+    "updatedAt": "2026-08-21T08:18:12+09:00",
+    "updatedByRole": "migration"
+  },
+  {
+    "departmentId": "department-05",
+    "htmlContent": "<b>* 학교생활 교육</b><br>- 산책로 출입 금지(폐기물, 위험물 주의)&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; - 식사 전 손 씻기(수돗가 이용 후 급식실로 이동)<br>- 운동장 통행 금지(오염된 먼지 주의)&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; - 올바른 복장 착용(책임 사복 데이)<br><b>- 지각하지 않기(지각생이 많음)</b><b>&nbsp; &nbsp; &nbsp; &nbsp;</b>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;- 교실이나 복도에서 공놀이 금지(손가락 골절 사고 발생)<br>- 교실, 특별구역 청소 점검<br><br>* 2학년 대상 청소년 범죄예방교육<br>&nbsp;- 8월 28일 1교시 꿈마루관(외부강사)",
+    "plainText": "* 학교생활 교육\n- 산책로 출입 금지\n(폐기물, 위험물 주의)\n- 식사 전 손 씻기\n(수돗가 이용 후 급식실로 이동)\n- 운동장 통행 금지\n(오염된 먼지 주의)\n- 올바른 복장 착용\n(책임 사복 데이)\n- 지각하지 않기(지각생이 많음)\n- 교실이나 복도에서 공놀이 금지\n(손가락 골절 사고 발생)\n- 교실, 특별구역 청소 점검\n* 2학년 대상 청소년 범죄예방교육\n- 8월 28일 1교시 꿈마루관\n(외부강사)",
+    "version": 1,
+    "updatedAt": "2026-08-20T15:11:18+09:00",
+    "updatedByRole": "migration"
+  },
+  {
+    "departmentId": "department-08",
+    "htmlContent": "<p><span lang=\"EN-US\">*&nbsp; 2</span><span>학기 희망도서 신청</span><span lang=\"EN-US\">: 8</span><span>월</span><span lang=\"EN-US\">26</span><span>일</span><span lang=\"EN-US\"><span>(</span><span>수</span><span lang=\"EN-US\">)</span></span><span>까지</span><span lang=\"EN-US\"><span>(</span><span>품절</span><span lang=\"EN-US\">,</span><span>절판 확인 후 양식에 맞춰 신청해주세요</span><span lang=\"EN-US\">)</span></span></p><p><span lang=\"EN-US\">*&nbsp; 8</span><span>월&nbsp;</span><span lang=\"EN-US\">26</span><span>일 수요일 퇴임예배 실시</span><span lang=\"EN-US\">: 15</span><span>시&nbsp;</span><span lang=\"EN-US\">30</span><span>분</span><span lang=\"EN-US\">~ <span>(</span><span>꿈마루관</span><span lang=\"EN-US\">)</span></span></p><p><span lang=\"EN-US\">*&nbsp; 8</span><span>월&nbsp;</span><span lang=\"EN-US\">31</span><span>일 월요일 취임예배 실시</span><span lang=\"EN-US\">: 15</span><span>시&nbsp;</span><span lang=\"EN-US\">30</span><span>분</span><span lang=\"EN-US\">~ <span>(</span><span>꿈마루관</span><span lang=\"EN-US\">)</span></span></p><p><span lang=\"EN-US\">*&nbsp;&nbsp;</span><span>등촌 북모닝</span><span>/</span><span>등촌 갓모닝</span><span>/</span><span>수요 선교방송&nbsp;</span><span lang=\"EN-US\">9</span><span>월 둘째주부터 실시</span></p><div><span><br></span></div>",
+    "plainText": "* 2학기 희망도서 신청: 8월26일(수)까지(품절,절판 확인 후 양식에 맞춰 신청해주세요)\n* 8월 26일 수요일 퇴임예배 실시: 15시 30분~ (꿈마루관)\n* 8월 31일 월요일 취임예배 실시: 15시 30분~ (꿈마루관)\n* 등촌 북모닝/등촌 갓모닝/수요 선교방송 9월 둘째주부터 실시",
+    "version": 1,
+    "updatedAt": "2026-08-20T10:01:46+09:00",
+    "updatedByRole": "migration"
+  },
+  {
+    "departmentId": "department-10",
+    "htmlContent": "* 9월 2일~4일까지 3학년 수련활동을 실시합니다.&nbsp;<br>*&nbsp;담임 협조 : 조·종례 시간을 활용하여 수련활동 안내 및 사전 '안전교육' 실시 바랍니다.<br>* 「수련활동 안내 및 안전교육 가정통신문」을 참고바랍니다.&nbsp;",
+    "plainText": "* 9월 2일~4일까지 3학년 수련활동을 실시합니다.\n* 담임 협조 : 조·종례 시간을 활용하여 수련활동 안내 및 사전 '안전교육' 실시 바랍니다.\n* 「수련활동 안내 및 안전교육 가정통신문」을 참고바랍니다.",
+    "version": 1,
+    "updatedAt": "2026-08-27T08:29:50+09:00",
+    "updatedByRole": "migration"
+  },
+  {
+    "departmentId": "department-06",
+    "htmlContent": "<p>* 방과후학교 2기 신청: 8.20<span>(</span><span>목</span><span lang=\"EN-US\">)</span> ~ 8.26<span>(</span><span>수</span><span lang=\"EN-US\">)</span> QR코드, 링크로 신청.</p><p>  - 첫 수업: 9.7일<span>(</span><span>월</span><span lang=\"EN-US\">, A</span><span>반</span><span lang=\"EN-US\">)</span>, 9.9일<span>(</span><span>수</span><span lang=\"EN-US\">, B</span><span>반</span><span lang=\"EN-US\">)</span><br></p><p><span>* 1학년 2학기 창체 진로</span><span><span>(매주 화)</span></span><span>: 협력종합예술활동</span><span><span><span>(</span><b>영화</b><span>)</span></span></span><span> 수업</span><span><span>(강사 윤*희)</span></span></p><p><span>* 3학년 2학기 창체 진로<span>(매주 화)</span>: </span><span><b>디자인</b></span><span>&nbsp;수업<span>(강사 장*정)</span></span></p>",
+    "plainText": "* 방과후학교 2기 신청: 8.20(목) ~ 8.26(수) QR코드, 링크로 신청.\n- 첫 수업: 9.7일(월, A반), 9.9일(수, B반)\n* 1학년 2학기 창체 진로(매주 화): 협력종합예술활동(영화) 수업(강사 윤*희)\n* 3학년 2학기 창체 진로(매주 화): 디자인 수업(강사 장*정)",
+    "version": 1,
+    "updatedAt": "2026-08-20T10:24:53+09:00",
+    "updatedByRole": "migration"
+  },
+  {
+    "departmentId": "department-11",
+    "htmlContent": "교내 전체 노후 화재감지기 교체 작업이 있습니다...<br>&nbsp;1. 일자: 2026년 9월3일~4일<span>(2일간)</span><br>&nbsp;2. 수량: 열감지기 <span>(71개)</span>, 연기감지기<span>(16개)</span><br><br><br>",
+    "plainText": "교내 전체 노후 화재감지기 교체 작업이 있습니다...\n1. 일자: 2026년 9월3일~4일\n(2일간)\n2. 수량: 열감지기 (71개), 연기감지기(16개)",
+    "version": 1,
+    "updatedAt": "2026-08-25T15:02:34+09:00",
+    "updatedByRole": "migration"
+  }
+]

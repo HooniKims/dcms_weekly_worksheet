@@ -1,0 +1,14 @@
+{
+  "indexes": [
+    {
+      "collectionGroup": "searchIndex",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "grams", "arrayConfig": "CONTAINS" },
+        { "fieldPath": "weekId", "order": "DESCENDING" },
+        { "fieldPath": "departmentId", "order": "ASCENDING" }
+      ]
+    }
+  ],
+  "fieldOverrides": []
+}

@@ -1,0 +1,74 @@
+[
+  {
+    "departmentId": "department-03",
+    "htmlContent": "<p>* 중간고사 일정</p><p>-정오표 배부: 5/12<span>(</span><span>화</span><span lang=\"EN-US\">)</span>  -정정기간: 5/12<span>(</span><span>화</span><span lang=\"EN-US\">)</span>~5/14<span>(</span><span>목</span><span lang=\"EN-US\">)</span>  -성적표 배부: 5/18<span>(</span><span>월</span><span lang=\"EN-US\">)</span></p><p>* 2026학년도 학교규정집 제작 완료</p>",
+    "plainText": "* 중간고사 일정\n-정오표 배부: 5/12(화) -정정기간: 5/12(화)~5/14(목) -성적표 배부: 5/18(월)\n* 2026학년도 학교규정집 제작 완료",
+    "version": 1,
+    "updatedAt": "2026-05-07T17:26:24+09:00",
+    "updatedByRole": "migration"
+  },
+  {
+    "departmentId": "department-04",
+    "htmlContent": "<p>* 5월 13일 <span>(</span><span>수</span><span lang=\"EN-US\">)</span>&nbsp;15:30 장소-꿈마루관&nbsp;교직원연수&nbsp;실시&nbsp;<span>(연수</span><span>부서 </span><span lang=\"EN-US\">: </span><span>교무기획</span><span lang=\"EN-US\">, </span><span>통합지원부</span><span lang=\"EN-US\">,</span><span>인성상담부, 창체활동부</span><span lang=\"EN-US\">)</span></p><p>* 강서양천 학교리그전 축구 경기가 본교 운동장에서 열립니다.</p><p>&nbsp; 경기일정은 <span>(5</span><span>월</span><span lang=\"EN-US\">14</span><span>일 </span><span lang=\"EN-US\">17</span><span>시</span><span lang=\"EN-US\">, 5</span><span>월</span><span lang=\"EN-US\">26</span><span>일 </span><span lang=\"EN-US\">18</span><span>시</span><span lang=\"EN-US\">, 6</span><span>월</span><span lang=\"EN-US\">12</span><span>일 </span><span lang=\"EN-US\">15</span><span>시</span><span lang=\"EN-US\">30</span><span>분</span><span lang=\"EN-US\">)</span>입니다. 많은 격려와 응원&nbsp;부탁 드립니다.</p><p>* 5월29일<span>(</span><span>금</span><span lang=\"EN-US\">)</span>에 진행되는 체육한마당을 위한 반티제작 운영은 각 반에서 진행할지 안할지 결정하여 운영하시면 됩니다. <br>&nbsp; 다만 제작을 결정했을 경우 담임선생님께서 지도 및 관리 해주시고 1인 2만원 이하로 구입하여 운영해주시기 바라며 <br>&nbsp; 반티는 체육한마당 당일에만 착용가능 합니다.</p>",
+    "plainText": "* 5월 13일 (수) 15:30 장소-꿈마루관 교직원연수 실시 (연수부서 : 교무기획, 통합지원부,인성상담부, 창체활동부)\n* 강서양천 학교리그전 축구 경기가 본교 운동장에서 열립니다.\n경기일정은 (5월14일 17시, 5월26일 18시, 6월12일 15시30분)입니다. 많은 격려와 응원 부탁 드립니다.\n* 5월29일(금)에 진행되는 체육한마당을 위한 반티제작 운영은 각 반에서 진행할지 안할지 결정하여 운영하시면 됩니다.\n다만 제작을 결정했을 경우 담임선생님께서 지도 및 관리 해주시고 1인 2만원 이하로 구입하여 운영해주시기 바라며\n반티는 체육한마당 당일에만 착용가능 합니다.",
+    "version": 1,
+    "updatedAt": "2026-05-08T12:46:24+09:00",
+    "updatedByRole": "migration"
+  },
+  {
+    "departmentId": "department-02",
+    "htmlContent": "<p>* 기안문 내용에 개인 정보 등 비공개 사항이 없는 경우 <u>부분공개</u>로 설정해 주시기 바랍니다.<span>(</span><span>원문 공개율 학교별 비교 공문이 자주 옴</span><span lang=\"EN-US\">)</span> </p><p>* <u>화</u><u>,</u><u>목</u>은 청소 안하는 날이 아니라 <u>간단히 청소하는 날</u>이므로 각 청소 구역 휴지줍기라도 꼭 실시하도록 하여 교내 청결 지도에 힘써 주시기 바랍니다.</p><p>* <u>학생들 분리수거</u> 지도해 주시고 <u>교무실도 분리수거</u> 철저히 하도록 협조 부탁드립니다.</p>",
+    "plainText": "* 기안문 내용에 개인 정보 등 비공개 사항이 없는 경우 부분공개로 설정해 주시기 바랍니다.(원문 공개율 학교별 비교 공문이 자주 옴)\n* 화,목은 청소 안하는 날이 아니라 간단히 청소하는 날이므로 각 청소 구역 휴지줍기라도 꼭 실시하도록 하여 교내 청결 지도에 힘써 주시기 바랍니다.\n* 학생들 분리수거 지도해 주시고 교무실도 분리수거 철저히 하도록 협조 부탁드립니다.",
+    "version": 1,
+    "updatedAt": "2026-05-07T13:17:16+09:00",
+    "updatedByRole": "migration"
+  },
+  {
+    "departmentId": "department-05",
+    "htmlContent": "* 학교생활 교육<br>- 산책로 출입 금지(폐기물, 위험물 주의)&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; - 식사 전 손 씻기(수돗가 이용 후 급식실로 이동)<br>- 운동장 통행 금지(오염된 먼지 주의)&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; -&nbsp;올바른 복장 착용(책임 사복 데이)<br>- 지각하지 않기&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;- 교실이나 복도에서 공놀이 금지(손가락 골절 사고 발생)<br>- 교실, 특별구역 청소 점검<br><br><div>* 2차 생활교육위원회 실시 : 5월 11일 2명<span><span>(흡연)</span><br><br>* 민방위 훈련 : 5월 12일 14:00~14:20</span></div>",
+    "plainText": "* 학교생활 교육\n- 산책로 출입 금지\n(폐기물, 위험물 주의)\n- 식사 전 손 씻기\n(수돗가 이용 후 급식실로 이동)\n- 운동장 통행 금지\n(오염된 먼지 주의)\n- 올바른 복장 착용\n(책임 사복 데이)\n- 지각하지 않기 - 교실이나 복도에서 공놀이 금지\n(손가락 골절 사고 발생)\n- 교실, 특별구역 청소 점검\n* 2차 생활교육위원회 실시 : 5월 11일 2명(흡연)\n* 민방위 훈련 : 5월 12일 14:00~14:20",
+    "version": 1,
+    "updatedAt": "2026-05-07T16:31:17+09:00",
+    "updatedByRole": "migration"
+  },
+  {
+    "departmentId": "department-08",
+    "htmlContent": "<p>* 북모닝 행사 안내</p><p>&nbsp;- 행사명: 북모닝 기록 데이</p><p>&nbsp;- 운영 기간 : 5. 12 <span>(</span><span>화</span><span lang=\"EN-US\">)</span> ~ 5. 15 <span>(</span><span>금</span><span lang=\"EN-US\">)</span></p><p>&nbsp;- 도서부가 배부한 도서 탐색 기록지 작성 후 우수반 및 우수학생에게 상품 지급</p><p>*  등촌의 소리 발간 준비 이벤트 실시</p><p>&nbsp;- 각 학급 게시판에 설문 참여 QR코드 부착 후 참여하는 학생들에게 간식 배부</p><p>* 5월은 각종 행사<span>(5</span><span>월</span><span lang=\"EN-US\">15</span><span>일</span><span lang=\"EN-US\">-</span><span>개교기념일</span><span lang=\"EN-US\">,5</span><span>월</span><span lang=\"EN-US\">22</span><span>일</span><span lang=\"EN-US\">-</span><span>학생예배</span><span lang=\"EN-US\">,5</span><span>월</span><span lang=\"EN-US\">29</span><span>일</span><span lang=\"EN-US\">-</span><span>체육한마당</span><span lang=\"EN-US\">)</span> 관계로 등촌 갓모닝예배를 실시하지 않습니다.</p>",
+    "plainText": "* 북모닝 행사 안내\n- 행사명: 북모닝 기록 데이\n- 운영 기간 : 5. 12 (화) ~ 5. 15 (금)\n- 도서부가 배부한 도서 탐색 기록지 작성 후 우수반 및 우수학생에게 상품 지급\n* 등촌의 소리 발간 준비 이벤트 실시\n- 각 학급 게시판에 설문 참여 QR코드 부착 후 참여하는 학생들에게 간식 배부\n* 5월은 각종 행사(5월15일-개교기념일,5월22일-학생예배,5월29일-체육한마당) 관계로 등촌 갓모닝예배를 실시하지 않습니다.",
+    "version": 1,
+    "updatedAt": "2026-05-08T09:53:51+09:00",
+    "updatedByRole": "migration"
+  },
+  {
+    "departmentId": "department-10",
+    "htmlContent": "없음.",
+    "plainText": "없음.",
+    "version": 1,
+    "updatedAt": "2026-05-07T14:09:59+09:00",
+    "updatedByRole": "migration"
+  },
+  {
+    "departmentId": "department-06",
+    "htmlContent": "* 방과후학교 수업 요일별 안내<br>&nbsp;- 월요반:&nbsp;<b>국어문법끝장내기A, 영어내신뽀개기A, 꽉잡아수학A, AI코딩A, 배드민턴A,드럼A,탁구A,기타A<br></b>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;5/11일,18일,6/1일,22일,7/6일,13일 종료<br>- 수요반:&nbsp;<b>국어문법끝장내기B, 영어내신뽀개기B, 꽉잡아수학B, 배드민턴B,드럼B<br></b>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;5/13일,20일,6/10일,17일,24일, 7/8일 종료",
+    "plainText": "* 방과후학교 수업 요일별 안내\n- 월요반:\n국어문법끝장내기A, 영어내신뽀개기A, 꽉잡아수학A, AI코딩A, 배드민턴A,드럼A,탁구A,기타A\n5/11일,18일,6/1일,22일,7/6일,13일 종료\n- 수요반:\n국어문법끝장내기B, 영어내신뽀개기B, 꽉잡아수학B, 배드민턴B,드럼B\n5/13일,20일,6/10일,17일,24일, 7/8일 종료",
+    "version": 1,
+    "updatedAt": "2026-05-07T16:23:10+09:00",
+    "updatedByRole": "migration"
+  },
+  {
+    "departmentId": "department-09",
+    "htmlContent": "<div><div>(0, 0, 0); font-family: \"Malgun Gothic\"; line-height: 1.35;\"&gt;보건실: 5.14.<span>(목)</span> 2, 3학년 소변검사<span>(09:00~)</span> 2학년부터 실시<span>(약 1시간 반 소요 예정)</span></div><div>(0, 0, 0); font-family: \"Malgun Gothic\"; line-height: 1.35;\"&gt;복지:- 5.16.<span>(토)</span> 12:00~17:30 전교생 대상 22명 사제멘토링<span>(복지)</span> 실시&nbsp;</div><div>(0, 0, 0); font-family: \"Malgun Gothic\"; line-height: 1.35;\"&gt;&nbsp; &nbsp; &nbsp; &nbsp; 국립중앙박물관 국립극장'용' 뮤지컬'태권, 날아올라'</div><div>(0, 0, 0); font-family: \"Malgun Gothic\"; line-height: 1.35;\"&gt;&nbsp; &nbsp; &nbsp; - 저소득층 학생 학기중 평일<span>(비급식일)</span> 중식지원<span>(제로페이)</span> 1차 신청 기간: 5.22.<span>(금)</span>까지</div><div>(0, 0, 0); font-family: \"Malgun Gothic\"; line-height: 1.35;\"&gt;기초학력: AI동시통역서비스 계정<span>(3개)</span> 구매 완료&nbsp;</div></div>",
+    "plainText": "(0, 0, 0); font-family: \"Malgun Gothic\"; line-height: 1.35;\">보건실: 5.14.(목) 2, 3학년 소변검사(09:00~) 2학년부터 실시(약 1시간 반 소요 예정)\n(0, 0, 0); font-family: \"Malgun Gothic\"; line-height: 1.35;\">복지:- 5.16.(토) 12:00~17:30 전교생 대상 22명 사제멘토링(복지) 실시\n(0, 0, 0); font-family: \"Malgun Gothic\"; line-height: 1.35;\"> 국립중앙박물관 국립극장'용' 뮤지컬'태권, 날아올라'\n(0, 0, 0); font-family: \"Malgun Gothic\"; line-height: 1.35;\"> - 저소득층 학생 학기중 평일(비급식일) 중식지원(제로페이) 1차 신청 기간: 5.22.(금)까지\n(0, 0, 0); font-family: \"Malgun Gothic\"; line-height: 1.35;\">기초학력: AI동시통역서비스 계정(3개) 구매 완료",
+    "version": 1,
+    "updatedAt": "2026-05-08T08:57:21+09:00",
+    "updatedByRole": "migration"
+  },
+  {
+    "departmentId": "department-11",
+    "htmlContent": "없음.",
+    "plainText": "없음.",
+    "version": 1,
+    "updatedAt": "2026-05-08T15:23:41+09:00",
+    "updatedByRole": "migration"
+  }
+]

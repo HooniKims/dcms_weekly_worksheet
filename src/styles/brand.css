@@ -1,0 +1,16 @@
+.school-brand-mark {
+  display: block;
+  width: var(--size-school-mark);
+  height: var(--size-school-mark);
+  margin: 0 0 var(--spacing-24);
+  border-radius: 50%;
+  object-fit: contain;
+}
+
+@media (max-width: 860px) {
+  .school-brand-mark {
+    width: var(--size-school-mark-mobile);
+    height: var(--size-school-mark-mobile);
+    margin-bottom: var(--spacing-16);
+  }
+}

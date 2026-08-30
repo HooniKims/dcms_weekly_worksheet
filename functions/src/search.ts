@@ -1,0 +1,25 @@
+export {
+  rebuildAllSearchIndexes,
+  refreshEntrySearchIndex,
+  refreshWeekSearchIndex,
+} from "./searchFirestore.js";
+export {
+  buildIndexRecord,
+  chunkSearchIndexPlan,
+  type DepartmentRecord,
+  type EntryRecord,
+  MAX_SEARCHABLE_PLAIN_TEXT_GRAPHEMES,
+  MAX_SEARCHABLE_PLAIN_TEXT_UTF8_BYTES,
+  normalizeActiveDepartments,
+  normalizeSearchText,
+  planSearchIndexRebuild,
+  type SearchIndexCounts,
+  type SearchIndexExecution,
+  type SearchIndexOperation,
+  type SearchIndexPlan,
+  type SearchIndexRecord,
+  searchGrams,
+  searchIndexId,
+  truncateSearchablePlainText,
+  type WeekRecord,
+} from "./searchPlanning.js";

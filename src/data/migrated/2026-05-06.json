@@ -1,0 +1,82 @@
+[
+  {
+    "departmentId": "department-07",
+    "htmlContent": "* AI 중점학교 특색 사업_AI 기반 생태전환교육<br>&nbsp;- 과학심화영재캠프 <b>1차</b> : 4/30(목) 13:30~ 과학실. <b>2차</b> : 5/6(수) 15:30~<br>&nbsp;- 어버이날 카드/몬스테라 꾸며서 선물하기 : 5/7~8 과학실 앞 복도&nbsp;<br>* 정보실 노후 컴퓨터 교체 : 4/30(목)~ 노트북 교체 작업 실시",
+    "plainText": "* AI 중점학교 특색 사업_AI 기반 생태전환교육\n- 과학심화영재캠프\n1차\n: 4/30\n(목)\n13:30~ 과학실.\n2차\n: 5/6\n(수)\n15:30~\n- 어버이날 카드/몬스테라 꾸며서 선물하기 : 5/7~8 과학실 앞 복도\n* 정보실 노후 컴퓨터 교체 : 4/30\n(목)\n~ 노트북 교체 작업 실시",
+    "version": 1,
+    "updatedAt": "2026-04-28T16:25:35+09:00",
+    "updatedByRole": "migration"
+  },
+  {
+    "departmentId": "department-03",
+    "htmlContent": "<p>* &lt;중간고사 일정&gt;</p><p>-수행평가 점수 입력 완료일: 5/8<span>(</span><span>금</span><span lang=\"EN-US\">)</span></p><p>-서술형 채점 및 입력 완료일: 5/8<span>(</span><span>목</span><span lang=\"EN-US\">)</span></p><p>-정오표 배부: 5/12<span>(</span><span>화</span><span lang=\"EN-US\">)</span></p><p>-정정기간: 5/12<span>(</span><span>화</span><span lang=\"EN-US\">)</span>~5/14<span>(</span><span>목</span><span lang=\"EN-US\">)</span></p><p>-성적표 배부: 5/18<span>(</span><span>월</span><span lang=\"EN-US\">)</span></p><p>*&lt;2차 정보공시 일정&gt;</p><p>- 업무 담당자 및 확인자 자료 입력 및 자료 보완: 5월 4일<span>(</span><span>월</span><span lang=\"EN-US\">)</span>~5월 11일<span>(</span><span>월</span><span lang=\"EN-US\">)</span></p><p>- 총괄관리자 자료 확인 및 자료 보완: 5월 12일<span>(</span><span>화</span><span lang=\"EN-US\">)</span></p><p>*개교기념식 및 스승의날 행사 안내 </p><p> - 5월 15일 금요일 1교시 <span>(</span><span>등마루관 강당</span><span lang=\"EN-US\">)</span> </p><p> - 2교시부터 정상수업 실시 예정</p>",
+    "plainText": "* <중간고사 일정>\n-수행평가 점수 입력 완료일: 5/8(금)\n-서술형 채점 및 입력 완료일: 5/8(목)\n-정오표 배부: 5/12(화)\n-정정기간: 5/12(화)~5/14(목)\n-성적표 배부: 5/18(월)\n*<2차 정보공시 일정>\n- 업무 담당자 및 확인자 자료 입력 및 자료 보완: 5월 4일(월)~5월 11일(월)\n- 총괄관리자 자료 확인 및 자료 보완: 5월 12일(화)\n*개교기념식 및 스승의날 행사 안내\n- 5월 15일 금요일 1교시 (등마루관 강당)\n- 2교시부터 정상수업 실시 예정",
+    "version": 1,
+    "updatedAt": "2026-04-29T11:25:25+09:00",
+    "updatedByRole": "migration"
+  },
+  {
+    "departmentId": "department-04",
+    "htmlContent": "<p>*&nbsp;5월4일<span>(</span>월<span lang=\"EN-US\">)</span> ~ 5월 29일<span>(</span>금<span lang=\"EN-US\">)</span>까지 교생실습 기간입니다. 많은 협조 부탁드립니다.<br>* 5월7일<span>(목)</span> 7교시 자유학기 특강 고전필사가 한문교실에서 있을 예정 입니다.<br>* 자유학기 2기<span>(</span><span>화요일 5교시, 목요일6,7교시)</span>&nbsp;5월7일<span>(목)</span>부터 시작됩니다. 학생들이 강좌 선택을 통해 6개<br>반<span>(1반~5반, 다목적실)</span>이&nbsp;편성되어운영됩니다.</p>",
+    "plainText": "* 5월4일(월) ~ 5월 29일(금)까지 교생실습 기간입니다. 많은 협조 부탁드립니다.\n* 5월7일(목) 7교시 자유학기 특강 고전필사가 한문교실에서 있을 예정 입니다.\n* 자유학기 2기(화요일 5교시, 목요일6,7교시) 5월7일(목)부터 시작됩니다. 학생들이 강좌 선택을 통해 6개\n반(1반~5반, 다목적실)이 편성되어운영됩니다.",
+    "version": 1,
+    "updatedAt": "2026-04-29T11:54:53+09:00",
+    "updatedByRole": "migration"
+  },
+  {
+    "departmentId": "department-02",
+    "htmlContent": "* 특별교실 수업 시 교실 문단속, 선풍기 및 전자칠판 OFF 하도록 담당학생 교육시켜 주세요<br>* 퇴근 시 책상위 노트북 및 개인정보 관련 서류는 반드시 정리하고 가세요<br>* 폭력예방 및 고운말 쓰기 매일 훈화 부탁드립니다",
+    "plainText": "* 특별교실 수업 시 교실 문단속, 선풍기 및 전자칠판 OFF 하도록 담당학생 교육시켜 주세요\n* 퇴근 시 책상위 노트북 및 개인정보 관련 서류는 반드시 정리하고 가세요\n* 폭력예방 및 고운말 쓰기 매일 훈화 부탁드립니다",
+    "version": 1,
+    "updatedAt": "2026-04-29T08:57:04+09:00",
+    "updatedByRole": "migration"
+  },
+  {
+    "departmentId": "department-01",
+    "htmlContent": "<div>* 말씀: 여호와를 경외하는 것이 지혜의 근본이요 거룩하신 자를 아는 것이 명철이니라(잠 9:10)</div><div>* 기도: 5월 김상배 선생님 / 6월 심형섭 선생님</div>",
+    "plainText": "* 말씀: 여호와를 경외하는 것이 지혜의 근본이요 거룩하신 자를 아는 것이 명철이니라(잠 9:10)\n* 기도: 5월 김상배 선생님 / 6월 심형섭 선생님",
+    "version": 1,
+    "updatedAt": "2026-04-29T08:58:38+09:00",
+    "updatedByRole": "migration"
+  },
+  {
+    "departmentId": "department-05",
+    "htmlContent": "* 학교생활 교육<br>- 산책로 출입 금지(폐기물, 위험물 주의)&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; - 식사 전 손 씻기(수돗가 이용 후 급식실로 이동)<br>- 운동장 통행 금지(오염된 먼지 주의)&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; -&nbsp;올바른 복장 착용(책임 사복 데이)<br>- 지각하지 않기&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;- 교실이나 복도에서 공놀이 금지(손가락 골절 사고 발생)<br>- 교실이나 복도에 비치 된 소화기로 장난 금지&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;- 교실, 특별구역 청소 점검<br><p>*&nbsp;식당지도 시간&nbsp;&nbsp;<u>12:30~13:00&nbsp;<span>(식당 입구 밖)</span></u></p><div>* 2차 생활교육위원회 실시 : 5월 11일 2명<span>(벌점 누적)</span></div>",
+    "plainText": "* 학교생활 교육\n- 산책로 출입 금지\n(폐기물, 위험물 주의)\n- 식사 전 손 씻기\n(수돗가 이용 후 급식실로 이동)\n- 운동장 통행 금지\n(오염된 먼지 주의)\n- 올바른 복장 착용\n(책임 사복 데이)\n- 지각하지 않기 - 교실이나 복도에서 공놀이 금지\n(손가락 골절 사고 발생)\n- 교실이나 복도에 비치 된 소화기로 장난 금지 - 교실, 특별구역 청소 점검\n* 식당지도 시간 12:30~13:00 (식당 입구 밖)\n* 2차 생활교육위원회 실시 : 5월 11일 2명(벌점 누적)",
+    "version": 1,
+    "updatedAt": "2026-04-28T09:12:20+09:00",
+    "updatedByRole": "migration"
+  },
+  {
+    "departmentId": "department-08",
+    "htmlContent": "<p>* 정서·행동 우선관심군 학생 대상 상담 안내</p><p>  - 기간: 5월 8일<span>(</span><span>금</span><span lang=\"EN-US\">)</span> 까지</p><p>  - 상담은 수업 시간 중 진행될 수 있으니 양해 부탁드립니다.</p><p>  - 수행평가 등으로 조정이 필요한 경우, 알려주시면 일정 조정 가능합니다.</p><p>* 5월 8일<span>(</span><span>금</span><span lang=\"EN-US\">)</span> 등촌 갓모닝<span>(</span><span>금요 아침 예배</span><span lang=\"EN-US\">)</span>&nbsp;운영<br></p><p></p><p>  - 금요일 오전 8시~8시 30분<span>(30</span><span>분</span><span lang=\"EN-US\">)</span>, 장소: 꿈마루관</p>",
+    "plainText": "* 정서·행동 우선관심군 학생 대상 상담 안내\n- 기간: 5월 8일(금) 까지\n- 상담은 수업 시간 중 진행될 수 있으니 양해 부탁드립니다.\n- 수행평가 등으로 조정이 필요한 경우, 알려주시면 일정 조정 가능합니다.\n* 5월 8일(금) 등촌 갓모닝(금요 아침 예배) 운영\n- 금요일 오전 8시~8시 30분(30분), 장소: 꿈마루관",
+    "version": 1,
+    "updatedAt": "2026-04-28T09:52:35+09:00",
+    "updatedByRole": "migration"
+  },
+  {
+    "departmentId": "department-10",
+    "htmlContent": "없음.",
+    "plainText": "없음.",
+    "version": 1,
+    "updatedAt": "2026-04-28T09:50:09+09:00",
+    "updatedByRole": "migration"
+  },
+  {
+    "departmentId": "department-06",
+    "htmlContent": "* 방과후학교 수업 요일별 안내<br>&nbsp;- 월요반:&nbsp;<b>국어문법끝장내기A, 영어내신뽀개기A, 꽉잡아수학A, AI코딩A, 배드민턴A,드럼A,탁구A,기타A<br></b>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;5/11일,18일,6/1일,22일,7/6일,13일 종료<br>- 수요반:&nbsp;<b>국어문법끝장내기B, 영어내신뽀개기B, 꽉잡아수학B, 배드민턴B,드럼B<br></b>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;5/6일,13일,20일,6/10일,17일,24일, 7/8일 종료",
+    "plainText": "* 방과후학교 수업 요일별 안내\n- 월요반:\n국어문법끝장내기A, 영어내신뽀개기A, 꽉잡아수학A, AI코딩A, 배드민턴A,드럼A,탁구A,기타A\n5/11일,18일,6/1일,22일,7/6일,13일 종료\n- 수요반:\n국어문법끝장내기B, 영어내신뽀개기B, 꽉잡아수학B, 배드민턴B,드럼B\n5/6일,13일,20일,6/10일,17일,24일, 7/8일 종료",
+    "version": 1,
+    "updatedAt": "2026-04-28T08:28:57+09:00",
+    "updatedByRole": "migration"
+  },
+  {
+    "departmentId": "department-11",
+    "htmlContent": "학교 인터넷 전화 변경 관련 안내입니다.<br>1. 변경업체:&nbsp; LG유플러스&gt;&gt;&gt;SK브로드밴드<br>2. 공사기간:&nbsp; 2026년5월11(월)~5월15일(금) 오후 2시 이후~&nbsp; 공사예정<br><br>",
+    "plainText": "학교 인터넷 전화 변경 관련 안내입니다.\n1. 변경업체: LG유플러스>>>SK브로드밴드\n2. 공사기간: 2026년5월11\n(월)\n~5월15일\n(금)\n오후 2시 이후~ 공사예정",
+    "version": 1,
+    "updatedAt": "2026-04-30T10:36:27+09:00",
+    "updatedByRole": "migration"
+  }
+]

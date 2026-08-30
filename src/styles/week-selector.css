@@ -1,0 +1,25 @@
+.week-selector {
+  display: grid;
+  gap: var(--spacing-8);
+  color: var(--color-slate-gray);
+  font-size: var(--text-label);
+}
+
+.week-selector select {
+  width: 100%;
+  min-height: var(--control-height-large);
+  padding: 0 var(--control-select-end-padding) 0 var(--spacing-12);
+  border: var(--border-thin) solid var(--color-hairline);
+  border-radius: var(--radius-small);
+  background: var(--color-paper-white);
+  color: var(--color-ink-black);
+  cursor: pointer;
+}
+
+.week-selector.compact {
+  gap: var(--spacing-4);
+}
+
+.week-selector.compact select {
+  min-height: var(--control-height-standard);
+}

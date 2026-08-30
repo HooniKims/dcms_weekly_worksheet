@@ -1,0 +1,1983 @@
+{
+  "sourceSpreadsheetId": "1eQFBttdX8AijXCbmHIQzHypFjiEoE0G4jMRM4ymVSBM",
+  "weeks": [
+    {
+      "id": "2026-08-31",
+      "dateLabel": "2026년 8월 31일",
+      "meetingTitle": "주간업무추진사항",
+      "createdBy": "migration",
+      "createdAt": "2026-08-31T00:00:00+09:00",
+      "departmentSnapshot": [
+        {
+          "id": "department-01",
+          "name": "말씀 및 기도",
+          "order": 0,
+          "active": true,
+          "omitWhenEmpty": true
+        },
+        {
+          "id": "department-02",
+          "name": "교장(교감)",
+          "order": 1,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-03",
+          "name": "교무기획부",
+          "order": 2,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-04",
+          "name": "교육연구부",
+          "order": 3,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-05",
+          "name": "생활안전부",
+          "order": 4,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-06",
+          "name": "창체활동부",
+          "order": 5,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-07",
+          "name": "과학정보부",
+          "order": 6,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-08",
+          "name": "인성상담부",
+          "order": 7,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-09",
+          "name": "통합지원부",
+          "order": 8,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-10",
+          "name": "진로진학부",
+          "order": 9,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-11",
+          "name": "행정실",
+          "order": 10,
+          "active": true,
+          "omitWhenEmpty": false
+        }
+      ]
+    },
+    {
+      "id": "2026-08-24",
+      "dateLabel": "2026년 8월 24일",
+      "meetingTitle": "주간업무추진사항",
+      "createdBy": "migration",
+      "createdAt": "2026-08-24T00:00:00+09:00",
+      "departmentSnapshot": [
+        {
+          "id": "department-01",
+          "name": "말씀 및 기도",
+          "order": 0,
+          "active": true,
+          "omitWhenEmpty": true
+        },
+        {
+          "id": "department-02",
+          "name": "교장(교감)",
+          "order": 1,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-03",
+          "name": "교무기획부",
+          "order": 2,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-04",
+          "name": "교육연구부",
+          "order": 3,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-05",
+          "name": "생활안전부",
+          "order": 4,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-06",
+          "name": "창체활동부",
+          "order": 5,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-07",
+          "name": "과학정보부",
+          "order": 6,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-08",
+          "name": "인성상담부",
+          "order": 7,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-09",
+          "name": "통합지원부",
+          "order": 8,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-10",
+          "name": "진로진학부",
+          "order": 9,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-11",
+          "name": "행정실",
+          "order": 10,
+          "active": true,
+          "omitWhenEmpty": false
+        }
+      ]
+    },
+    {
+      "id": "2026-08-18",
+      "dateLabel": "2026년 8월 18일",
+      "meetingTitle": "주간업무추진사항",
+      "createdBy": "migration",
+      "createdAt": "2026-08-18T00:00:00+09:00",
+      "departmentSnapshot": [
+        {
+          "id": "department-01",
+          "name": "말씀 및 기도",
+          "order": 0,
+          "active": true,
+          "omitWhenEmpty": true
+        },
+        {
+          "id": "department-02",
+          "name": "교장(교감)",
+          "order": 1,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-03",
+          "name": "교무기획부",
+          "order": 2,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-04",
+          "name": "교육연구부",
+          "order": 3,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-05",
+          "name": "생활안전부",
+          "order": 4,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-06",
+          "name": "창체활동부",
+          "order": 5,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-07",
+          "name": "과학정보부",
+          "order": 6,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-08",
+          "name": "인성상담부",
+          "order": 7,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-09",
+          "name": "통합지원부",
+          "order": 8,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-10",
+          "name": "진로진학부",
+          "order": 9,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-11",
+          "name": "행정실",
+          "order": 10,
+          "active": true,
+          "omitWhenEmpty": false
+        }
+      ]
+    },
+    {
+      "id": "2026-07-20",
+      "dateLabel": "2026년 7월 20일",
+      "meetingTitle": "주간업무추진사항",
+      "createdBy": "migration",
+      "createdAt": "2026-07-20T00:00:00+09:00",
+      "departmentSnapshot": [
+        {
+          "id": "department-01",
+          "name": "말씀 및 기도",
+          "order": 0,
+          "active": true,
+          "omitWhenEmpty": true
+        },
+        {
+          "id": "department-02",
+          "name": "교장(교감)",
+          "order": 1,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-03",
+          "name": "교무기획부",
+          "order": 2,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-04",
+          "name": "교육연구부",
+          "order": 3,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-05",
+          "name": "생활안전부",
+          "order": 4,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-06",
+          "name": "창체활동부",
+          "order": 5,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-07",
+          "name": "과학정보부",
+          "order": 6,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-08",
+          "name": "인성상담부",
+          "order": 7,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-09",
+          "name": "통합지원부",
+          "order": 8,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-10",
+          "name": "진로진학부",
+          "order": 9,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-11",
+          "name": "행정실",
+          "order": 10,
+          "active": true,
+          "omitWhenEmpty": false
+        }
+      ]
+    },
+    {
+      "id": "2026-07-13",
+      "dateLabel": "2026년 7월 13일",
+      "meetingTitle": "주간업무추진사항",
+      "createdBy": "migration",
+      "createdAt": "2026-07-13T00:00:00+09:00",
+      "departmentSnapshot": [
+        {
+          "id": "department-01",
+          "name": "말씀 및 기도",
+          "order": 0,
+          "active": true,
+          "omitWhenEmpty": true
+        },
+        {
+          "id": "department-02",
+          "name": "교장(교감)",
+          "order": 1,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-03",
+          "name": "교무기획부",
+          "order": 2,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-04",
+          "name": "교육연구부",
+          "order": 3,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-05",
+          "name": "생활안전부",
+          "order": 4,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-06",
+          "name": "창체활동부",
+          "order": 5,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-07",
+          "name": "과학정보부",
+          "order": 6,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-08",
+          "name": "인성상담부",
+          "order": 7,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-09",
+          "name": "통합지원부",
+          "order": 8,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-10",
+          "name": "진로진학부",
+          "order": 9,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-11",
+          "name": "행정실",
+          "order": 10,
+          "active": true,
+          "omitWhenEmpty": false
+        }
+      ]
+    },
+    {
+      "id": "2026-07-06",
+      "dateLabel": "2026년 7월 6일",
+      "meetingTitle": "주간업무추진사항",
+      "createdBy": "migration",
+      "createdAt": "2026-07-06T00:00:00+09:00",
+      "departmentSnapshot": [
+        {
+          "id": "department-01",
+          "name": "말씀 및 기도",
+          "order": 0,
+          "active": true,
+          "omitWhenEmpty": true
+        },
+        {
+          "id": "department-02",
+          "name": "교장(교감)",
+          "order": 1,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-03",
+          "name": "교무기획부",
+          "order": 2,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-04",
+          "name": "교육연구부",
+          "order": 3,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-05",
+          "name": "생활안전부",
+          "order": 4,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-06",
+          "name": "창체활동부",
+          "order": 5,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-07",
+          "name": "과학정보부",
+          "order": 6,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-08",
+          "name": "인성상담부",
+          "order": 7,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-09",
+          "name": "통합지원부",
+          "order": 8,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-10",
+          "name": "진로진학부",
+          "order": 9,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-11",
+          "name": "행정실",
+          "order": 10,
+          "active": true,
+          "omitWhenEmpty": false
+        }
+      ]
+    },
+    {
+      "id": "2026-06-29",
+      "dateLabel": "2026년 6월 29일",
+      "meetingTitle": "주간업무추진사항",
+      "createdBy": "migration",
+      "createdAt": "2026-06-29T00:00:00+09:00",
+      "departmentSnapshot": [
+        {
+          "id": "department-01",
+          "name": "말씀 및 기도",
+          "order": 0,
+          "active": true,
+          "omitWhenEmpty": true
+        },
+        {
+          "id": "department-02",
+          "name": "교장(교감)",
+          "order": 1,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-03",
+          "name": "교무기획부",
+          "order": 2,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-04",
+          "name": "교육연구부",
+          "order": 3,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-05",
+          "name": "생활안전부",
+          "order": 4,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-06",
+          "name": "창체활동부",
+          "order": 5,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-07",
+          "name": "과학정보부",
+          "order": 6,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-08",
+          "name": "인성상담부",
+          "order": 7,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-09",
+          "name": "통합지원부",
+          "order": 8,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-10",
+          "name": "진로진학부",
+          "order": 9,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-11",
+          "name": "행정실",
+          "order": 10,
+          "active": true,
+          "omitWhenEmpty": false
+        }
+      ]
+    },
+    {
+      "id": "2026-06-22",
+      "dateLabel": "2026년 6월 22일",
+      "meetingTitle": "주간업무추진사항",
+      "createdBy": "migration",
+      "createdAt": "2026-06-22T00:00:00+09:00",
+      "departmentSnapshot": [
+        {
+          "id": "department-01",
+          "name": "말씀 및 기도",
+          "order": 0,
+          "active": true,
+          "omitWhenEmpty": true
+        },
+        {
+          "id": "department-02",
+          "name": "교장(교감)",
+          "order": 1,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-03",
+          "name": "교무기획부",
+          "order": 2,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-04",
+          "name": "교육연구부",
+          "order": 3,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-05",
+          "name": "생활안전부",
+          "order": 4,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-06",
+          "name": "창체활동부",
+          "order": 5,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-07",
+          "name": "과학정보부",
+          "order": 6,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-08",
+          "name": "인성상담부",
+          "order": 7,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-09",
+          "name": "통합지원부",
+          "order": 8,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-10",
+          "name": "진로진학부",
+          "order": 9,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-11",
+          "name": "행정실",
+          "order": 10,
+          "active": true,
+          "omitWhenEmpty": false
+        }
+      ]
+    },
+    {
+      "id": "2026-06-15",
+      "dateLabel": "2026년 6월 15일",
+      "meetingTitle": "주간업무추진사항",
+      "createdBy": "migration",
+      "createdAt": "2026-06-15T00:00:00+09:00",
+      "departmentSnapshot": [
+        {
+          "id": "department-01",
+          "name": "말씀 및 기도",
+          "order": 0,
+          "active": true,
+          "omitWhenEmpty": true
+        },
+        {
+          "id": "department-02",
+          "name": "교장(교감)",
+          "order": 1,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-03",
+          "name": "교무기획부",
+          "order": 2,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-04",
+          "name": "교육연구부",
+          "order": 3,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-05",
+          "name": "생활안전부",
+          "order": 4,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-06",
+          "name": "창체활동부",
+          "order": 5,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-07",
+          "name": "과학정보부",
+          "order": 6,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-08",
+          "name": "인성상담부",
+          "order": 7,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-09",
+          "name": "통합지원부",
+          "order": 8,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-10",
+          "name": "진로진학부",
+          "order": 9,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-11",
+          "name": "행정실",
+          "order": 10,
+          "active": true,
+          "omitWhenEmpty": false
+        }
+      ]
+    },
+    {
+      "id": "2026-06-09",
+      "dateLabel": "2026년 6월 9일",
+      "meetingTitle": "주간업무추진사항",
+      "createdBy": "migration",
+      "createdAt": "2026-06-09T00:00:00+09:00",
+      "departmentSnapshot": [
+        {
+          "id": "department-01",
+          "name": "말씀 및 기도",
+          "order": 0,
+          "active": true,
+          "omitWhenEmpty": true
+        },
+        {
+          "id": "department-02",
+          "name": "교장(교감)",
+          "order": 1,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-03",
+          "name": "교무기획부",
+          "order": 2,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-04",
+          "name": "교육연구부",
+          "order": 3,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-05",
+          "name": "생활안전부",
+          "order": 4,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-06",
+          "name": "창체활동부",
+          "order": 5,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-07",
+          "name": "과학정보부",
+          "order": 6,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-08",
+          "name": "인성상담부",
+          "order": 7,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-09",
+          "name": "통합지원부",
+          "order": 8,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-10",
+          "name": "진로진학부",
+          "order": 9,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-11",
+          "name": "행정실",
+          "order": 10,
+          "active": true,
+          "omitWhenEmpty": false
+        }
+      ]
+    },
+    {
+      "id": "2026-06-01",
+      "dateLabel": "2026년 6월 1일",
+      "meetingTitle": "주간업무추진사항",
+      "createdBy": "migration",
+      "createdAt": "2026-06-01T00:00:00+09:00",
+      "departmentSnapshot": [
+        {
+          "id": "department-01",
+          "name": "말씀 및 기도",
+          "order": 0,
+          "active": true,
+          "omitWhenEmpty": true
+        },
+        {
+          "id": "department-02",
+          "name": "교장(교감)",
+          "order": 1,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-03",
+          "name": "교무기획부",
+          "order": 2,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-04",
+          "name": "교육연구부",
+          "order": 3,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-05",
+          "name": "생활안전부",
+          "order": 4,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-06",
+          "name": "창체활동부",
+          "order": 5,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-07",
+          "name": "과학정보부",
+          "order": 6,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-08",
+          "name": "인성상담부",
+          "order": 7,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-09",
+          "name": "통합지원부",
+          "order": 8,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-10",
+          "name": "진로진학부",
+          "order": 9,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-11",
+          "name": "행정실",
+          "order": 10,
+          "active": true,
+          "omitWhenEmpty": false
+        }
+      ]
+    },
+    {
+      "id": "2026-05-26",
+      "dateLabel": "2026년 5월 26일",
+      "meetingTitle": "주간업무추진사항",
+      "createdBy": "migration",
+      "createdAt": "2026-05-26T00:00:00+09:00",
+      "departmentSnapshot": [
+        {
+          "id": "department-01",
+          "name": "말씀 및 기도",
+          "order": 0,
+          "active": true,
+          "omitWhenEmpty": true
+        },
+        {
+          "id": "department-02",
+          "name": "교장(교감)",
+          "order": 1,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-03",
+          "name": "교무기획부",
+          "order": 2,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-04",
+          "name": "교육연구부",
+          "order": 3,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-05",
+          "name": "생활안전부",
+          "order": 4,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-06",
+          "name": "창체활동부",
+          "order": 5,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-07",
+          "name": "과학정보부",
+          "order": 6,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-08",
+          "name": "인성상담부",
+          "order": 7,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-09",
+          "name": "통합지원부",
+          "order": 8,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-10",
+          "name": "진로진학부",
+          "order": 9,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-11",
+          "name": "행정실",
+          "order": 10,
+          "active": true,
+          "omitWhenEmpty": false
+        }
+      ]
+    },
+    {
+      "id": "2026-05-25",
+      "dateLabel": "2026년 5월 25일",
+      "meetingTitle": "주간업무추진사항",
+      "createdBy": "migration",
+      "createdAt": "2026-05-25T00:00:00+09:00",
+      "departmentSnapshot": [
+        {
+          "id": "department-01",
+          "name": "말씀 및 기도",
+          "order": 0,
+          "active": true,
+          "omitWhenEmpty": true
+        },
+        {
+          "id": "department-02",
+          "name": "교장(교감)",
+          "order": 1,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-03",
+          "name": "교무기획부",
+          "order": 2,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-04",
+          "name": "교육연구부",
+          "order": 3,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-05",
+          "name": "생활안전부",
+          "order": 4,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-06",
+          "name": "창체활동부",
+          "order": 5,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-07",
+          "name": "과학정보부",
+          "order": 6,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-08",
+          "name": "인성상담부",
+          "order": 7,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-09",
+          "name": "통합지원부",
+          "order": 8,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-10",
+          "name": "진로진학부",
+          "order": 9,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-11",
+          "name": "행정실",
+          "order": 10,
+          "active": true,
+          "omitWhenEmpty": false
+        }
+      ]
+    },
+    {
+      "id": "2026-05-18",
+      "dateLabel": "2026년 5월 18일",
+      "meetingTitle": "주간업무추진사항",
+      "createdBy": "migration",
+      "createdAt": "2026-05-18T00:00:00+09:00",
+      "departmentSnapshot": [
+        {
+          "id": "department-01",
+          "name": "말씀 및 기도",
+          "order": 0,
+          "active": true,
+          "omitWhenEmpty": true
+        },
+        {
+          "id": "department-02",
+          "name": "교장(교감)",
+          "order": 1,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-03",
+          "name": "교무기획부",
+          "order": 2,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-04",
+          "name": "교육연구부",
+          "order": 3,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-05",
+          "name": "생활안전부",
+          "order": 4,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-06",
+          "name": "창체활동부",
+          "order": 5,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-07",
+          "name": "과학정보부",
+          "order": 6,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-08",
+          "name": "인성상담부",
+          "order": 7,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-09",
+          "name": "통합지원부",
+          "order": 8,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-10",
+          "name": "진로진학부",
+          "order": 9,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-11",
+          "name": "행정실",
+          "order": 10,
+          "active": true,
+          "omitWhenEmpty": false
+        }
+      ]
+    },
+    {
+      "id": "2026-05-11",
+      "dateLabel": "2026년 5월 11일",
+      "meetingTitle": "주간업무추진사항",
+      "createdBy": "migration",
+      "createdAt": "2026-05-11T00:00:00+09:00",
+      "departmentSnapshot": [
+        {
+          "id": "department-01",
+          "name": "말씀 및 기도",
+          "order": 0,
+          "active": true,
+          "omitWhenEmpty": true
+        },
+        {
+          "id": "department-02",
+          "name": "교장(교감)",
+          "order": 1,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-03",
+          "name": "교무기획부",
+          "order": 2,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-04",
+          "name": "교육연구부",
+          "order": 3,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-05",
+          "name": "생활안전부",
+          "order": 4,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-06",
+          "name": "창체활동부",
+          "order": 5,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-07",
+          "name": "과학정보부",
+          "order": 6,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-08",
+          "name": "인성상담부",
+          "order": 7,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-09",
+          "name": "통합지원부",
+          "order": 8,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-10",
+          "name": "진로진학부",
+          "order": 9,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-11",
+          "name": "행정실",
+          "order": 10,
+          "active": true,
+          "omitWhenEmpty": false
+        }
+      ]
+    },
+    {
+      "id": "2026-05-06",
+      "dateLabel": "2026년 5월 6일",
+      "meetingTitle": "주간업무추진사항",
+      "createdBy": "migration",
+      "createdAt": "2026-05-06T00:00:00+09:00",
+      "departmentSnapshot": [
+        {
+          "id": "department-01",
+          "name": "말씀 및 기도",
+          "order": 0,
+          "active": true,
+          "omitWhenEmpty": true
+        },
+        {
+          "id": "department-02",
+          "name": "교장(교감)",
+          "order": 1,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-03",
+          "name": "교무기획부",
+          "order": 2,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-04",
+          "name": "교육연구부",
+          "order": 3,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-05",
+          "name": "생활안전부",
+          "order": 4,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-06",
+          "name": "창체활동부",
+          "order": 5,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-07",
+          "name": "과학정보부",
+          "order": 6,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-08",
+          "name": "인성상담부",
+          "order": 7,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-09",
+          "name": "통합지원부",
+          "order": 8,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-10",
+          "name": "진로진학부",
+          "order": 9,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-11",
+          "name": "행정실",
+          "order": 10,
+          "active": true,
+          "omitWhenEmpty": false
+        }
+      ]
+    },
+    {
+      "id": "2026-04-27",
+      "dateLabel": "2026년 4월 27일",
+      "meetingTitle": "주간업무추진사항",
+      "createdBy": "migration",
+      "createdAt": "2026-04-27T00:00:00+09:00",
+      "departmentSnapshot": [
+        {
+          "id": "department-01",
+          "name": "말씀 및 기도",
+          "order": 0,
+          "active": true,
+          "omitWhenEmpty": true
+        },
+        {
+          "id": "department-02",
+          "name": "교장(교감)",
+          "order": 1,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-03",
+          "name": "교무기획부",
+          "order": 2,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-04",
+          "name": "교육연구부",
+          "order": 3,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-05",
+          "name": "생활안전부",
+          "order": 4,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-06",
+          "name": "창체활동부",
+          "order": 5,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-07",
+          "name": "과학정보부",
+          "order": 6,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-08",
+          "name": "인성상담부",
+          "order": 7,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-09",
+          "name": "통합지원부",
+          "order": 8,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-10",
+          "name": "진로진학부",
+          "order": 9,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-11",
+          "name": "행정실",
+          "order": 10,
+          "active": true,
+          "omitWhenEmpty": false
+        }
+      ]
+    },
+    {
+      "id": "2026-04-20",
+      "dateLabel": "2026년 4월 20일",
+      "meetingTitle": "주간업무추진사항",
+      "createdBy": "migration",
+      "createdAt": "2026-04-20T00:00:00+09:00",
+      "departmentSnapshot": [
+        {
+          "id": "department-01",
+          "name": "말씀 및 기도",
+          "order": 0,
+          "active": true,
+          "omitWhenEmpty": true
+        },
+        {
+          "id": "department-02",
+          "name": "교장(교감)",
+          "order": 1,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-03",
+          "name": "교무기획부",
+          "order": 2,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-04",
+          "name": "교육연구부",
+          "order": 3,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-05",
+          "name": "생활안전부",
+          "order": 4,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-06",
+          "name": "창체활동부",
+          "order": 5,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-07",
+          "name": "과학정보부",
+          "order": 6,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-08",
+          "name": "인성상담부",
+          "order": 7,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-09",
+          "name": "통합지원부",
+          "order": 8,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-10",
+          "name": "진로진학부",
+          "order": 9,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-11",
+          "name": "행정실",
+          "order": 10,
+          "active": true,
+          "omitWhenEmpty": false
+        }
+      ]
+    },
+    {
+      "id": "2026-04-13",
+      "dateLabel": "2026년 4월 13일",
+      "meetingTitle": "주간업무추진사항",
+      "createdBy": "migration",
+      "createdAt": "2026-04-13T00:00:00+09:00",
+      "departmentSnapshot": [
+        {
+          "id": "department-01",
+          "name": "말씀 및 기도",
+          "order": 0,
+          "active": true,
+          "omitWhenEmpty": true
+        },
+        {
+          "id": "department-02",
+          "name": "교장(교감)",
+          "order": 1,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-03",
+          "name": "교무기획부",
+          "order": 2,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-04",
+          "name": "교육연구부",
+          "order": 3,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-05",
+          "name": "생활안전부",
+          "order": 4,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-06",
+          "name": "창체활동부",
+          "order": 5,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-07",
+          "name": "과학정보부",
+          "order": 6,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-08",
+          "name": "인성상담부",
+          "order": 7,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-09",
+          "name": "통합지원부",
+          "order": 8,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-10",
+          "name": "진로진학부",
+          "order": 9,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-11",
+          "name": "행정실",
+          "order": 10,
+          "active": true,
+          "omitWhenEmpty": false
+        }
+      ]
+    },
+    {
+      "id": "2026-04-06",
+      "dateLabel": "2026년 4월 6일",
+      "meetingTitle": "주간업무추진사항",
+      "createdBy": "migration",
+      "createdAt": "2026-04-06T00:00:00+09:00",
+      "departmentSnapshot": [
+        {
+          "id": "department-01",
+          "name": "말씀 및 기도",
+          "order": 0,
+          "active": true,
+          "omitWhenEmpty": true
+        },
+        {
+          "id": "department-02",
+          "name": "교장(교감)",
+          "order": 1,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-03",
+          "name": "교무기획부",
+          "order": 2,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-04",
+          "name": "교육연구부",
+          "order": 3,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-05",
+          "name": "생활안전부",
+          "order": 4,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-06",
+          "name": "창체활동부",
+          "order": 5,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-07",
+          "name": "과학정보부",
+          "order": 6,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-08",
+          "name": "인성상담부",
+          "order": 7,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-09",
+          "name": "통합지원부",
+          "order": 8,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-10",
+          "name": "진로진학부",
+          "order": 9,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-11",
+          "name": "행정실",
+          "order": 10,
+          "active": true,
+          "omitWhenEmpty": false
+        }
+      ]
+    },
+    {
+      "id": "2026-03-30",
+      "dateLabel": "2026년 3월 30일",
+      "meetingTitle": "주간업무추진사항",
+      "createdBy": "migration",
+      "createdAt": "2026-03-30T00:00:00+09:00",
+      "departmentSnapshot": [
+        {
+          "id": "department-01",
+          "name": "말씀 및 기도",
+          "order": 0,
+          "active": true,
+          "omitWhenEmpty": true
+        },
+        {
+          "id": "department-02",
+          "name": "교장(교감)",
+          "order": 1,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-03",
+          "name": "교무기획부",
+          "order": 2,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-04",
+          "name": "교육연구부",
+          "order": 3,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-05",
+          "name": "생활안전부",
+          "order": 4,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-06",
+          "name": "창체활동부",
+          "order": 5,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-07",
+          "name": "과학정보부",
+          "order": 6,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-08",
+          "name": "인성상담부",
+          "order": 7,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-09",
+          "name": "통합지원부",
+          "order": 8,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-10",
+          "name": "진로진학부",
+          "order": 9,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-11",
+          "name": "행정실",
+          "order": 10,
+          "active": true,
+          "omitWhenEmpty": false
+        }
+      ]
+    },
+    {
+      "id": "2026-03-23",
+      "dateLabel": "2026년 3월 23일",
+      "meetingTitle": "주간업무추진사항",
+      "createdBy": "migration",
+      "createdAt": "2026-03-23T00:00:00+09:00",
+      "departmentSnapshot": [
+        {
+          "id": "department-01",
+          "name": "말씀 및 기도",
+          "order": 0,
+          "active": true,
+          "omitWhenEmpty": true
+        },
+        {
+          "id": "department-02",
+          "name": "교장(교감)",
+          "order": 1,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-03",
+          "name": "교무기획부",
+          "order": 2,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-04",
+          "name": "교육연구부",
+          "order": 3,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-05",
+          "name": "생활안전부",
+          "order": 4,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-06",
+          "name": "창체활동부",
+          "order": 5,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-07",
+          "name": "과학정보부",
+          "order": 6,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-08",
+          "name": "인성상담부",
+          "order": 7,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-09",
+          "name": "통합지원부",
+          "order": 8,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-10",
+          "name": "진로진학부",
+          "order": 9,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-11",
+          "name": "행정실",
+          "order": 10,
+          "active": true,
+          "omitWhenEmpty": false
+        }
+      ]
+    },
+    {
+      "id": "2026-03-16",
+      "dateLabel": "2026년 3월 16일",
+      "meetingTitle": "주간업무추진사항",
+      "createdBy": "migration",
+      "createdAt": "2026-03-16T00:00:00+09:00",
+      "departmentSnapshot": [
+        {
+          "id": "department-01",
+          "name": "말씀 및 기도",
+          "order": 0,
+          "active": true,
+          "omitWhenEmpty": true
+        },
+        {
+          "id": "department-02",
+          "name": "교장(교감)",
+          "order": 1,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-03",
+          "name": "교무기획부",
+          "order": 2,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-04",
+          "name": "교육연구부",
+          "order": 3,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-05",
+          "name": "생활안전부",
+          "order": 4,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-06",
+          "name": "창체활동부",
+          "order": 5,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-07",
+          "name": "과학정보부",
+          "order": 6,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-08",
+          "name": "인성상담부",
+          "order": 7,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-09",
+          "name": "통합지원부",
+          "order": 8,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-10",
+          "name": "진로진학부",
+          "order": 9,
+          "active": true,
+          "omitWhenEmpty": false
+        },
+        {
+          "id": "department-11",
+          "name": "행정실",
+          "order": 10,
+          "active": true,
+          "omitWhenEmpty": false
+        }
+      ]
+    }
+  ]
+}

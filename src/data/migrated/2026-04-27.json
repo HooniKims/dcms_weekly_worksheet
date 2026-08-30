@@ -1,0 +1,66 @@
+[
+  {
+    "departmentId": "department-03",
+    "htmlContent": "<p>* 1학기 중간고사 관련 학생 교육 실시 <span>(</span><span>방송영상 시청</span><span lang=\"EN-US\">)</span></p><p> - 학생들 부정행위 금지 및 휴대폰, 디벗 소지<span>( </span><span>교실 내 가방 및 사물함 포함</span><span lang=\"EN-US\">)</span>로 인한 부정해위 처리도지 않도록 강조</p><p>* 중간고사 기간 중 비 급식</p><p>* 시험 전 교실 정비 부탁 </p><p>* 5월 15일 금요일 1교시 : 개교기념식 행사 및 스승의날 행사 실시</p>",
+    "plainText": "* 1학기 중간고사 관련 학생 교육 실시 (방송영상 시청)\n- 학생들 부정행위 금지 및 휴대폰, 디벗 소지( 교실 내 가방 및 사물함 포함)로 인한 부정해위 처리도지 않도록 강조\n* 중간고사 기간 중 비 급식\n* 시험 전 교실 정비 부탁\n* 5월 15일 금요일 1교시 : 개교기념식 행사 및 스승의날 행사 실시",
+    "version": 1,
+    "updatedAt": "2026-04-24T09:41:22+09:00",
+    "updatedByRole": "migration"
+  },
+  {
+    "departmentId": "department-04",
+    "htmlContent": "<p>* 5월4일<span>(</span><span>월</span><span lang=\"EN-US\">)</span> ~ 5월 29일<span>(</span><span>금</span><span lang=\"EN-US\">)</span>까지 교생실습 기간입니다. 선생님들의 많은 격려와 협조 부탁드립니다.</p><p></p><table><tbody><tr><td><p>번호</p></td><td><p>성명</p></td><td><p>지도</p><p>과목</p></td><td><p>소속대학</p></td><td><p>배정</p><p>학급</p></td><td><p>학과</p><p>지도교사</p></td><td><p>교과</p><p>지도교사</p></td></tr><tr><td><p>1</p></td><td><p>황하람</p></td><td><p>국어</p></td><td><p>상명대학교</p></td><td><p>1-1</p></td><td><p>이지현</p></td><td><p>김형훈</p></td></tr><tr><td><p>2</p></td><td><p>고다솜</p></td><td><p>음악</p></td><td><p>동덕여자대학교</p></td><td><p>3-4</p></td><td><p>박성철</p></td><td><p>이혜리</p></td></tr></tbody></table><p></p><p><span>(5</span><span>월 연휴와 개교기념일로 인해 인사차 </span><span lang=\"EN-US\">4</span><span>월 </span><span lang=\"EN-US\">27</span><span>일 학교 방문 예정입니다</span><span lang=\"EN-US\">.)</span></p><p>* 4월 28일까지 중간고사 기간<span>(4</span><span>월 </span><span lang=\"EN-US\">29</span><span>일</span><span lang=\"EN-US\">, 30</span><span>일</span><span lang=\"EN-US\">)</span> 및 개교기념일<span>(5</span><span>월</span><span lang=\"EN-US\">4</span><span>일</span><span lang=\"EN-US\">)</span> 41조 연수 올려주세요. </p><p>4월 29일<span>(</span><span>수</span><span lang=\"EN-US\">)</span>-과목별, 4월 30일<span>(</span><span>목</span><span lang=\"EN-US\">)</span>-부서별 <span>(</span><span>출장 및 근무자 제외</span><span lang=\"EN-US\">)</span></p><p>5월4일<span>(</span><span>월</span><span lang=\"EN-US\">)</span>-<span>(</span><span>개교기념일로 인한 재택연수</span><span lang=\"EN-US\">)</span></p><p>  <!--[if !supportEmptyParas]-->&nbsp;<!--[endif]-->  </p>",
+    "plainText": "* 5월4일(월) ~ 5월 29일(금)까지 교생실습 기간입니다. 선생님들의 많은 격려와 협조 부탁드립니다.\n\n번호 | 성명 | 지도\n과목 | 소속대학 | 배정\n학급 | 학과\n지도교사 | 교과\n지도교사\n1 | 황하람 | 국어 | 상명대학교 | 1-1 | 이지현 | 김형훈\n2 | 고다솜 | 음악 | 동덕여자대학교 | 3-4 | 박성철 | 이혜리\n\n(5월 연휴와 개교기념일로 인해 인사차 4월 27일 학교 방문 예정입니다.)\n* 4월 28일까지 중간고사 기간(4월 29일, 30일) 및 개교기념일(5월4일) 41조 연수 올려주세요.\n4월 29일(수)-과목별, 4월 30일(목)-부서별 (출장 및 근무자 제외)\n5월4일(월)-(개교기념일로 인한 재택연수)",
+    "version": 1,
+    "updatedAt": "2026-04-24T10:10:18+09:00",
+    "updatedByRole": "migration"
+  },
+  {
+    "departmentId": "department-02",
+    "htmlContent": "<p>* 중간고사 관리 철저 부탁드립니다.<span>(</span><span>부정행위 금지 매일 교육</span><span lang=\"EN-US\">)</span> </p><p>* 출석부 관리 철저히 해주시기 바랍니다.<span>(</span><span>분실 및 외부 노출 시 여파 심각</span><span lang=\"EN-US\">)</span></p>",
+    "plainText": "* 중간고사 관리 철저 부탁드립니다.(부정행위 금지 매일 교육)\n* 출석부 관리 철저히 해주시기 바랍니다.(분실 및 외부 노출 시 여파 심각)",
+    "version": 1,
+    "updatedAt": "2026-04-24T11:51:47+09:00",
+    "updatedByRole": "migration"
+  },
+  {
+    "departmentId": "department-05",
+    "htmlContent": "* 학교생활 교육<br>- 산책로 출입 금지(폐기물, 위험물 주의)&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; - 식사 전 손 씻기(수돗가 이용 후 급식실로 이동)<br>- 운동장 통행 금지(오염된 먼지 주의)&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; -&nbsp;올바른 복장 착용(책임 사복 데이)<br>- 지각하지 않기&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;- 교실이나 복도에서 공놀이 금지(손가락 골절 사고 발생)<br>- 교실이나 복도에 비치 된 소화기로 장난 금지&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;- 교실, 특별구역 청소 점검<br><p>*&nbsp;식당지도 시간&nbsp;&nbsp;<u>12:30~13:00 <span>(식당 입구 밖)</span></u></p><div>* 1차 생활교육위원회 실시 : 상습적인 흡연 2명</div>",
+    "plainText": "* 학교생활 교육\n- 산책로 출입 금지\n(폐기물, 위험물 주의)\n- 식사 전 손 씻기\n(수돗가 이용 후 급식실로 이동)\n- 운동장 통행 금지\n(오염된 먼지 주의)\n- 올바른 복장 착용\n(책임 사복 데이)\n- 지각하지 않기 - 교실이나 복도에서 공놀이 금지\n(손가락 골절 사고 발생)\n- 교실이나 복도에 비치 된 소화기로 장난 금지 - 교실, 특별구역 청소 점검\n* 식당지도 시간 12:30~13:00 (식당 입구 밖)\n* 1차 생활교육위원회 실시 : 상습적인 흡연 2명",
+    "version": 1,
+    "updatedAt": "2026-04-24T14:16:38+09:00",
+    "updatedByRole": "migration"
+  },
+  {
+    "departmentId": "department-08",
+    "htmlContent": "<p>* 정서·행동 우선관심군 학생 대상 상담 안내</p><p>&nbsp; - 기간: 4월 27일<span>(</span><span>월</span><span lang=\"EN-US\">)</span> ~ 5월 8일<span>(</span><span>금</span><span lang=\"EN-US\">)</span>, 총 2주간</p><p>&nbsp; - 상담은 수업 시간 중 진행될 수 있으니 양해 부탁드립니다.</p><p>&nbsp; - 수행평가 등으로 조정이 필요한 경우, 알려주시면 일정 조정 가능합니다.</p><p>* 이번주는 2,3학년 중간고사 기간인 관계로 수요일 선교방송 및 목요일 북모닝 로고송 송출되지 않습니다.</p><p>* 사회정서교육<span>(</span><span>서울시교육청 발간</span><span lang=\"EN-US\">)</span> 학년별 교육 자료 및 책자 필요한 선생님께서는 문의바랍니다.</p>",
+    "plainText": "* 정서·행동 우선관심군 학생 대상 상담 안내\n- 기간: 4월 27일(월) ~ 5월 8일(금), 총 2주간\n- 상담은 수업 시간 중 진행될 수 있으니 양해 부탁드립니다.\n- 수행평가 등으로 조정이 필요한 경우, 알려주시면 일정 조정 가능합니다.\n* 이번주는 2,3학년 중간고사 기간인 관계로 수요일 선교방송 및 목요일 북모닝 로고송 송출되지 않습니다.\n* 사회정서교육(서울시교육청 발간) 학년별 교육 자료 및 책자 필요한 선생님께서는 문의바랍니다.",
+    "version": 1,
+    "updatedAt": "2026-04-24T08:56:48+09:00",
+    "updatedByRole": "migration"
+  },
+  {
+    "departmentId": "department-10",
+    "htmlContent": "*&nbsp;진로상담실 상설공부방 학습 분위기가 잘 정착되었습니다.&nbsp;아침 시간에도 진로상담실 공부방이 추가 운영됩니다.(4월30일<span><span>(목)</span>까지</span>)",
+    "plainText": "*\n진로상담실 상설공부방 학습 분위기가 잘 정착되었습니다.\n아침 시간에도 진로상담실 공부방이 추가 운영됩니다.(4월30일(목)까지)",
+    "version": 1,
+    "updatedAt": "2026-04-24T08:39:31+09:00",
+    "updatedByRole": "migration"
+  },
+  {
+    "departmentId": "department-06",
+    "htmlContent": "* 봉사활동 교육 안내(27일)<br>&nbsp;- 학급별 계획서에 따라 활동 장소에서 봉사활동<br>&nbsp;- 여비부지급 출장(결재: 교무-교감)",
+    "plainText": "* 봉사활동 교육 안내\n(27일)\n- 학급별 계획서에 따라 활동 장소에서 봉사활동\n- 여비부지급 출장\n(결재: 교무-교감)",
+    "version": 1,
+    "updatedAt": "2026-04-24T14:08:46+09:00",
+    "updatedByRole": "migration"
+  },
+  {
+    "departmentId": "department-11",
+    "htmlContent": "&nbsp;*학생 식당 누수로 인한&nbsp; 도서실 공사가 4월18일부터 계속 진행 중입니다..<br>&nbsp; 3주 정도의 기간을 갖고 진행하는 공사이니 불편하시더라도 양해 부탁드립니다.<br>*청소 여사님의 병가로 5월 말까지 대체 근무자가 업무를 대행해 주실&nbsp; 예정입니다.(6월도 연장 가능)<br>&nbsp;단기간이고 대체근무자라서 청소 여사님이 전에 해주시던 구역을 모두 맡기지는 못하고 화장실 위주로만 청소해 주실 예정입니다.<br>* 학교 인터넷 전화 교체 작업이 4월27일부터 4월30일까지 진행 될 예정입니다.<br>&nbsp; 소음 발생은 거의 없다고 하셨으나 외부인 출입은 있을 예정이니 참고하여 주시기 바랍니다.<br><p>* 문서 출력 시 꼭 필요한 경우에 한해 컬러 인쇄 부탁드립니다.<span>(</span><span>기본 설정 흑백으로 지정</span><span lang=\"EN-US\">)</span></p><br>",
+    "plainText": "*학생 식당 누수로 인한 도서실 공사가 4월18일부터 계속 진행 중입니다..\n3주 정도의 기간을 갖고 진행하는 공사이니 불편하시더라도 양해 부탁드립니다.\n*청소 여사님의 병가로 5월 말까지 대체 근무자가 업무를 대행해 주실 예정입니다.\n(6월도 연장 가능)\n단기간이고 대체근무자라서 청소 여사님이 전에 해주시던 구역을 모두 맡기지는 못하고 화장실 위주로만 청소해 주실 예정입니다.\n* 학교 인터넷 전화 교체 작업이 4월27일부터 4월30일까지 진행 될 예정입니다.\n소음 발생은 거의 없다고 하셨으나 외부인 출입은 있을 예정이니 참고하여 주시기 바랍니다.\n* 문서 출력 시 꼭 필요한 경우에 한해 컬러 인쇄 부탁드립니다.(기본 설정 흑백으로 지정)",
+    "version": 1,
+    "updatedAt": "2026-04-24T11:53:22+09:00",
+    "updatedByRole": "migration"
+  }
+]

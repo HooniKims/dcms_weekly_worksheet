@@ -1,0 +1,74 @@
+[
+  {
+    "departmentId": "department-07",
+    "htmlContent": "- <b>6월 내PC 지키미 100점</b> 부탁드립니다.<br>- 바탕화면의 '<b>AhnLab Privacy Management 5.0</b>' 실행 후 개인정보 파일 여부를 확인 부탁드립니다.<br>(개인정보 파일 발생 시 '삭제' 또는 '저장매체 이동'이 원칙입니다.)<br>- 시험 기간중 <b>1학년 대상 AI 윤리교육이 6/29(월), 6/30(화) 이틀동안 실시</b>됩니다.<br>(각 요일 1, 2교시 담당 교과 선생님들께서는 임장지도 부탁드립니다.)<br>- <b>시험 기간중 디벗 사용을 희망하는 학생</b>은 <b>담임 선생님 권한</b>으로 분출이 가능합니다.<br>( 분실/파손 시 본인 비용이 발생하며, 7월 1일<span>(수)</span>에 반드시 반납할 수 있도록 안내 부탁드립니다.)",
+    "plainText": "-\n6월 내PC 지키미 100점\n부탁드립니다.\n- 바탕화면의 '\nAhnLab Privacy Management 5.0\n' 실행 후 개인정보 파일 여부를 확인 부탁드립니다.\n(개인정보 파일 발생 시 '삭제' 또는 '저장매체 이동'이 원칙입니다.)\n- 시험 기간중\n1학년 대상 AI 윤리교육이 6/29(월), 6/30(화) 이틀동안 실시\n됩니다.\n(각 요일 1, 2교시 담당 교과 선생님들께서는 임장지도 부탁드립니다.)\n-\n시험 기간중 디벗 사용을 희망하는 학생\n은\n담임 선생님 권한\n으로 분출이 가능합니다.\n( 분실/파손 시 본인 비용이 발생하며, 7월 1일(수)에 반드시 반납할 수 있도록 안내 부탁드립니다.)",
+    "version": 1,
+    "updatedAt": "2026-06-18T15:04:57+09:00",
+    "updatedByRole": "migration"
+  },
+  {
+    "departmentId": "department-03",
+    "htmlContent": "<p>* 중간고사 원안지 제출 : 6월 22일 월요일 퇴근 전 <span>(</span><span>연수자료 참고</span><span lang=\"EN-US\">)</span></p><p>* 원안지 및 문항정보표 제출일: 6/22<span>(</span><span>월</span><span lang=\"EN-US\">)</span>   *수행평가 점수 입력 완료일: 7/10<span>(</span><span>금</span><span lang=\"EN-US\">)</span></p><p>* 서술형 채점 및 입력 완료일: 7/8<span>(</span><span>수</span><span lang=\"EN-US\">)</span>     *정오표 배부: 7/13<span>(</span><span>월</span><span lang=\"EN-US\">)</span></p><p>* 정정기간: 7/13<span>(</span><span>월</span><span lang=\"EN-US\">)</span>~7/15<span>(</span><span>수</span><span lang=\"EN-US\">)</span>             *성적 결재: 7/20<span>(</span><span>월</span><span lang=\"EN-US\">)</span></p><p>* 성적표 배부: 7/23<span>(</span><span>목</span><span lang=\"EN-US\">)</span></p><p>* 1학년 담당선생님들</p><p> -모든 학생 과세특 입력 7/10<span>(</span><span>금</span><span lang=\"EN-US\">)</span>까지,  학교생활통지표 입력 7/13<span>(</span><span>월</span><span lang=\"EN-US\">)</span>까지</p><p>* 6월 26일 금요일 8:40-8:50 : 고사유의사항 학생교육<span>(</span><span>방송</span><span lang=\"EN-US\">)</span></p><p>* 6월 23일 평가 관련 컨설팅 예정<span>(</span><span>문의 내용 있으면 계로 알려주세요</span><span lang=\"EN-US\">)</span>&nbsp;</p>",
+    "plainText": "* 중간고사 원안지 제출 : 6월 22일 월요일 퇴근 전 (연수자료 참고)\n* 원안지 및 문항정보표 제출일: 6/22(월) *수행평가 점수 입력 완료일: 7/10(금)\n* 서술형 채점 및 입력 완료일: 7/8(수) *정오표 배부: 7/13(월)\n* 정정기간: 7/13(월)~7/15(수) *성적 결재: 7/20(월)\n* 성적표 배부: 7/23(목)\n* 1학년 담당선생님들\n-모든 학생 과세특 입력 7/10(금)까지, 학교생활통지표 입력 7/13(월)까지\n* 6월 26일 금요일 8:40-8:50 : 고사유의사항 학생교육(방송)\n* 6월 23일 평가 관련 컨설팅 예정(문의 내용 있으면 계로 알려주세요)",
+    "version": 1,
+    "updatedAt": "2026-06-18T08:47:03+09:00",
+    "updatedByRole": "migration"
+  },
+  {
+    "departmentId": "department-04",
+    "htmlContent": "* 6월 23일&nbsp; 15:10~16:40 2026학교평가 대면 컨설팅 <span>(도덕, 국어)</span>이&nbsp;있을 예정 입니다.&nbsp;<br>* 1 학기 학교 평가 중간 평가 시기가 다가오고 있습니다. 이번 중간 평가는 서울형 학교조직진단도구(SODI) 로 대체 하고자 합니다. 설문은 <br>&nbsp; &nbsp;5분 정도 걸리며 결과 통계는 해당 학교에서만 다뤄지며 익명으로 진행됩니다. 자세한 검사 방법과 일정은 기말고사 후 다시 <br>&nbsp; &nbsp;알려드리겠습니다.&nbsp;<br>* <b>6월 22일 까지 기말고사 관련 교과별협의 내용 메신저로 담당선생님께 협의록 제출 부탁드립니다.<br></b><div>* 6월 24일 (수)15:30~ 꿈마루관 에서 교직원 연수가 있을 예정 입니다.&nbsp; 해당 부서는 연수 준비 해주시기 바랍니다.&nbsp;<br>&nbsp; &nbsp;교무부 - 생활기록부&nbsp; 작성 실제, 직장내 괴롭힘 금지 교육<br>&nbsp; &nbsp;연구부 - 자유학기 운영 안내<br>&nbsp; &nbsp;인성상담부 - 부정청탁 및 금품 등 수수의 금지, 공직자 부패 방지 교육<br>&nbsp; &nbsp;과학정보부 - 생태전화교육, 친환경급식, AI활용, 미세먼지 대응</div>",
+    "plainText": "* 6월 23일 15:10~16:40 2026학교평가 대면 컨설팅\n(도덕, 국어)이\n있을 예정 입니다.\n* 1 학기 학교 평가 중간 평가 시기가 다가오고 있습니다. 이번 중간 평가는 서울형 학교조직진단도구\n(SODI)\n로 대체 하고자 합니다. 설문은\n5분 정도 걸리며 결과 통계는 해당 학교에서만 다뤄지며 익명으로 진행됩니다. 자세한 검사 방법과 일정은 기말고사 후 다시\n알려드리겠습니다.\n*\n6월 22일 까지 기말고사 관련 교과별협의 내용 메신저로 담당선생님께 협의록 제출 부탁드립니다.\n* 6월 24일 (수)15:30~ 꿈마루관 에서 교직원 연수가 있을 예정 입니다. 해당 부서는 연수 준비 해주시기 바랍니다.\n교무부 - 생활기록부 작성 실제, 직장내 괴롭힘 금지 교육\n연구부 - 자유학기 운영 안내\n인성상담부 - 부정청탁 및 금품 등 수수의 금지, 공직자 부패 방지 교육\n과학정보부 - 생태전화교육, 친환경급식, AI활용, 미세먼지 대응",
+    "version": 1,
+    "updatedAt": "2026-06-19T10:20:07+09:00",
+    "updatedByRole": "migration"
+  },
+  {
+    "departmentId": "department-02",
+    "htmlContent": "<p>* 각종 회의 및 연수, 예배 등에 <span>(</span><span>출장을 제외한</span><span lang=\"EN-US\">)</span> 전 교사 필참 부탁드립니다.</p><p>* 이동수업 시 소등은 잘 되고 있는데 <u>에어컨</u><u>, </u><u>선풍기 끄기</u>는 아직도 잘 안 되고 있습니다. 담당자 지정하고 조례 시 반복적으로 강조해 주세요.&nbsp;<br>* 복무규정 미준수로 혹시나 불이익을 받는 일이 없도록 유념해 주세요.&nbsp;</p>",
+    "plainText": "* 각종 회의 및 연수, 예배 등에 (출장을 제외한) 전 교사 필참 부탁드립니다.\n* 이동수업 시 소등은 잘 되고 있는데 에어컨, 선풍기 끄기는 아직도 잘 안 되고 있습니다. 담당자 지정하고 조례 시 반복적으로 강조해 주세요.\n* 복무규정 미준수로 혹시나 불이익을 받는 일이 없도록 유념해 주세요.",
+    "version": 1,
+    "updatedAt": "2026-06-18T12:17:23+09:00",
+    "updatedByRole": "migration"
+  },
+  {
+    "departmentId": "department-05",
+    "htmlContent": "* 학교생활 교육<br>- 산책로 출입 금지(폐기물, 위험물 주의)&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; - 식사 전 손 씻기(수돗가 이용 후 급식실로 이동)<br>- 운동장 통행 금지(오염된 먼지 주의)&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; - 올바른 복장 착용(책임 사복 데이)<br>- 지각하지 않기&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;- 교실이나 복도에서 공놀이 금지(손가락 골절 사고 발생)<br>- 교실, 특별구역 청소 점검<br><br>",
+    "plainText": "* 학교생활 교육\n- 산책로 출입 금지\n(폐기물, 위험물 주의)\n- 식사 전 손 씻기\n(수돗가 이용 후 급식실로 이동)\n- 운동장 통행 금지\n(오염된 먼지 주의)\n- 올바른 복장 착용\n(책임 사복 데이)\n- 지각하지 않기 - 교실이나 복도에서 공놀이 금지\n(손가락 골절 사고 발생)\n- 교실, 특별구역 청소 점검",
+    "version": 1,
+    "updatedAt": "2026-06-17T09:01:04+09:00",
+    "updatedByRole": "migration"
+  },
+  {
+    "departmentId": "department-08",
+    "htmlContent": "<p>*&nbsp;학생생활교육위원회 위클래스 특별교육 실시 일정</p><p>&nbsp;-&nbsp;대상: 2학년&nbsp;3반 이○○&nbsp;외&nbsp;2명&nbsp;<span>(</span><span>총&nbsp;</span><span lang=\"EN-US\">3</span><span>명</span><span lang=\"EN-US\">)</span></p><p>&nbsp;-&nbsp;기간 및 시간: 6. 17.<span>(</span><span>수</span><span lang=\"EN-US\">)</span> ~ 2026. 6. 24.<span>(</span><span>수</span><span lang=\"EN-US\">)</span>/&nbsp;매일&nbsp;2교시, 3교시</p><p>&nbsp;-&nbsp;수행평가 일정 조정이 필요한 경우 참고하여 협조해 주시기 바랍니다.</p><p>*&nbsp;주간 선교 일정</p><p>&nbsp;-&nbsp;수요일 조회 시간:&nbsp;선교방송 실시</p><p>&nbsp;-&nbsp;금요일&nbsp;8시~8시&nbsp;30분:&nbsp;등촌 갓모닝 실시<span>(</span><span>꿈마루관</span><span lang=\"EN-US\">)</span></p>",
+    "plainText": "* 학생생활교육위원회 위클래스 특별교육 실시 일정\n- 대상: 2학년 3반 이○○ 외 2명 (총 3명)\n- 기간 및 시간: 6. 17.(수) ~ 2026. 6. 24.(수)/ 매일 2교시, 3교시\n- 수행평가 일정 조정이 필요한 경우 참고하여 협조해 주시기 바랍니다.\n* 주간 선교 일정\n- 수요일 조회 시간: 선교방송 실시\n- 금요일 8시~8시 30분: 등촌 갓모닝 실시(꿈마루관)",
+    "version": 1,
+    "updatedAt": "2026-06-18T11:10:12+09:00",
+    "updatedByRole": "migration"
+  },
+  {
+    "departmentId": "department-10",
+    "htmlContent": "*&nbsp;<span>진로상담실 아침 공부방 운영 안내</span><div><span>기간 : 6월15일<span>(월)</span> ~ 7월1일<span>(수)</span>&nbsp;</span><span>&nbsp;8시00분 ~ 8시40분까지<br></span><span>간식 제공,&nbsp;</span><span>참여 우수자에게 진로체험 우선권 부여 및 상점 부여<br></span><span>* 점심시간 공부방은 상설로 계속 개방 됩니다.</span></div>",
+    "plainText": "*\n진로상담실 아침 공부방 운영 안내기간 : 6월15일(월) ~ 7월1일(수) 8시00분 ~ 8시40분까지\n간식 제공, 참여 우수자에게 진로체험 우선권 부여 및 상점 부여\n* 점심시간 공부방은 상설로 계속 개방 됩니다.",
+    "version": 1,
+    "updatedAt": "2026-06-18T08:47:19+09:00",
+    "updatedByRole": "migration"
+  },
+  {
+    "departmentId": "department-06",
+    "htmlContent": "* 합창페스티벌(7/15) 연습을 기말고사 이후(7/2)부터 시작해주세요.<br>&nbsp;- 반마다 합창곡은 선정 완료.<br>* 청소년 무예 만화 공모전과 서울 건축산책&nbsp; 사진 공모전 홍보(공람 참조)",
+    "plainText": "* 합창페스티벌\n(7/15)\n연습을 기말고사 이후\n(7/2)\n부터 시작해주세요.\n- 반마다 합창곡은 선정 완료.\n* 청소년 무예 만화 공모전과 서울 건축산책 사진 공모전 홍보\n(공람 참조)",
+    "version": 1,
+    "updatedAt": "2026-06-17T12:42:18+09:00",
+    "updatedByRole": "migration"
+  },
+  {
+    "departmentId": "department-11",
+    "htmlContent": "없음.",
+    "plainText": "없음.",
+    "version": 1,
+    "updatedAt": "2026-06-19T08:25:23+09:00",
+    "updatedByRole": "migration"
+  }
+]

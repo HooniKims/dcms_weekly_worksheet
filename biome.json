@@ -1,0 +1,32 @@
+{
+  "$schema": "https://biomejs.dev/schemas/2.5.11/schema.json",
+  "files": {
+    "includes": [
+      "**",
+      "!dist",
+      "!node_modules",
+      "!.firebase",
+      "!.superpowers",
+      "!.omo",
+      "!.migration",
+      "!functions/lib",
+      "!Apps_Script_Codes"
+    ]
+  },
+  "formatter": {
+    "enabled": true,
+    "indentStyle": "space",
+    "indentWidth": 2,
+    "lineWidth": 100
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "preset": "recommended",
+      "a11y": { "useSemanticElements": "off" }
+    }
+  },
+  "javascript": {
+    "formatter": { "quoteStyle": "double", "trailingCommas": "all" }
+  }
+}

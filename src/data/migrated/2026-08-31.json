@@ -1,0 +1,90 @@
+[
+  {
+    "departmentId": "department-07",
+    "htmlContent": "* 과학전람회 실시 : 8월31일(월) 6교시 / 장소 : 과학실<br>",
+    "plainText": "* 과학전람회 실시 : 8월31일\n(월)\n6교시 / 장소 : 과학실",
+    "version": 1,
+    "updatedAt": "2026-08-28T10:03:19+09:00",
+    "updatedByRole": "migration"
+  },
+  {
+    "departmentId": "department-03",
+    "htmlContent": "<p>  <!--[if !supportEmptyParas]-->&nbsp;* 정보공시수시실시 일정</p><p> - 업무 담당자 및 확인자 자료 입력 및 자료 보완: 8월24일<span>(</span><span>월</span><span lang=\"EN-US\">)</span>~9월 7일<span>(</span><span>월</span><span lang=\"EN-US\">)</span></p><p>*취임 감사 예배 실시 : 8월 31일 월요일 15:30- 꿈마루관 </p><p> <span>(8</span><span>월 토론이 있는 교직원 회의는 실시 하지 않습니다</span><span lang=\"EN-US\">)</span></p><p>*9월 2일 수요일 3학년 수련활동 인솔 교사 수업 결강으로 대강이 있습니다.<span>(4</span><span>명</span><span lang=\"EN-US\">)</span></p><p>*교과연계 수련활동과 체험활동 불참학생 지도 계획은 메신저 참고</p>",
+    "plainText": "* 정보공시수시실시 일정\n- 업무 담당자 및 확인자 자료 입력 및 자료 보완: 8월24일(월)~9월 7일(월)\n*취임 감사 예배 실시 : 8월 31일 월요일 15:30- 꿈마루관\n(8월 토론이 있는 교직원 회의는 실시 하지 않습니다)\n*9월 2일 수요일 3학년 수련활동 인솔 교사 수업 결강으로 대강이 있습니다.(4명)\n*교과연계 수련활동과 체험활동 불참학생 지도 계획은 메신저 참고",
+    "version": 1,
+    "updatedAt": "2026-08-27T14:40:21+09:00",
+    "updatedByRole": "migration"
+  },
+  {
+    "departmentId": "department-04",
+    "htmlContent": "* 2026학년도 자유학기 운영 학생 만족도 조사를 실시하고자 합니다.&nbsp;<br>&nbsp; 아침 조회 핸드폰 수거 전&nbsp;&nbsp; &nbsp;1학년 각 반 에 QR코드를 통해 설문을 실시하고자 합니다.&nbsp; 담임선생님께서는 학생들이 접속하여 설문 작성 할 수&nbsp; &nbsp; 있도록 안내 부탁 드립니다.&nbsp; &nbsp;(참고로 QR코드는 각 반에 부착하도록 하겠습니다. )&nbsp;협조 부탁 드립니다.&nbsp;<br><br><br><br>",
+    "plainText": "* 2026학년도 자유학기 운영 학생 만족도 조사를 실시하고자 합니다.\n아침 조회 핸드폰 수거 전 1학년 각 반 에 QR코드를 통해 설문을 실시하고자 합니다. 담임선생님께서는 학생들이 접속하여 설문 작성 할 수 있도록 안내 부탁 드립니다.\n(참고로 QR코드는 각 반에 부착하도록 하겠습니다. )\n협조 부탁 드립니다.",
+    "version": 1,
+    "updatedAt": "2026-08-28T09:06:57+09:00",
+    "updatedByRole": "migration"
+  },
+  {
+    "departmentId": "department-02",
+    "htmlContent": "* 새로운 체계가 빠르게 안착할 수 있도록 선생님들의 많은 협조 부탁드립니다<br>* 수련활동 및 체험활동이 안전하고 즐겁게 마무리 될 수 있도록 선생님들의 적극적인 참여 부탁드립니다",
+    "plainText": "* 새로운 체계가 빠르게 안착할 수 있도록 선생님들의 많은 협조 부탁드립니다\n* 수련활동 및 체험활동이 안전하고 즐겁게 마무리 될 수 있도록 선생님들의 적극적인 참여 부탁드립니다",
+    "version": 1,
+    "updatedAt": "2026-08-27T09:41:11+09:00",
+    "updatedByRole": "migration"
+  },
+  {
+    "departmentId": "department-01",
+    "htmlContent": "<p>* 말씀: 여호와를 경외하는 것이 지혜의 근본이요 거룩하신 자를 아는 것이 명철이니라<span>(</span><span>잠 </span><span lang=\"EN-US\">9:10)</span></p><p>* 기도: 9월 조민기 선생님  / 10월 조성문 선생님</p>",
+    "plainText": "* 말씀: 여호와를 경외하는 것이 지혜의 근본이요 거룩하신 자를 아는 것이 명철이니라(잠 9:10)\n* 기도: 9월 조민기 선생님 / 10월 조성문 선생님",
+    "version": 1,
+    "updatedAt": "2026-08-27T09:36:08+09:00",
+    "updatedByRole": "migration"
+  },
+  {
+    "departmentId": "department-05",
+    "htmlContent": "<b>* 학교생활 교육</b><br>- 산책로 출입 금지(폐기물, 위험물 주의)&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; - 식사 전 손 씻기(수돗가 이용 후 급식실로 이동)<br>- 운동장 통행 금지(오염된 먼지 주의)&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; - 올바른 복장 착용(책임 사복 데이)<br><b>- 지각하지 않기(지각생이 많음)</b><b>&nbsp; &nbsp; &nbsp; &nbsp;</b>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;- 교실이나 복도에서 공놀이 금지(손가락 골절 사고 발생)<br>- 교실, 특별구역 청소 점검<br>",
+    "plainText": "* 학교생활 교육\n- 산책로 출입 금지\n(폐기물, 위험물 주의)\n- 식사 전 손 씻기\n(수돗가 이용 후 급식실로 이동)\n- 운동장 통행 금지\n(오염된 먼지 주의)\n- 올바른 복장 착용\n(책임 사복 데이)\n- 지각하지 않기(지각생이 많음)\n- 교실이나 복도에서 공놀이 금지\n(손가락 골절 사고 발생)\n- 교실, 특별구역 청소 점검",
+    "version": 1,
+    "updatedAt": "2026-08-27T08:52:24+09:00",
+    "updatedByRole": "migration"
+  },
+  {
+    "departmentId": "department-08",
+    "htmlContent": "<p><span>* 학부모 상담 주간 안내</span></p><p><span lang=\"EN-US\">&nbsp;</span><span lang=\"EN-US\">-&nbsp;</span><span>기간</span><span lang=\"EN-US\">: 9</span><span>월&nbsp;</span><span lang=\"EN-US\">7</span><span>일</span><span lang=\"EN-US\"><span>(</span><span>월</span><span lang=\"EN-US\">)</span>~9</span><span>월&nbsp;</span><span lang=\"EN-US\">18</span><span>일</span><span lang=\"EN-US\"><span>(</span><span>금</span><span lang=\"EN-US\">)</span> 2</span><span>주간</span></p><p><span lang=\"EN-US\">&nbsp;-&nbsp;</span><span>온라인 신청받은 후 상담 시간 조정 실시</span></p><p><span lang=\"EN-US\">* 9</span><span>월&nbsp;</span><span lang=\"EN-US\">23</span><span>일</span><span lang=\"EN-US\"><span>(</span><span>수</span><span lang=\"EN-US\">)</span></span><span>에 예정되었던&nbsp;</span><span lang=\"EN-US\">9</span><span>월 교직원예배는 오늘</span><span lang=\"EN-US\"><span>(8</span><span>월&nbsp;</span><span lang=\"EN-US\">31</span><span>일</span><span lang=\"EN-US\">)</span>&nbsp;</span><span>드리는 취임예배로</span></p><p><span>&nbsp;</span><font color=\"#808080\" face=\"tahoma\">&nbsp;</font><span>대체됩니다</span><span lang=\"EN-US\">.</span></p><p><span lang=\"EN-US\">*&nbsp;</span><span>등촌 북모닝</span><span>/</span><span>등촌 갓모닝</span><span>/</span><span>수요 선교방송&nbsp;</span><span lang=\"EN-US\">9</span><span>월 둘째주부터 실</span></p>",
+    "plainText": "* 학부모 상담 주간 안내\n- 기간: 9월 7일(월)~9월 18일(금) 2주간\n- 온라인 신청받은 후 상담 시간 조정 실시\n* 9월 23일(수)에 예정되었던 9월 교직원예배는 오늘(8월 31일) 드리는 취임예배로\n대체됩니다.\n* 등촌 북모닝/등촌 갓모닝/수요 선교방송 9월 둘째주부터 실",
+    "version": 1,
+    "updatedAt": "2026-08-28T08:18:31+09:00",
+    "updatedByRole": "migration"
+  },
+  {
+    "departmentId": "department-10",
+    "htmlContent": "* 9월 2일~4일까지 3학년 수련활동을 실시합니다.&nbsp;<br>* 담임 협조 : 조·종례 시간을 활용하여 수련활동 안내 및 사전 '안전교육' 실시 바랍니다.<br>* 「수련활동 안내 및 안전교육 가정통신문」을 참고바랍니다.&nbsp;",
+    "plainText": "* 9월 2일~4일까지 3학년 수련활동을 실시합니다.\n* 담임 협조 : 조·종례 시간을 활용하여 수련활동 안내 및 사전 '안전교육' 실시 바랍니다.\n* 「수련활동 안내 및 안전교육 가정통신문」을 참고바랍니다.",
+    "version": 1,
+    "updatedAt": "2026-08-28T09:56:45+09:00",
+    "updatedByRole": "migration"
+  },
+  {
+    "departmentId": "department-06",
+    "htmlContent": "<p>* 방과후학교 2기 첫 수업 안내</p><p>9.7일<span><span>(</span>월<span lang=\"EN-US\">, A</span>반<span lang=\"EN-US\">)</span> - 꽉 잡아 수학, 탁구, 배드민턴, 드럼, 기타, AI코딩</span><br>9.8일<span>(화, A반)</span> - 피구<br>9.9일<span><span>(</span>수<span lang=\"EN-US\">, B</span>반<span lang=\"EN-US\">)</span> - 마음을 쓰는 문학 창작반, 배드민턴<br>월,수: 15:20~16:50, 화:16:10~17:40&nbsp;</span></p>",
+    "plainText": "* 방과후학교 2기 첫 수업 안내\n9.7일(월, A반) - 꽉 잡아 수학, 탁구, 배드민턴, 드럼, 기타, AI코딩\n9.8일(화, A반) - 피구\n9.9일(수, B반) - 마음을 쓰는 문학 창작반, 배드민턴\n월,수: 15:20~16:50, 화:16:10~17:40",
+    "version": 1,
+    "updatedAt": "2026-08-27T14:23:34+09:00",
+    "updatedByRole": "migration"
+  },
+  {
+    "departmentId": "department-09",
+    "htmlContent": "<div>*&nbsp;&lt;기초학력 방과후 수업<span>(등촌 거북이랑)</span> 9월 일정&gt;</div><div>&nbsp;- 7일, 9일, 14일, 16일, 21일, 23일, 30일 <span>(총 7회)</span></div><div>&nbsp;- 월요일, 수요일<span>(15:15~16:15)</span> 1-1, 1-2&nbsp;</div>",
+    "plainText": "* <기초학력 방과후 수업(등촌 거북이랑) 9월 일정>\n- 7일, 9일, 14일, 16일, 21일, 23일, 30일 (총 7회)\n- 월요일, 수요일(15:15~16:15) 1-1, 1-2",
+    "version": 1,
+    "updatedAt": "2026-08-28T10:05:53+09:00",
+    "updatedByRole": "migration"
+  },
+  {
+    "departmentId": "department-11",
+    "htmlContent": "학교 내 전체 노후 화재감지기 교체 작업이 있을 예정입니다...<br>1학년 체험활동 시 외부인 출입이 있을 예정이니 양해 부탁드립니다.<br>&nbsp;1. 일자: 2026년 9월3일~4일(2일간)<br>&nbsp;2. 수량: 열감지기 (71개), 연기감지기(16개)<br>",
+    "plainText": "학교 내 전체 노후 화재감지기 교체 작업이 있을 예정입니다...\n1학년 체험활동 시 외부인 출입이 있을 예정이니 양해 부탁드립니다.\n1. 일자: 2026년 9월3일~4일\n(2일간)\n2. 수량: 열감지기\n(71개)\n, 연기감지기\n(16개)",
+    "version": 1,
+    "updatedAt": "2026-08-27T08:35:05+09:00",
+    "updatedByRole": "migration"
+  }
+]

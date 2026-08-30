@@ -1,0 +1,82 @@
+[
+  {
+    "departmentId": "department-07",
+    "htmlContent": "<p>* 고사기간 디벗 가정학습 사용 안내 : 6/15<span>(</span><span>월</span><span lang=\"EN-US\">)</span>~7/1<span>(</span><span>수</span><span lang=\"EN-US\">)</span> 시험종료일에 충전함에 넣기</p><p>  - 디벗 분실/파손 시 비용 본인 부담 지속적으로 훈화 부탁</p><p>* 종례 시 에어컨/전자칠판/선풍기 전원 종료 : 화재 위험&nbsp;</p>",
+    "plainText": "* 고사기간 디벗 가정학습 사용 안내 : 6/15(월)~7/1(수) 시험종료일에 충전함에 넣기\n- 디벗 분실/파손 시 비용 본인 부담 지속적으로 훈화 부탁\n* 종례 시 에어컨/전자칠판/선풍기 전원 종료 : 화재 위험",
+    "version": 1,
+    "updatedAt": "2026-06-11T13:09:31+09:00",
+    "updatedByRole": "migration"
+  },
+  {
+    "departmentId": "department-03",
+    "htmlContent": "<p>  <!--[if !supportEmptyParas]-->&nbsp;<!--[endif]-->  </p><p>*&lt;기말고사 일정&gt; 시험기간 학교급식 있음</p><p></p><table><tbody><tr><td><p>구분</p></td><td><p>6/29<span>(</span><span>월</span><span lang=\"EN-US\">)</span></p></td><td><p>6/30<span>(</span><span>화</span><span lang=\"EN-US\">)</span></p></td><td><p>7/1<span>(</span><span>수</span><span lang=\"EN-US\">)</span></p></td></tr><tr><td><p>1교시</p></td><td><p>영어</p></td><td><p>국어</p></td><td><p>수학</p></td></tr><tr><td><p>2교시</p></td><td><p>역사</p></td><td><p>공부<span>(2)</span>/한문<span>(3)</span></p></td><td><p>사회<span>(2)</span>/도덕<span>(3)</span></p></td></tr><tr><td><p>3교시</p></td><td><p>미술</p></td><td><p>과학</p></td><td><p>기가</p></td></tr><tr><td><p>4교시</p></td><td><p>채점</p></td><td><p>채점</p></td><td><p>채점</p></td></tr></tbody></table><p></p><p>*원안지 및 문항정보표 제출일: 6/22<span>(</span><span>월</span><span lang=\"EN-US\">)</span>  *수행평가 점수 입력 완료일: 7/10<span>(</span><span>금</span><span lang=\"EN-US\">)</span></p><p>*서술형 채점 및 입력 완료일: 7/8<span>(</span><span>수</span><span lang=\"EN-US\">)</span>    *정오표 배부: 7/13<span>(</span><span>월</span><span lang=\"EN-US\">)</span></p><p>*정정기간: 7/13<span>(</span><span>월</span><span lang=\"EN-US\">)</span>~7/15<span>(</span><span>수</span><span lang=\"EN-US\">)</span>            *성적 결재: 7/20<span>(</span><span>월</span><span lang=\"EN-US\">)</span>&nbsp; &nbsp;*성적표 배부: 7/23(목)</p><p>*1학년 담당선생님들 :&nbsp;모든 학생 과세특 입력&nbsp;7/10(금)까지,&nbsp;&nbsp;학교생활통지표 입력 7/13(월)까지</p><p>* 중간고사 원안지 제출 : 6월 22일 월요일 퇴근 전</p><p>  - 학교교육과정 범위와 수준 벗어난 내용 출제하지 않도록 유의 </p><p>  - 출력물 관리 및 보안 관리 철저히</p><p>* 1학기 기말고사 관련 교사 연수 및 학생 교육실시</p><p></p><table><tbody><tr><td><p>2026. 6. 26.<span>(</span><span>금</span><span lang=\"EN-US\">)</span> 8:40 ~ 8:50</p></td><td><p>고사 유의사항 학생 교육</p></td><td><p>방송영상 시청</p></td></tr><tr><td><p>2026. 6. 16.<span>(</span><span>화</span><span lang=\"EN-US\">)</span> 16:10 ~ 16:30</p></td><td><p>출제 관련 교사 연수</p></td><td><p>교무실</p></td></tr><tr><td><p>2026. 6. 24.<span>(</span><span>수</span><span lang=\"EN-US\">)</span> 15:30 ~ 16:00</p></td><td><p>감독 관련 교사 연수</p></td><td><p>꿈마루관</p></td></tr></tbody></table><p>* 6월 18일 목요일 : 금요수업</p>",
+    "plainText": "*<기말고사 일정> 시험기간 학교급식 있음\n\n구분 | 6/29(월) | 6/30(화) | 7/1(수)\n1교시 | 영어 | 국어 | 수학\n2교시 | 역사 | 공부(2)/한문(3) | 사회(2)/도덕(3)\n3교시 | 미술 | 과학 | 기가\n4교시 | 채점 | 채점 | 채점\n\n*원안지 및 문항정보표 제출일: 6/22(월) *수행평가 점수 입력 완료일: 7/10(금)\n*서술형 채점 및 입력 완료일: 7/8(수) *정오표 배부: 7/13(월)\n*정정기간: 7/13(월)~7/15(수) *성적 결재: 7/20(월) *성적표 배부: 7/23(목)\n*1학년 담당선생님들 : 모든 학생 과세특 입력 7/10(금)까지, 학교생활통지표 입력 7/13(월)까지\n* 중간고사 원안지 제출 : 6월 22일 월요일 퇴근 전\n- 학교교육과정 범위와 수준 벗어난 내용 출제하지 않도록 유의\n- 출력물 관리 및 보안 관리 철저히\n* 1학기 기말고사 관련 교사 연수 및 학생 교육실시\n\n2026. 6. 26.(금) 8:40 ~ 8:50 | 고사 유의사항 학생 교육 | 방송영상 시청\n2026. 6. 16.(화) 16:10 ~ 16:30 | 출제 관련 교사 연수 | 교무실\n2026. 6. 24.(수) 15:30 ~ 16:00 | 감독 관련 교사 연수 | 꿈마루관\n\n* 6월 18일 목요일 : 금요수업",
+    "version": 1,
+    "updatedAt": "2026-06-10T14:26:20+09:00",
+    "updatedByRole": "migration"
+  },
+  {
+    "departmentId": "department-04",
+    "htmlContent": "<div><b>* &lt;과별 협의회 안내&gt;</b></div><div>1. 일시: 6월 15일<span>(월)</span>~6월 22일<span>(월)</span> 中 실시</div><div>2, 내용:&nbsp;026학년도 1학기 기말고사 출제 관련 논의,&nbsp;2026학년도 1학기 기말고사 수행평가 실시 및 출제 관련 논의,&nbsp;기타 안건</div><div>&gt;과별 대표께서는 협의록을 메신저로 보내주시기 바랍니다.</div><div><br></div>",
+    "plainText": "* <과별 협의회 안내>\n1. 일시: 6월 15일(월)~6월 22일(월) 中 실시\n2, 내용: 026학년도 1학기 기말고사 출제 관련 논의, 2026학년도 1학기 기말고사 수행평가 실시 및 출제 관련 논의, 기타 안건\n>과별 대표께서는 협의록을 메신저로 보내주시기 바랍니다.",
+    "version": 1,
+    "updatedAt": "2026-06-12T07:57:10+09:00",
+    "updatedByRole": "migration"
+  },
+  {
+    "departmentId": "department-02",
+    "htmlContent": "* 기말고사 출제 시 예상 평균점수 및&nbsp; 분포도 고려하여 난이도 조정해 주세요<br>* 시험 전 2주동안 면학분위기 조성해 주세요<br>* 종례 후 에어컨, 선풍기, 전자칠판, 창문 등 교실 관리 마무리 잘 해 주세요&nbsp;<br>* 언어폭력 예방 차원에서 바른말 고운말 사용하도록 지속적인 교육 부탁드립니다",
+    "plainText": "* 기말고사 출제 시 예상 평균점수 및 분포도 고려하여 난이도 조정해 주세요\n* 시험 전 2주동안 면학분위기 조성해 주세요\n* 종례 후 에어컨, 선풍기, 전자칠판, 창문 등 교실 관리 마무리 잘 해 주세요\n* 언어폭력 예방 차원에서 바른말 고운말 사용하도록 지속적인 교육 부탁드립니다",
+    "version": 1,
+    "updatedAt": "2026-06-12T08:40:23+09:00",
+    "updatedByRole": "migration"
+  },
+  {
+    "departmentId": "department-05",
+    "htmlContent": "* 학교생활 교육<br>- 산책로 출입 금지(폐기물, 위험물 주의)&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; - 식사 전 손 씻기(수돗가 이용 후 급식실로 이동)<br>- 운동장 통행 금지(오염된 먼지 주의)&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; - 올바른 복장 착용(책임 사복 데이)<br>- 지각하지 않기&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;- 교실이나 복도에서 공놀이 금지(손가락 골절 사고 발생)<br>- 교실, 특별구역 청소 점검<br><br>* 급식순서 : 3학년-&gt;2학년-&gt;1학년<span>(반 구분 없음)</span><br>* 교탁 앞부분에 낙서가 되어 있는 학급 있음-낙서 지우기 지도<br>* 흡연예방교육 : 6/19<span>(금)</span>, 다목적관, 3교시, 전교생",
+    "plainText": "* 학교생활 교육\n- 산책로 출입 금지\n(폐기물, 위험물 주의)\n- 식사 전 손 씻기\n(수돗가 이용 후 급식실로 이동)\n- 운동장 통행 금지\n(오염된 먼지 주의)\n- 올바른 복장 착용\n(책임 사복 데이)\n- 지각하지 않기 - 교실이나 복도에서 공놀이 금지\n(손가락 골절 사고 발생)\n- 교실, 특별구역 청소 점검\n* 급식순서 : 3학년->2학년->1학년\n(반 구분 없음)\n*\n교탁 앞부분에 낙서가 되어 있는 학급 있음\n-\n낙서 지우기 지도\n* 흡연예방교육 : 6/19(금), 다목적관, 3교시, 전교생",
+    "version": 1,
+    "updatedAt": "2026-06-10T09:59:16+09:00",
+    "updatedByRole": "migration"
+  },
+  {
+    "departmentId": "department-08",
+    "htmlContent": "<p>*&nbsp;&nbsp;도서실<span>(</span>책마루<span lang=\"EN-US\">)</span>&nbsp;플리마켓 행사 실시<span>(</span>학년별 점심시간 운영<span lang=\"EN-US\">)</span></p><p>&nbsp;- 1학년: 6월16일<span>(</span><span>화</span><span lang=\"EN-US\">)</span>/ 2학년: 6월17일<span>(</span><span>수</span><span lang=\"EN-US\">)</span>/ 3학년: 6월18일<span>(</span><span>목</span><span lang=\"EN-US\">)</span></p><p>*&nbsp;북모닝 시간은 시험&nbsp;2주 전부터 시험공부 시간으로 활용 가능<span>(2,3</span><span>학년</span><span lang=\"EN-US\">)</span></p><p>*&nbsp;주간 선교 일정</p><p>&nbsp;-&nbsp;수요일<span>(17</span><span>일</span><span lang=\"EN-US\">)</span>&nbsp;교직원 예배&nbsp;15시&nbsp;30분~<span>(</span><span>다목적실</span><span lang=\"EN-US\">)</span></p><p>&nbsp;-&nbsp;수요일 조회 시간:&nbsp;선교방송 실시</p><p>&nbsp;-&nbsp;금요일&nbsp;8시~8시&nbsp;30분:&nbsp;등촌 갓모닝 실시<span>(</span><span>꿈마루관</span><span lang=\"EN-US\">)</span></p>",
+    "plainText": "* 도서실(책마루) 플리마켓 행사 실시(학년별 점심시간 운영)\n- 1학년: 6월16일(화)/ 2학년: 6월17일(수)/ 3학년: 6월18일(목)\n* 북모닝 시간은 시험 2주 전부터 시험공부 시간으로 활용 가능(2,3학년)\n* 주간 선교 일정\n- 수요일(17일) 교직원 예배 15시 30분~(다목적실)\n- 수요일 조회 시간: 선교방송 실시\n- 금요일 8시~8시 30분: 등촌 갓모닝 실시(꿈마루관)",
+    "version": 1,
+    "updatedAt": "2026-06-12T11:47:08+09:00",
+    "updatedByRole": "migration"
+  },
+  {
+    "departmentId": "department-10",
+    "htmlContent": "* 다음 주부터&nbsp;진로상담실을 점심시간 동안 상설 공부방으로 운영합니다. 공부하고 싶은 학생들이 많이 이용할 수 있도록 홍보 바랍니다.<br>",
+    "plainText": "* 다음 주부터\n진로상담실을 점심시간 동안 상설 공부방으로 운영합니다\n.\n공부하고 싶은 학생들이 많이 이용할 수 있도록 홍보 바랍니다\n.",
+    "version": 1,
+    "updatedAt": "2026-06-10T08:36:14+09:00",
+    "updatedByRole": "migration"
+  },
+  {
+    "departmentId": "department-06",
+    "htmlContent": "* 19일(금) 동아리 안내<br>&nbsp;- 동아리 시간: 12:40~14:40<br>&nbsp;- 학급별 종례 12:25, 동아리 부서 이동 12:30",
+    "plainText": "* 19일\n(금)\n동아리 안내\n- 동아리 시간: 12:40~14:40\n- 학급별 종례 12:25, 동아리 부서 이동 12:30",
+    "version": 1,
+    "updatedAt": "2026-06-10T08:35:33+09:00",
+    "updatedByRole": "migration"
+  },
+  {
+    "departmentId": "department-09",
+    "htmlContent": "<div>[1학년 건강검진]</div><div>- 6월 18일(목) 11시~ (급식 이전에 끝날 예정)</div><div>- 해당교과 선생님들은 임장지도&nbsp;</div><div>- 당일 1학년 먼저 급식</div><div>- 기타:&nbsp;가정통신문 배부 예정, 전날 금식, 검진 끝나고 간식 배부</div><div>* 흉부 x선 검사 신청 교사는 10시30분 부터 검사시작 가능</div>",
+    "plainText": "[1학년 건강검진]\n- 6월 18일(목) 11시~ (급식 이전에 끝날 예정)\n- 해당교과 선생님들은 임장지도\n- 당일 1학년 먼저 급식\n- 기타: 가정통신문 배부 예정, 전날 금식, 검진 끝나고 간식 배부\n* 흉부 x선 검사 신청 교사는 10시30분 부터 검사시작 가능",
+    "version": 1,
+    "updatedAt": "2026-06-11T09:45:07+09:00",
+    "updatedByRole": "migration"
+  },
+  {
+    "departmentId": "department-11",
+    "htmlContent": "없음.",
+    "plainText": "없음.",
+    "version": 1,
+    "updatedAt": "2026-06-11T15:28:12+09:00",
+    "updatedByRole": "migration"
+  }
+]
