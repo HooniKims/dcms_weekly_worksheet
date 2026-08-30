@@ -91,7 +91,9 @@
   font-weight: var(--report-weight-bold);
   line-height: var(--report-body-leading);
   text-align: center;
-  white-space: nowrap;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  word-break: keep-all;
   print-color-adjust: exact;
 }
 

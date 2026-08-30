@@ -1,7 +1,10 @@
+import { readFileSync } from "node:fs";
 import { render, screen, within } from "@testing-library/react";
 import { describe, expect, it } from "vitest";
 import type { Department, Entry, Week } from "../domain/models";
 import { ReportView } from "./ReportView";
+
+const reportStyles = readFileSync("src/styles/report.css", "utf8");
 
 const departments: readonly Department[] = [
   {
@@ -104,5 +107,28 @@ describe("ReportView", () => {
     );
 
     expect(screen.queryByRole("rowheader", { name: "주간 나눔" })).not.toBeInTheDocument();
+  });
+
+  it("Given a long department label, when rendering the report, then the label may wrap inside its column", () => {
+    // Given
+    const prayerEntry: Entry = {
+      departmentId: "department-prayer",
+      htmlContent: "<p>말씀과 기도 내용</p>",
+      plainText: "말씀과 기도 내용",
+      version: 1,
+      updatedAt: "2026-08-28T00:00:00.000Z",
+      updatedByRole: "migration",
+    };
+
+    // When
+    render(
+      <ReportView week={week} departments={departments} entries={[prayerEntry, ...entries]} />,
+    );
+
+    // Then
+    expect(screen.getByRole("rowheader", { name: "말씀 및 기도" })).toBeInTheDocument();
+    expect(reportStyles).toMatch(
+      /\.report-row\s*>\s*th\s*\{[^}]*white-space:\s*normal;[^}]*overflow-wrap:\s*anywhere;/,
+    );
   });
 });
