@@ -19,6 +19,11 @@ const DemoWorkspacePreview = lazy(() =>
     default: module.DemoWorkspacePreview,
   })),
 );
+const DemoPrintDialogPreview = lazy(() =>
+  import("./components/DemoPrintDialogPreview").then((module) => ({
+    default: module.DemoPrintDialogPreview,
+  })),
+);
 
 export function App() {
   const preview = new URLSearchParams(window.location.search);
@@ -81,6 +86,14 @@ export function App() {
     return (
       <Suspense fallback={<p className="loading-page">업무 화면을 준비하는 중…</p>}>
         <DemoWorkspacePreview />
+      </Suspense>
+    );
+  }
+
+  if (isLocalDemo && preview.has("a4-dialog-preview")) {
+    return (
+      <Suspense fallback={null}>
+        <DemoPrintDialogPreview />
       </Suspense>
     );
   }

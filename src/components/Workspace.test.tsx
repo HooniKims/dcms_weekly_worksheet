@@ -154,7 +154,10 @@ function deferred<Value>() {
 }
 
 describe("Workspace", () => {
-  afterEach(cleanup);
+  afterEach(() => {
+    cleanup();
+    vi.restoreAllMocks();
+  });
 
   it("Given the workspace opens, when no tab was chosen, then it starts in the selected week snapshot editor", () => {
     render(
@@ -195,6 +198,33 @@ describe("Workspace", () => {
     expect(screen.getByRole("button", { name: "A4 인쇄" })).toBeInTheDocument();
     await user.click(screen.getByRole("button", { name: "주간표" }));
     expect(screen.getByRole("table", { name: /주간업무추진사항/ })).toBeInTheDocument();
+  });
+
+  it("Given administrator access from the editor, when A4 print is selected, then a preview appears before printing", async () => {
+    // Given
+    const user = userEvent.setup();
+    const print = vi.spyOn(window, "print").mockImplementation(() => undefined);
+    render(
+      <Workspace
+        repository={repository({ signInAdmin: vi.fn().mockResolvedValue(undefined) })}
+        initialData={initialData}
+        demo={false}
+        onLogout={vi.fn()}
+      />,
+    );
+    await user.click(screen.getByRole("button", { name: "관리자" }));
+    await user.type(screen.getByLabelText("관리자 비밀번호"), "admin-test-password");
+    await user.click(screen.getByRole("button", { name: "관리자 확인" }));
+    await user.click(screen.getByRole("button", { name: "닫기" }));
+
+    // When
+    await user.click(screen.getByRole("button", { name: "A4 인쇄" }));
+
+    // Then
+    expect(screen.getByRole("dialog", { name: "A4 인쇄 미리보기" })).toBeInTheDocument();
+    expect(print).not.toHaveBeenCalled();
+    await user.click(screen.getByRole("button", { name: "인쇄하기" }));
+    expect(print).toHaveBeenCalledOnce();
   });
 
   it("Given administrator authentication fails, when the password is submitted, then report and print controls stay unavailable", async () => {

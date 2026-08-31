@@ -53,7 +53,13 @@ export function WorkspaceHeader({
   reportVisible,
   onAdmin,
   onLogout,
-}: Readonly<{ reportVisible: boolean; onAdmin: () => void; onLogout: () => Promise<void> }>) {
+  onPrintPreview,
+}: Readonly<{
+  reportVisible: boolean;
+  onAdmin: () => void;
+  onLogout: () => Promise<void>;
+  onPrintPreview: () => void;
+}>) {
   return (
     <header className="workspace-header">
       <div>
@@ -68,7 +74,7 @@ export function WorkspaceHeader({
           <SignOut size={18} /> 로그아웃
         </button>
         {reportVisible && (
-          <button className="ghost-button" type="button" onClick={() => window.print()}>
+          <button className="ghost-button" type="button" onClick={onPrintPreview}>
             <Printer size={18} /> A4 인쇄
           </button>
         )}

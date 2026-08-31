@@ -4,6 +4,7 @@ import { findClosestDepartmentId } from "../domain/departments";
 import type { SearchResult } from "../domain/models";
 import type { WeekId } from "../domain/week";
 import { AdminDialog } from "./AdminDialog";
+import { PrintPreviewDialog } from "./PrintPreviewDialog";
 import { ReuseDialog, type ReuseSource } from "./ReuseDialog";
 import { useWorkspaceController } from "./useWorkspaceController";
 import { WorkspaceContent, type WorkspaceTab } from "./WorkspaceContent";
@@ -21,6 +22,7 @@ export function Workspace({ repository, initialData, demo, onLogout }: Workspace
   const [tab, setTab] = useState<WorkspaceTab>("edit");
   const [adminOpen, setAdminOpen] = useState(false);
   const [administratorVerified, setAdministratorVerified] = useState(false);
+  const [printPreviewOpen, setPrintPreviewOpen] = useState(false);
   const [reuseSource, setReuseSource] = useState<ReuseSource>();
   const [reuseDestinationId, setReuseDestinationId] = useState("");
   const reuseLoadGeneration = useRef(0);
@@ -131,6 +133,7 @@ export function Workspace({ repository, initialData, demo, onLogout }: Workspace
         reportVisible={administratorVerified}
         onAdmin={() => setAdminOpen(true)}
         onLogout={onLogout}
+        onPrintPreview={() => setPrintPreviewOpen(true)}
       />
       <MobileSelectors
         snapshot={workspace.snapshot}
@@ -191,6 +194,14 @@ export function Workspace({ repository, initialData, demo, onLogout }: Workspace
           onRebuildSearchIndex={() => repository.rebuildSearchIndex()}
           selectedWeekLabel={workspace.selectedWeek.dateLabel}
           departments={workspace.weekDepartments}
+        />
+      )}
+      {printPreviewOpen && (
+        <PrintPreviewDialog
+          week={workspace.selectedWeek}
+          departments={workspace.weekDepartments}
+          entries={workspace.snapshot.entries}
+          onClose={() => setPrintPreviewOpen(false)}
         />
       )}
     </main>

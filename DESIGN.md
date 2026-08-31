@@ -426,9 +426,11 @@ The workspace chrome follows the Steep design system above. The weekly report it
 document surface and must reproduce the established Google Sheets output instead of inheriting
 the product-card styling.
 
-- Output: A4 portrait, fit to page width, centered horizontally, with 0.10in top, 0.04in bottom,
+- Output: A4 portrait, fit to page width, centered horizontally, with 4.54mm top, 0.04in bottom,
   and 0.01in left/right print margins. Print output scales the whole source-sheet geometry from
   726px to 756px (about 4.1%) so the page uses the available area while remaining a single page.
+- The 4.54mm top margin is exactly 2mm more than the former 0.10in margin. The other page margins,
+  report width, column ratios, type scale, and single-page constraint remain unchanged.
 - Grid: seven source columns. Column A is 66px; columns B:G are 110px each. The web document uses
   the equivalent 66:660 label/content ratio.
 - Typeface: `Malgun Gothic` throughout the report. The screen document keeps the 13pt title,
@@ -467,6 +469,9 @@ the product-card styling.
   enter the DOM only after the administrator password has been verified in the current workspace.
   Closing the administrator dialog keeps that verified state until logout or page reload. Department
   selection, editing, saving, archive search, and reuse remain available to contributors.
+- The administrator `A4 인쇄` action opens an accessible preview dialog for the selected week's
+  saved report. Only the dialog's explicit `인쇄하기` action invokes the browser print flow. Closing
+  the dialog returns focus to the trigger; unsaved editor drafts do not enter the compiled preview.
 - The header includes an icon-and-label `로그아웃` action. It ends the repository session, removes the
   browser restoration marker, and returns to the password lock screen even if the repository sign-out
   request reports an error.
@@ -510,6 +515,10 @@ the product-card styling.
   very narrow widths.
 - Below 640px the 726px source-sheet report is uniformly zoomed to the available viewport width,
   preserving its row/column proportions while avoiding clipping or horizontal scrolling.
+- The rich editor inserts rectangular tables from 1×1 through 10×10. Selecting a normal table cell
+  reveals controls that add a row below, delete the active row, add a column to the right, or delete
+  the active column. The final row or column cannot be removed, and structural controls are disabled
+  for merged or irregular tables so historical content remains intact.
 - Archive search is available to every unlocked contributor. It waits for at least two characters,
   searches partial department names and content across every week, and shows the date, department,
   and a concise matching excerpt. Search results overlay the page rather than changing the editor

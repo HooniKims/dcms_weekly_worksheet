@@ -1,6 +1,6 @@
 @page {
   size: A4 portrait;
-  margin: 0.1in 0.01in 0.04in;
+  margin: 4.54mm 0.01in 0.04in;
 }
 
 .print-preview {
@@ -71,5 +71,29 @@
 
   .report-form thead {
     display: table-row-group;
+  }
+
+  body.print-preview-active .workspace-grid,
+  body.print-preview-active .print-preview-controls {
+    display: none;
+  }
+
+  body.print-preview-active .print-preview-backdrop,
+  body.print-preview-active .print-preview-dialog,
+  body.print-preview-active .print-preview-document {
+    position: static;
+    display: block;
+    width: auto;
+    max-width: none;
+    height: auto;
+    max-height: none;
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+    border: 0;
+    border-radius: 0;
+    background: var(--print-paper);
+    box-shadow: none;
+    backdrop-filter: none;
   }
 }

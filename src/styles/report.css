@@ -163,6 +163,10 @@
     width: var(--report-width);
   }
 
+  .print-preview-document .report-sheet {
+    zoom: min(1, calc((100vw - var(--spacing-40) - var(--spacing-64)) / var(--report-width)));
+  }
+
   .report-meta-row td,
   .report-row > th,
   .report-content {
