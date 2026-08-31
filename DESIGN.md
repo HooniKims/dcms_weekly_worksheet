@@ -426,11 +426,13 @@ The workspace chrome follows the Steep design system above. The weekly report it
 document surface and must reproduce the established Google Sheets output instead of inheriting
 the product-card styling.
 
-- Output: A4 portrait, fit to page width, centered horizontally, with 4.54mm top, 0.04in bottom,
-  and 0.01in left/right print margins. Print output scales the whole source-sheet geometry from
+- Output: A4 portrait, fit to page width, centered horizontally, with 5mm top/bottom and 4mm
+  left/right print margins. The centered 756px report then begins about 5mm from either paper edge,
+  providing a practical printer-safe buffer without noticeably shrinking the source-sheet layout.
+  Print output scales the whole source-sheet geometry from
   726px to 756px (about 4.1%) so the page uses the available area while remaining a single page.
-- The 4.54mm top margin is exactly 2mm more than the former 0.10in margin. The other page margins,
-  report width, column ratios, type scale, and single-page constraint remain unchanged.
+- The report width, column ratios, type scale, and single-page constraint remain unchanged; the
+  added page-edge buffer must not clip the title, department grid, or embedded tables.
 - Grid: seven source columns. Column A is 66px; columns B:G are 110px each. The web document uses
   the equivalent 66:660 label/content ratio.
 - Typeface: `Malgun Gothic` throughout the report. The screen document keeps the 13pt title,
