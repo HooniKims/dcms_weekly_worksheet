@@ -1,12 +1,11 @@
 import { ArrowCounterClockwise, Trash } from "@phosphor-icons/react";
 import { useState } from "react";
 import type { Week } from "../domain/models";
-import type { WeekId } from "../domain/week";
+import { type WeekId, weekIdSchema } from "../domain/week";
 
 type AdminWeekTrashProps = Readonly<{
   selectedWeekId: WeekId;
-  selectedWeekLabel: string;
-  activeWeekCount: number;
+  activeWeeks: readonly Week[];
   archivedWeeks: readonly Week[];
   onArchiveWeek: (weekId: WeekId) => Promise<void>;
   onRestoreWeek: (weekId: WeekId) => Promise<void>;
@@ -18,8 +17,7 @@ type BusyAction = "archive" | "restore" | null;
 
 export function AdminWeekTrash({
   selectedWeekId,
-  selectedWeekLabel,
-  activeWeekCount,
+  activeWeeks,
   archivedWeeks,
   onArchiveWeek,
   onRestoreWeek,
@@ -27,17 +25,21 @@ export function AdminWeekTrash({
   confirmArchive = window.confirm,
 }: AdminWeekTrashProps) {
   const [busyAction, setBusyAction] = useState<BusyAction>(null);
+  const [archiveTargetWeekId, setArchiveTargetWeekId] = useState(selectedWeekId);
+  const archiveTargetWeek =
+    activeWeeks.find((week) => week.id === archiveTargetWeekId) ?? activeWeeks[0];
 
   async function archiveWeek(): Promise<void> {
+    if (archiveTargetWeek === undefined) return;
     const confirmed = confirmArchive(
-      `${selectedWeekLabel} 주차를 휴지통으로 이동할까요?\n입력 내용과 수정 기록은 삭제되지 않으며 일반 목록과 검색에서 숨겨집니다.`,
+      `${archiveTargetWeek.dateLabel} 주차를 휴지통으로 이동할까요?\n입력 내용과 수정 기록은 삭제되지 않으며 일반 목록과 검색에서 숨겨집니다.`,
     );
     if (!confirmed) return;
     onMessage("");
     setBusyAction("archive");
     try {
-      await onArchiveWeek(selectedWeekId);
-      onMessage("선택한 주차를 휴지통으로 이동했습니다.");
+      await onArchiveWeek(archiveTargetWeek.id);
+      onMessage(`${archiveTargetWeek.dateLabel}을 휴지통으로 이동했습니다.`);
     } catch {
       onMessage("주차를 휴지통으로 이동하지 못했습니다. 잠시 후 다시 시도해 주세요.");
     } finally {
@@ -65,17 +67,51 @@ export function AdminWeekTrash({
           <h3 id="week-manager-title">주차 관리</h3>
           <p className="form-help">내용은 보존한 채 목록과 검색에서 숨기거나 복원합니다.</p>
         </div>
+      </div>
+      <div className="week-trash-target-controls">
+        <label htmlFor="archive-week-target">휴지통으로 이동할 주차</label>
+        <select
+          id="archive-week-target"
+          value={archiveTargetWeek?.id ?? archiveTargetWeekId}
+          onChange={(event) => setArchiveTargetWeekId(weekIdSchema.parse(event.target.value))}
+          disabled={busyAction !== null}
+        >
+          {activeWeeks.map((week) => (
+            <option key={week.id} value={week.id}>
+              {week.dateLabel}
+            </option>
+          ))}
+        </select>
+        {archiveTargetWeek !== undefined && (
+          <p className="week-trash-target" aria-live="polite">
+            현재 삭제 대상: {archiveTargetWeek.dateLabel}
+          </p>
+        )}
         <button
           className="ghost-button compact week-trash-action"
           type="button"
+          aria-label={
+            busyAction === "archive"
+              ? "이동 중…"
+              : `${archiveTargetWeek?.dateLabel ?? "주차"}을 휴지통으로 이동`
+          }
           onClick={() => void archiveWeek()}
-          disabled={activeWeekCount <= 1 || busyAction !== null}
+          disabled={
+            activeWeeks.length <= 1 || archiveTargetWeek === undefined || busyAction !== null
+          }
         >
           <Trash size={16} />
-          {busyAction === "archive" ? "이동 중…" : "선택한 주차를 휴지통으로 이동"}
+          {busyAction === "archive" ? (
+            "이동 중…"
+          ) : (
+            <span className="week-trash-action-label" aria-hidden="true">
+              <span>{archiveTargetWeek?.dateLabel ?? "주차"}을</span>
+              <span>휴지통으로 이동</span>
+            </span>
+          )}
         </button>
       </div>
-      {activeWeekCount <= 1 && (
+      {activeWeeks.length <= 1 && (
         <p className="form-help week-trash-help">
           마지막 활성 주차는 휴지통으로 이동할 수 없습니다.
         </p>

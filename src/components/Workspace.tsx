@@ -196,7 +196,7 @@ export function Workspace({ repository, initialData, demo, onLogout }: Workspace
           onRebuildSearchIndex={() => repository.rebuildSearchIndex()}
           selectedWeekLabel={workspace.selectedWeek.dateLabel}
           selectedWeekId={workspace.selectedWeek.id}
-          activeWeekCount={workspace.snapshot.weeks.length}
+          activeWeeks={workspace.snapshot.weeks}
           archivedWeeks={workspace.snapshot.archivedWeeks}
           departments={workspace.weekDepartments}
         />

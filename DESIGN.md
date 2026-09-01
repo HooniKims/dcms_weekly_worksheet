@@ -503,8 +503,15 @@ the product-card styling.
 
 ## Administrator week-trash contract
 
-- Administrators may move the currently selected week to a reversible trash after an explicit
-  confirmation that names the week and explains that entries and revision history are preserved.
+- Administrators choose the trash target from an active-week selector inside the administrator
+  dialog. The selector starts from the workspace's current editing week, but later choices remain
+  local to week management and never change the editor's week or department context.
+- The selected date is repeated in a `현재 삭제 대상` callout, the archive button label, the
+  confirmation, and the repository request. These surfaces must always derive from the same week
+  object so the administrator can see exactly which week will move to trash.
+- Administrators may move that explicitly selected week to reversible trash after a confirmation
+  that names the week and explains that entries and revision history are preserved. After a target
+  is archived, the selector falls back to the newest remaining active week.
 - A trashed week is removed from contributor date selection and archive-search results. If it was
   selected, the workspace immediately opens the newest remaining active week without changing the
   fixed desktop editor geometry.

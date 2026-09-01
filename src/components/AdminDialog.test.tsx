@@ -29,6 +29,26 @@ const archivedWeek: Week = {
   archivedAt: "2026-09-01T00:00:00.000Z",
   departmentSnapshot: [...departments],
 };
+const activeWeeks: readonly Week[] = [
+  {
+    id: "2026-08-31",
+    dateLabel: "2026년 8월 31일 (월)",
+    meetingTitle: "주간업무추진사항",
+    createdBy: "admin",
+    createdAt: "2026-08-31T00:00:00.000Z",
+    archivedAt: null,
+    departmentSnapshot: [...departments],
+  },
+  {
+    id: "2026-08-17",
+    dateLabel: "2026년 8월 17일 (월)",
+    meetingTitle: "주간업무추진사항",
+    createdBy: "admin",
+    createdAt: "2026-08-17T00:00:00.000Z",
+    archivedAt: null,
+    departmentSnapshot: [...departments],
+  },
+];
 
 type DialogProps = React.ComponentProps<typeof AdminDialog>;
 
@@ -44,13 +64,13 @@ function dialog(overrides: Partial<DialogProps> = {}) {
     onRebuildSearchIndex: vi.fn().mockResolvedValue(undefined),
     selectedWeekLabel: "2026년 8월 31일 (월)",
     selectedWeekId: "2026-08-31",
-    activeWeekCount: 2,
+    activeWeeks,
     archivedWeeks: [archivedWeek],
     departments,
     ...overrides,
   };
-  render(<AdminDialog {...props} />);
-  return props;
+  const rendered = render(<AdminDialog {...props} />);
+  return { props, ...rendered };
 }
 
 async function authenticate(user: ReturnType<typeof userEvent.setup>): Promise<void> {
@@ -252,12 +272,37 @@ describe("AdminDialog", () => {
     await authenticate(user);
 
     // When
-    await user.click(screen.getByRole("button", { name: "선택한 주차를 휴지통으로 이동" }));
+    await user.click(
+      screen.getByRole("button", { name: "2026년 8월 31일 (월)을 휴지통으로 이동" }),
+    );
 
     // Then
     expect(confirm).toHaveBeenCalledTimes(1);
     expect(onArchiveWeek).toHaveBeenCalledWith("2026-08-31");
-    expect(await screen.findByText("선택한 주차를 휴지통으로 이동했습니다.")).toBeInTheDocument();
+    expect(
+      await screen.findByText("2026년 8월 31일 (월)을 휴지통으로 이동했습니다."),
+    ).toBeInTheDocument();
+  });
+
+  it("Given several active weeks, when the administrator chooses another trash target, then every archive surface uses that week", async () => {
+    // Given
+    const user = userEvent.setup();
+    const onArchiveWeek = vi.fn().mockResolvedValue(undefined);
+    const confirm = vi.fn().mockReturnValue(true);
+    vi.stubGlobal("confirm", confirm);
+    dialog({ onArchiveWeek, activeWeeks });
+    await authenticate(user);
+
+    // When
+    await user.selectOptions(screen.getByLabelText("휴지통으로 이동할 주차"), "2026-08-17");
+
+    // Then
+    expect(screen.getByText("현재 삭제 대상: 2026년 8월 17일 (월)")).toBeInTheDocument();
+    await user.click(
+      screen.getByRole("button", { name: "2026년 8월 17일 (월)을 휴지통으로 이동" }),
+    );
+    expect(confirm).toHaveBeenCalledWith(expect.stringContaining("2026년 8월 17일 (월)"));
+    expect(onArchiveWeek).toHaveBeenCalledWith("2026-08-17");
   });
 
   it("disables archive and restore together while a lifecycle request is pending", async () => {
@@ -267,23 +312,43 @@ describe("AdminDialog", () => {
     dialog({ onArchiveWeek: vi.fn(() => pendingArchive.promise) });
     await authenticate(user);
 
-    await user.click(screen.getByRole("button", { name: "선택한 주차를 휴지통으로 이동" }));
+    await user.click(
+      screen.getByRole("button", { name: "2026년 8월 31일 (월)을 휴지통으로 이동" }),
+    );
 
     expect(screen.getByRole("button", { name: "이동 중…" })).toBeDisabled();
+    expect(screen.getByLabelText("휴지통으로 이동할 주차")).toBeDisabled();
     expect(screen.getByRole("button", { name: "2026년 8월 24일 복원" })).toBeDisabled();
     await act(async () => pendingArchive.resolve(undefined));
+  });
+
+  it("Given the chosen target disappears, when active weeks refresh, then the newest remaining week becomes the target", async () => {
+    // Given
+    const user = userEvent.setup();
+    const view = dialog({ activeWeeks });
+    await authenticate(user);
+    await user.selectOptions(screen.getByLabelText("휴지통으로 이동할 주차"), "2026-08-17");
+
+    // When
+    view.rerender(<AdminDialog {...view.props} activeWeeks={activeWeeks.slice(0, 1)} />);
+
+    // Then
+    expect(await screen.findByText("현재 삭제 대상: 2026년 8월 31일 (월)")).toBeInTheDocument();
+    expect(screen.getByLabelText("휴지통으로 이동할 주차")).toHaveValue("2026-08-31");
   });
 
   it("Given only one active week, when viewing week management, then archive remains disabled", async () => {
     // Given
     const user = userEvent.setup();
-    dialog({ activeWeekCount: 1 });
+    dialog({ activeWeeks: activeWeeks.slice(0, 1) });
 
     // When
     await authenticate(user);
 
     // Then
-    expect(screen.getByRole("button", { name: "선택한 주차를 휴지통으로 이동" })).toBeDisabled();
+    expect(
+      screen.getByRole("button", { name: "2026년 8월 31일 (월)을 휴지통으로 이동" }),
+    ).toBeDisabled();
   });
 
   it("Given a week in trash, when the administrator restores it, then the archived week id is submitted", async () => {

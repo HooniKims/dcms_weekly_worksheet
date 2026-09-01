@@ -64,7 +64,7 @@ export function DemoAdminWeekTrashPreview() {
         onRebuildSearchIndex={async () => undefined}
         selectedWeekLabel={selectedWeek.dateLabel}
         selectedWeekId={selectedWeek.id}
-        activeWeekCount={activeWeeks.length}
+        activeWeeks={activeWeeks}
         archivedWeeks={archivedWeeks}
         departments={selectedWeek.departmentSnapshot}
         confirmArchiveWeek={() => true}

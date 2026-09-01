@@ -837,11 +837,56 @@ describe("Workspace", () => {
     await user.click(screen.getByRole("button", { name: "관리자 확인" }));
 
     // When
-    await user.click(screen.getByRole("button", { name: "선택한 주차를 휴지통으로 이동" }));
+    await user.click(
+      screen.getByRole("button", { name: `${sourceWeek.dateLabel}을 휴지통으로 이동` }),
+    );
 
     // Then
     expect(archiveWeek).toHaveBeenCalledWith(currentWeekId);
     expect(await screen.findByRole("heading", { name: "이전 주차 현재 부서" })).toBeInTheDocument();
+  });
+
+  it("Given the administrator targets a different week, when that week is archived, then the editor stays on its current week", async () => {
+    // Given
+    const user = userEvent.setup();
+    vi.stubGlobal("confirm", vi.fn().mockReturnValue(true));
+    const targetWeek = weeks[2];
+    if (targetWeek === undefined) throw new Error("archive-target-fixture-missing");
+    const archivedWeek: Week = { ...targetWeek, archivedAt: "2026-09-01T00:00:00.000Z" };
+    const archiveWeek = vi.fn<WorkspaceRepository["archiveWeek"]>().mockResolvedValue({
+      ...initialData,
+      weeks: weeks.slice(0, 2),
+      archivedWeeks: [archivedWeek],
+    });
+    render(
+      <Workspace
+        repository={repository({ archiveWeek })}
+        initialData={initialData}
+        demo={false}
+        onLogout={vi.fn()}
+      />,
+    );
+    const dateSelector = screen.getAllByRole("combobox", { name: "작성할 날짜" }).at(0);
+    if (dateSelector === undefined) throw new Error("date-selector-missing");
+    await user.selectOptions(dateSelector, sameDepartmentWeekId);
+    await screen.findByRole("heading", { name: "이전 주차 현재 부서" });
+    await user.click(screen.getByRole("button", { name: "관리자" }));
+    await user.type(screen.getByLabelText("관리자 비밀번호"), "admin-test-password");
+    await user.click(screen.getByRole("button", { name: "관리자 확인" }));
+    await user.selectOptions(
+      screen.getByLabelText("휴지통으로 이동할 주차"),
+      fallbackDepartmentWeekId,
+    );
+
+    // When
+    await user.click(
+      screen.getByRole("button", { name: `${targetWeek.dateLabel}을 휴지통으로 이동` }),
+    );
+
+    // Then
+    expect(archiveWeek).toHaveBeenCalledWith(fallbackDepartmentWeekId);
+    expect(await screen.findByRole("heading", { name: "이전 주차 현재 부서" })).toBeInTheDocument();
+    expect(dateSelector).toHaveValue(sameDepartmentWeekId);
   });
 
   it("Given a week in trash, when the administrator restores it, then the current editor selection stays open", async () => {

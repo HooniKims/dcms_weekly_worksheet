@@ -15,7 +15,7 @@ type AdminDialogProps = Readonly<{
   onRebuildSearchIndex: () => Promise<void>;
   selectedWeekLabel: string;
   selectedWeekId: WeekId;
-  activeWeekCount: number;
+  activeWeeks: readonly Week[];
   archivedWeeks: readonly Week[];
   departments: readonly DepartmentSnapshot[];
   demo: boolean;
@@ -34,7 +34,7 @@ export function AdminDialog({
   onRebuildSearchIndex,
   selectedWeekLabel,
   selectedWeekId,
-  activeWeekCount,
+  activeWeeks,
   archivedWeeks,
   departments,
   demo,
@@ -147,8 +147,7 @@ export function AdminDialog({
             </form>
             <AdminWeekTrash
               selectedWeekId={selectedWeekId}
-              selectedWeekLabel={selectedWeekLabel}
-              activeWeekCount={activeWeekCount}
+              activeWeeks={activeWeeks}
               archivedWeeks={archivedWeeks}
               onArchiveWeek={onArchiveWeek}
               onRestoreWeek={onRestoreWeek}

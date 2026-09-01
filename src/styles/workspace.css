@@ -692,7 +692,7 @@
 }
 .reuse-destination select {
   width: 100%;
-  min-height: var(--control-height);
+  min-height: var(--control-height-standard);
   padding: 0 var(--spacing-12);
   border: var(--border-thin) solid var(--color-hairline);
   border-radius: var(--radius-input);
@@ -797,9 +797,50 @@
 .admin-week-manager .form-help {
   word-break: keep-all;
 }
-.week-trash-action {
-  flex: none;
+.week-trash-target-controls {
+  display: grid;
+  gap: var(--spacing-8);
+  min-width: 0;
+}
+.week-trash-target-controls label {
+  color: var(--color-ink-black);
+  font-size: var(--text-label);
+  font-weight: 500;
+}
+.week-trash-target-controls select {
+  width: 100%;
+  min-width: 0;
+  min-height: var(--control-height-standard);
+  padding: 0 var(--spacing-16);
+  border: var(--border-thin) solid var(--color-hairline);
+  border-radius: var(--radius-input);
+  background: var(--color-paper-white);
+  color: var(--color-ink-black);
+  font: inherit;
+}
+.week-trash-target {
+  margin: 0;
+  padding: var(--spacing-12) var(--spacing-16);
+  border-radius: var(--radius-input);
+  background: var(--color-blush-peach);
   color: var(--color-sienna-brown);
+  font-size: var(--text-ui);
+  font-weight: 500;
+  word-break: keep-all;
+}
+.ghost-button.compact.week-trash-action {
+  width: fit-content;
+  min-height: var(--control-height-standard);
+  color: var(--color-sienna-brown);
+  white-space: normal;
+}
+.week-trash-action-label {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: var(--spacing-4);
+}
+.week-trash-action-label > span {
   white-space: nowrap;
 }
 .week-trash-action:disabled {
@@ -1024,6 +1065,9 @@
     flex-direction: column;
   }
   .admin-section-heading .ghost-button {
+    width: 100%;
+  }
+  .week-trash-action {
     width: 100%;
   }
   .save-row {

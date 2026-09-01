@@ -36,6 +36,15 @@ export function createWeekTrashActions(context: WeekTrashContext): Readonly<{
     ) {
       return;
     }
+    if (targetWeekId !== origin.weekId) {
+      context.setSnapshot((current) => ({
+        ...current,
+        weeks: next.weeks,
+        archivedWeeks: next.archivedWeeks,
+        departments: next.departments,
+      }));
+      return;
+    }
     const nextWeek = next.weeks[0];
     if (nextWeek === undefined) return;
     const nextDepartmentId =
