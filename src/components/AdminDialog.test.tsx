@@ -1,7 +1,7 @@
 import { act, cleanup, render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { afterEach, describe, expect, it, vi } from "vitest";
-import type { DepartmentSnapshot } from "../domain/models";
+import type { DepartmentSnapshot, Week } from "../domain/models";
 import { AdminDialog } from "./AdminDialog";
 
 const departments: readonly DepartmentSnapshot[] = [
@@ -20,6 +20,15 @@ const departments: readonly DepartmentSnapshot[] = [
     omitWhenEmpty: false,
   },
 ];
+const archivedWeek: Week = {
+  id: "2026-08-24",
+  dateLabel: "2026년 8월 24일",
+  meetingTitle: "주간업무추진사항",
+  createdBy: "admin",
+  createdAt: "2026-08-24T00:00:00.000Z",
+  archivedAt: "2026-09-01T00:00:00.000Z",
+  departmentSnapshot: [...departments],
+};
 
 type DialogProps = React.ComponentProps<typeof AdminDialog>;
 
@@ -29,9 +38,14 @@ function dialog(overrides: Partial<DialogProps> = {}) {
     onClose: vi.fn(),
     onSignIn: vi.fn().mockResolvedValue(undefined),
     onCreateWeek: vi.fn().mockResolvedValue(undefined),
+    onArchiveWeek: vi.fn().mockResolvedValue(undefined),
+    onRestoreWeek: vi.fn().mockResolvedValue(undefined),
     onSaveDepartments: vi.fn().mockResolvedValue(undefined),
     onRebuildSearchIndex: vi.fn().mockResolvedValue(undefined),
     selectedWeekLabel: "2026년 8월 31일 (월)",
+    selectedWeekId: "2026-08-31",
+    activeWeekCount: 2,
+    archivedWeeks: [archivedWeek],
     departments,
     ...overrides,
   };
@@ -226,5 +240,64 @@ describe("AdminDialog", () => {
       await screen.findByText("부서 목록을 저장하지 못했습니다. 잠시 후 다시 시도해 주세요."),
     ).toBeInTheDocument();
     expect(screen.getByRole("heading", { name: "관리자 도구" })).toBeInTheDocument();
+  });
+
+  it("Given more than one active week, when the administrator confirms archive, then the selected week moves to trash", async () => {
+    // Given
+    const user = userEvent.setup();
+    const onArchiveWeek = vi.fn().mockResolvedValue(undefined);
+    const confirm = vi.fn().mockReturnValue(true);
+    vi.stubGlobal("confirm", confirm);
+    dialog({ onArchiveWeek });
+    await authenticate(user);
+
+    // When
+    await user.click(screen.getByRole("button", { name: "선택한 주차를 휴지통으로 이동" }));
+
+    // Then
+    expect(confirm).toHaveBeenCalledTimes(1);
+    expect(onArchiveWeek).toHaveBeenCalledWith("2026-08-31");
+    expect(await screen.findByText("선택한 주차를 휴지통으로 이동했습니다.")).toBeInTheDocument();
+  });
+
+  it("disables archive and restore together while a lifecycle request is pending", async () => {
+    const user = userEvent.setup();
+    const pendingArchive = deferred<void>();
+    vi.stubGlobal("confirm", vi.fn().mockReturnValue(true));
+    dialog({ onArchiveWeek: vi.fn(() => pendingArchive.promise) });
+    await authenticate(user);
+
+    await user.click(screen.getByRole("button", { name: "선택한 주차를 휴지통으로 이동" }));
+
+    expect(screen.getByRole("button", { name: "이동 중…" })).toBeDisabled();
+    expect(screen.getByRole("button", { name: "2026년 8월 24일 복원" })).toBeDisabled();
+    await act(async () => pendingArchive.resolve(undefined));
+  });
+
+  it("Given only one active week, when viewing week management, then archive remains disabled", async () => {
+    // Given
+    const user = userEvent.setup();
+    dialog({ activeWeekCount: 1 });
+
+    // When
+    await authenticate(user);
+
+    // Then
+    expect(screen.getByRole("button", { name: "선택한 주차를 휴지통으로 이동" })).toBeDisabled();
+  });
+
+  it("Given a week in trash, when the administrator restores it, then the archived week id is submitted", async () => {
+    // Given
+    const user = userEvent.setup();
+    const onRestoreWeek = vi.fn().mockResolvedValue(undefined);
+    dialog({ onRestoreWeek });
+    await authenticate(user);
+
+    // When
+    await user.click(screen.getByRole("button", { name: "2026년 8월 24일 복원" }));
+
+    // Then
+    expect(onRestoreWeek).toHaveBeenCalledWith("2026-08-24");
+    expect(await screen.findByText("주차를 복원했습니다.")).toBeInTheDocument();
   });
 });

@@ -501,6 +501,21 @@ the product-card styling.
 - Search-index rebuilding is an explicit, confirmed administrator repair action. It is never run as
   a side effect of opening, saving, or creating a week.
 
+## Administrator week-trash contract
+
+- Administrators may move the currently selected week to a reversible trash after an explicit
+  confirmation that names the week and explains that entries and revision history are preserved.
+- A trashed week is removed from contributor date selection and archive-search results. If it was
+  selected, the workspace immediately opens the newest remaining active week without changing the
+  fixed desktop editor geometry.
+- The last active week cannot be moved to trash. The destructive action is disabled with visible
+  explanatory text so the workspace can never enter a zero-week state.
+- The administrator dialog lists trashed weeks in newest-first order and offers an individual
+  restore action. Restoring returns the original week, entries, department snapshot, and search
+  records without navigating away from the administrator's current editing context.
+- Trash uses the existing Paperlogy operational card, hairline border, compact status copy, and pill
+  action tokens. It adds no permanent-delete action and never auto-empties preserved data.
+
 ## Workspace layout and archive-search contract
 
 - On desktop, the workspace header and two-column workspace grid share the same centered width:

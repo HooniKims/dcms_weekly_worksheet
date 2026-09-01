@@ -40,7 +40,11 @@ describe("manual week creation planning", () => {
     expect(plan.writes[0]).toMatchObject({
       kind: "week",
       id: "2026-08-31",
-      data: { createdBy: "admin", departmentSnapshot: [{ ...masterDepartments[0], order: 0 }] },
+      data: {
+        createdBy: "admin",
+        archivedAt: null,
+        departmentSnapshot: [{ ...masterDepartments[0], order: 0 }],
+      },
     });
     expect(plan.writes[1]).toMatchObject({
       kind: "index",

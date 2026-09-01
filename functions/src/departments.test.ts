@@ -1,6 +1,7 @@
 import { describe, expect, it } from "vitest";
 import {
   type DepartmentUpdateGateway,
+  DepartmentWeekArchivedError,
   DepartmentWeekNotFoundError,
   executeDepartmentUpdate,
   planDepartmentUpdate,
@@ -104,6 +105,27 @@ describe("department administration", () => {
 
     // Then
     await expect(operation).rejects.toBeInstanceOf(DepartmentWeekNotFoundError);
+    expect(refreshes).toBe(0);
+  });
+
+  it("rejects an archived selected week and never refreshes its index", async () => {
+    // Given
+    let refreshes = 0;
+    const gateway: DepartmentUpdateGateway = {
+      async persist() {
+        return { kind: "archived" };
+      },
+      async refreshIndex() {
+        refreshes += 1;
+      },
+    };
+    const input = { weekId: "2026-08-31", departments: [activeDepartment] };
+
+    // When
+    const operation = executeDepartmentUpdate(input, gateway);
+
+    // Then
+    await expect(operation).rejects.toBeInstanceOf(DepartmentWeekArchivedError);
     expect(refreshes).toBe(0);
   });
 

@@ -190,9 +190,14 @@ export function Workspace({ repository, initialData, demo, onLogout }: Workspace
           onClose={closeAdmin}
           onSignIn={authenticateAdministrator}
           onCreateWeek={workspace.createWeek}
+          onArchiveWeek={workspace.archiveWeek}
+          onRestoreWeek={workspace.restoreWeek}
           onSaveDepartments={workspace.saveDepartments}
           onRebuildSearchIndex={() => repository.rebuildSearchIndex()}
           selectedWeekLabel={workspace.selectedWeek.dateLabel}
+          selectedWeekId={workspace.selectedWeek.id}
+          activeWeekCount={workspace.snapshot.weeks.length}
+          archivedWeeks={workspace.snapshot.archivedWeeks}
           departments={workspace.weekDepartments}
         />
       )}

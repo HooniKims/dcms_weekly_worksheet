@@ -5,6 +5,7 @@ import { type DecodedIdToken, getAuth } from "firebase-admin/auth";
 import { FieldValue, getFirestore } from "firebase-admin/firestore";
 import { z } from "zod";
 import {
+  DepartmentWeekArchivedError,
   DepartmentWeekNotFoundError,
   executeDepartmentUpdate,
   planDepartmentUpdate,
@@ -15,6 +16,12 @@ import {
   refreshEntrySearchIndex,
   refreshWeekSearchIndex,
 } from "../functions/src/searchFirestore.js";
+import {
+  archiveWeekDocument,
+  LastActiveWeekError,
+  restoreWeekDocument,
+  WeekNotFoundError,
+} from "../functions/src/weekLifecycleFirestore.js";
 import { ensureWeek } from "../functions/src/weeks.js";
 
 type ApiRequest = IncomingMessage & Readonly<{ body?: unknown }>;
@@ -30,6 +37,8 @@ const requestSchema = z
       "unlockWithSharedPassword",
       "unlockAdminWithPassword",
       "createWeek",
+      "archiveWeek",
+      "restoreWeek",
       "updateDepartments",
       "saveEntry",
       "rebuildSearchIndex",
@@ -157,6 +166,29 @@ async function createWeek(request: ApiRequest, data: unknown): Promise<unknown> 
   return { created: await ensureWeek(input.weekId) };
 }
 
+async function archiveWeek(request: ApiRequest, data: unknown): Promise<unknown> {
+  await requireAdmin(request);
+  const input = weekInputSchema.parse(data);
+  try {
+    return await archiveWeekDocument(input.weekId);
+  } catch (error) {
+    if (error instanceof WeekNotFoundError) throw new ApiError(404, "week-not-found");
+    if (error instanceof LastActiveWeekError) throw new ApiError(409, "last-active-week");
+    throw error;
+  }
+}
+
+async function restoreWeek(request: ApiRequest, data: unknown): Promise<unknown> {
+  await requireAdmin(request);
+  const input = weekInputSchema.parse(data);
+  try {
+    return await restoreWeekDocument(input.weekId);
+  } catch (error) {
+    if (error instanceof WeekNotFoundError) throw new ApiError(404, "week-not-found");
+    throw error;
+  }
+}
+
 async function updateDepartments(request: ApiRequest, data: unknown): Promise<unknown> {
   await requireAdmin(request);
   const input = updateDepartmentsInputSchema.parse(data);
@@ -171,6 +203,7 @@ async function updateDepartments(request: ApiRequest, data: unknown): Promise<un
             transaction.get(db.collection("departments")),
           ]);
           if (!weekDocument.exists) return { kind: "missing" } as const;
+          if (weekDocument.get("archivedAt") != null) return { kind: "archived" } as const;
           const plan = planDepartmentUpdate(
             updateInput,
             masterSnapshot.docs.map(({ id }) => id),
@@ -191,6 +224,7 @@ async function updateDepartments(request: ApiRequest, data: unknown): Promise<un
     });
   } catch (error) {
     if (error instanceof DepartmentWeekNotFoundError) throw new ApiError(404, "week-not-found");
+    if (error instanceof DepartmentWeekArchivedError) throw new ApiError(409, "archived-week");
     throw error;
   }
 }
@@ -199,9 +233,15 @@ async function saveEntry(request: ApiRequest, data: unknown): Promise<unknown> {
   const claims = await requireContributor(request);
   const input = saveEntryInputSchema.parse(data);
   const db = getFirestore();
+  const weekReference = db.doc(`weeks/${input.weekId}`);
   const entryReference = db.doc(`weeks/${input.weekId}/entries/${input.departmentId}`);
   const result = await db.runTransaction(async (transaction) => {
-    const snapshot = await transaction.get(entryReference);
+    const [weekSnapshot, snapshot] = await Promise.all([
+      transaction.get(weekReference),
+      transaction.get(entryReference),
+    ]);
+    if (!weekSnapshot.exists) throw new ApiError(404, "week-not-found");
+    if (weekSnapshot.get("archivedAt") != null) throw new ApiError(409, "archived-week");
     const latestVersion = snapshot.exists ? Number(snapshot.get("version") ?? 0) : 0;
     if (latestVersion !== input.expectedVersion) {
       return {
@@ -261,6 +301,10 @@ async function executeAction(
       return unlockAdmin(data);
     case "createWeek":
       return createWeek(request, data);
+    case "archiveWeek":
+      return archiveWeek(request, data);
+    case "restoreWeek":
+      return restoreWeek(request, data);
     case "updateDepartments":
       return updateDepartments(request, data);
     case "saveEntry":

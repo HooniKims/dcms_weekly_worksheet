@@ -6,9 +6,12 @@
       "!dist",
       "!node_modules",
       "!.firebase",
+      "!.vercel",
       "!.superpowers",
       "!.omo",
       "!.migration",
+      "!output",
+      "!tmp",
       "!functions/lib",
       "!Apps_Script_Codes"
     ]

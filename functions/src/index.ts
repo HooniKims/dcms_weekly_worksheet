@@ -9,6 +9,7 @@ import { HttpsError, onCall } from "firebase-functions/v2/https";
 import { z } from "zod";
 import {
   type DepartmentUpdateResponse,
+  DepartmentWeekArchivedError,
   DepartmentWeekNotFoundError,
   executeDepartmentUpdate,
   planDepartmentUpdate,
@@ -27,6 +28,12 @@ import {
   verifyPassword,
 } from "./security.js";
 import { weekInputSchema } from "./validation.js";
+import {
+  archiveWeekDocument,
+  LastActiveWeekError,
+  restoreWeekDocument,
+  WeekNotFoundError,
+} from "./weekLifecycleFirestore.js";
 import { ensureWeek } from "./weeks.js";
 
 initializeApp();
@@ -126,6 +133,40 @@ export const createWeek = onCall({ region }, async (request) => {
   return { created: await ensureWeek(input.data.weekId) };
 });
 
+export const archiveWeek = onCall({ region }, async (request) => {
+  requireAdmin(request.auth);
+  const input = weekInputSchema.safeParse(request.data);
+  if (!input.success) throw new HttpsError("invalid-argument", "주차 날짜가 올바르지 않습니다.");
+  try {
+    return await archiveWeekDocument(input.data.weekId);
+  } catch (error) {
+    if (error instanceof WeekNotFoundError) {
+      throw new HttpsError("not-found", "선택한 주차가 존재하지 않습니다.");
+    }
+    if (error instanceof LastActiveWeekError) {
+      throw new HttpsError(
+        "failed-precondition",
+        "마지막 활성 주차는 휴지통으로 이동할 수 없습니다.",
+      );
+    }
+    throw error;
+  }
+});
+
+export const restoreWeek = onCall({ region }, async (request) => {
+  requireAdmin(request.auth);
+  const input = weekInputSchema.safeParse(request.data);
+  if (!input.success) throw new HttpsError("invalid-argument", "주차 날짜가 올바르지 않습니다.");
+  try {
+    return await restoreWeekDocument(input.data.weekId);
+  } catch (error) {
+    if (error instanceof WeekNotFoundError) {
+      throw new HttpsError("not-found", "선택한 주차가 존재하지 않습니다.");
+    }
+    throw error;
+  }
+});
+
 export const updateDepartments = onCall({ region }, async (request) => {
   requireAdmin(request.auth);
   const input = updateDepartmentsInputSchema.safeParse(request.data);
@@ -144,6 +185,7 @@ export const updateDepartments = onCall({ region }, async (request) => {
             transaction.get(db.collection("departments")),
           ]);
           if (!weekDocument.exists) return { kind: "missing" };
+          if (weekDocument.get("archivedAt") != null) return { kind: "archived" };
           const plan = planDepartmentUpdate(
             updateInput,
             masterSnapshot.docs.map(({ id }) => id),
@@ -165,6 +207,9 @@ export const updateDepartments = onCall({ region }, async (request) => {
   } catch (error) {
     if (error instanceof DepartmentWeekNotFoundError) {
       throw new HttpsError("not-found", "선택한 주차가 존재하지 않습니다.");
+    }
+    if (error instanceof DepartmentWeekArchivedError) {
+      throw new HttpsError("failed-precondition", "휴지통 주차는 복원한 뒤 수정해 주세요.");
     }
     throw error;
   }

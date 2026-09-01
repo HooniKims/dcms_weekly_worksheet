@@ -491,4 +491,54 @@ describe("firebaseRepository", () => {
       CreatedWeekUnavailableError,
     );
   });
+
+  it("Given active and archived week documents, when loading an archived id, then only active weeks are selectable", async () => {
+    // Given
+    const active = weekDocument("2026-09-07", []);
+    const archived = document("2026-08-31", {
+      date: "2026-08-31",
+      dateLabel: "2026년 8월 31일",
+      meetingTitle: "주간업무추진사항",
+      createdBy: "admin",
+      createdAt: "2026-08-31T00:00:00.000Z",
+      archivedAt: "2026-09-01T00:00:00.000Z",
+      departmentSnapshot: [],
+    });
+    firebaseState.snapshots.push(snapshot(active, archived), emptySnapshot(), emptySnapshot());
+
+    // When
+    const loaded = await firebaseRepository.load("2026-08-31");
+
+    // Then
+    expect(loaded.weeks.map((week) => week.id)).toEqual(["2026-09-07"]);
+    expect(loaded.archivedWeeks.map((week) => week.id)).toEqual(["2026-08-31"]);
+  });
+
+  it("Given an active week, when archiving it, then the backend action is called and the remaining workspace is returned", async () => {
+    // Given
+    const weekId: WeekId = "2026-08-31";
+    firebaseState.responses.archiveWeek = { status: "archived" };
+    queueLoad(weekDocument("2026-09-07", []), []);
+
+    // When
+    const loaded = await firebaseRepository.archiveWeek(weekId);
+
+    // Then
+    expect(firebaseState.calls).toContainEqual({ name: "archiveWeek", payload: { weekId } });
+    expect(loaded.weeks[0]?.id).toBe("2026-09-07");
+  });
+
+  it("Given an archived week, when restoring it, then the backend action is called and that week reloads", async () => {
+    // Given
+    const weekId: WeekId = "2026-08-31";
+    firebaseState.responses.restoreWeek = { status: "restored" };
+    queueLoad(weekDocument(weekId, []), []);
+
+    // When
+    const loaded = await firebaseRepository.restoreWeek(weekId);
+
+    // Then
+    expect(firebaseState.calls).toContainEqual({ name: "restoreWeek", payload: { weekId } });
+    expect(loaded.weeks[0]?.id).toBe(weekId);
+  });
 });

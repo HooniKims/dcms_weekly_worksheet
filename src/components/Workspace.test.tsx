@@ -76,6 +76,7 @@ const weeks: readonly Week[] = [
 
 const initialData: WorkspaceSnapshot = {
   weeks,
+  archivedWeeks: [],
   departments: [
     {
       id: "master-only",
@@ -110,6 +111,7 @@ function snapshotFor(weekId: WeekId): WorkspaceSnapshot {
   if (week === undefined) throw new Error("week-fixture-missing");
   return {
     weeks,
+    archivedWeeks: [],
     departments: initialData.departments,
     entries: week.departmentSnapshot.map((department) => ({
       departmentId: department.id,
@@ -133,6 +135,8 @@ function repository(overrides: Partial<WorkspaceRepository> = {}): WorkspaceRepo
     saveEntry: vi.fn(),
     saveDepartments: vi.fn(),
     createWeek: vi.fn(),
+    archiveWeek: vi.fn(),
+    restoreWeek: vi.fn(),
     search: vi.fn(),
     rebuildSearchIndex: vi.fn(),
     ...overrides,
@@ -805,5 +809,74 @@ describe("Workspace", () => {
     const dateSelector = screen.getAllByRole("combobox", { name: "작성할 날짜" }).at(0);
     if (dateSelector === undefined) throw new Error("date-selector-missing");
     expect(dateSelector).toHaveValue(currentWeekId);
+  });
+
+  it("Given multiple active weeks, when the administrator archives the selected week, then the newest remaining week opens", async () => {
+    // Given
+    const user = userEvent.setup();
+    vi.stubGlobal("confirm", vi.fn().mockReturnValue(true));
+    const next = snapshotFor(sameDepartmentWeekId);
+    const sourceWeek = weeks[0];
+    if (sourceWeek === undefined) throw new Error("current-week-fixture-missing");
+    const archivedWeek: Week = { ...sourceWeek, archivedAt: "2026-09-01T00:00:00.000Z" };
+    const archiveWeek = vi.fn<WorkspaceRepository["archiveWeek"]>().mockResolvedValue({
+      ...next,
+      weeks: weeks.slice(1),
+      archivedWeeks: [archivedWeek],
+    });
+    render(
+      <Workspace
+        repository={repository({ archiveWeek })}
+        initialData={initialData}
+        demo={false}
+        onLogout={vi.fn()}
+      />,
+    );
+    await user.click(screen.getByRole("button", { name: "관리자" }));
+    await user.type(screen.getByLabelText("관리자 비밀번호"), "admin-test-password");
+    await user.click(screen.getByRole("button", { name: "관리자 확인" }));
+
+    // When
+    await user.click(screen.getByRole("button", { name: "선택한 주차를 휴지통으로 이동" }));
+
+    // Then
+    expect(archiveWeek).toHaveBeenCalledWith(currentWeekId);
+    expect(await screen.findByRole("heading", { name: "이전 주차 현재 부서" })).toBeInTheDocument();
+  });
+
+  it("Given a week in trash, when the administrator restores it, then the current editor selection stays open", async () => {
+    // Given
+    const user = userEvent.setup();
+    const sourceWeek = weeks[1];
+    if (sourceWeek === undefined) throw new Error("archived-week-fixture-missing");
+    const archivedWeek: Week = {
+      ...sourceWeek,
+      archivedAt: "2026-09-01T00:00:00.000Z",
+    };
+    const data = { ...initialData, archivedWeeks: [archivedWeek] };
+    const restoreWeek = vi.fn<WorkspaceRepository["restoreWeek"]>().mockResolvedValue({
+      ...snapshotFor(sameDepartmentWeekId),
+      weeks,
+      archivedWeeks: [],
+    });
+    render(
+      <Workspace
+        repository={repository({ restoreWeek })}
+        initialData={data}
+        demo={false}
+        onLogout={vi.fn()}
+      />,
+    );
+    await user.click(screen.getByRole("button", { name: "관리자" }));
+    await user.type(screen.getByLabelText("관리자 비밀번호"), "admin-test-password");
+    await user.click(screen.getByRole("button", { name: "관리자 확인" }));
+
+    // When
+    await user.click(screen.getByRole("button", { name: "2026년 8월 24일 복원" }));
+
+    // Then
+    expect(restoreWeek).toHaveBeenCalledWith(sameDepartmentWeekId);
+    expect(screen.getByRole("heading", { name: "현재 부서" })).toBeInTheDocument();
+    expect(screen.getByRole("textbox", { name: "업무 내용" })).toHaveTextContent("현재 주차 내용");
   });
 });

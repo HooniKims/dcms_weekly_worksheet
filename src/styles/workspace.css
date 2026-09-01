@@ -791,6 +791,61 @@
 .admin-section-heading .form-help {
   margin: var(--spacing-4) 0 0;
 }
+.admin-week-manager .admin-section-heading {
+  margin-bottom: var(--spacing-8);
+}
+.admin-week-manager .form-help {
+  word-break: keep-all;
+}
+.week-trash-action {
+  flex: none;
+  color: var(--color-sienna-brown);
+  white-space: nowrap;
+}
+.week-trash-action:disabled {
+  cursor: not-allowed;
+  opacity: 0.45;
+}
+.week-trash-help {
+  margin: 0 0 var(--spacing-12);
+  color: var(--color-sienna-brown);
+}
+.week-trash-title {
+  margin: var(--spacing-16) 0 var(--spacing-8);
+  color: var(--color-slate-gray);
+  font-size: var(--text-label);
+  font-weight: 500;
+}
+.week-trash-empty {
+  margin: 0;
+}
+.week-trash-list {
+  display: grid;
+  gap: var(--spacing-8);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.week-trash-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-12);
+  min-width: 0;
+  padding: var(--spacing-8) var(--spacing-12);
+  border: var(--border-thin) solid var(--color-hairline);
+  border-radius: var(--radius-small);
+  background: var(--color-fog-white);
+}
+.week-trash-list li > span {
+  min-width: 0;
+  color: var(--color-ink-black);
+  font-size: var(--text-ui);
+  word-break: keep-all;
+}
+.week-trash-list .ghost-button {
+  flex: none;
+}
 .department-editor-list {
   display: grid;
   gap: var(--spacing-8);

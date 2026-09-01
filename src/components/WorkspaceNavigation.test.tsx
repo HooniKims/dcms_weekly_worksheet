@@ -34,6 +34,7 @@ const weeks: readonly Week[] = [
 
 const snapshot: WorkspaceSnapshot = {
   weeks,
+  archivedWeeks: [],
   departments: [department],
   entries: [],
 };

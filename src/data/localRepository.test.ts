@@ -280,4 +280,58 @@ describe("local workspace administration", () => {
 
     await expect(localRepository.search("과학")).resolves.toEqual(before);
   });
+
+  it("Given a migrated week, when the administrator archives it, then it moves from active weeks to the trash", async () => {
+    // Given
+    const weekId: WeekId = "2026-08-31";
+
+    // When
+    const snapshot = await localRepository.archiveWeek(weekId);
+
+    // Then
+    expect(snapshot.weeks.some((week) => week.id === weekId)).toBe(false);
+    expect(snapshot.archivedWeeks.some((week) => week.id === weekId)).toBe(true);
+    expect(snapshot.weeks[0]?.id).toBe("2026-08-24");
+  });
+
+  it("Given a searchable week, when the administrator archives it, then its results are hidden", async () => {
+    // Given
+    const weekId: WeekId = "2026-08-31";
+    expect(
+      (await localRepository.search("여호와")).some((result) => result.weekId === weekId),
+    ).toBe(true);
+
+    // When
+    await localRepository.archiveWeek(weekId);
+
+    // Then
+    expect(
+      (await localRepository.search("여호와")).some((result) => result.weekId === weekId),
+    ).toBe(false);
+  });
+
+  it("Given an archived week with saved content, when the administrator restores it, then the content is preserved", async () => {
+    // Given
+    const weekId: WeekId = "2026-08-31";
+    const before = await localRepository.load(weekId);
+    const existing = before.entries.find((entry) => entry.departmentId === "department-01");
+    await localRepository.saveEntry({
+      weekId,
+      departmentId: "department-01",
+      htmlContent: "<p>복원할 내용</p>",
+      plainText: "복원할 내용",
+      expectedVersion: existing?.version ?? 0,
+    });
+    await localRepository.archiveWeek(weekId);
+
+    // When
+    const snapshot = await localRepository.restoreWeek(weekId);
+
+    // Then
+    expect(snapshot.weeks.some((week) => week.id === weekId)).toBe(true);
+    expect(snapshot.archivedWeeks.some((week) => week.id === weekId)).toBe(false);
+    expect(
+      snapshot.entries.find((entry) => entry.departmentId === "department-01")?.plainText,
+    ).toBe("복원할 내용");
+  });
 });

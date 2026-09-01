@@ -20,6 +20,7 @@ const departmentSchema = z.object({
 });
 const weekDataSchema = z.object({
   dateLabel: z.string(),
+  archivedAt: z.unknown().optional(),
   departmentSnapshot: z.array(departmentSchema),
 });
 const entryDataSchema = z.object({ plainText: z.string() });
@@ -61,7 +62,7 @@ export async function refreshWeekSearchIndex(weekId: string): Promise<SearchInde
     readWeekEntries(db, weekId),
     db.collection("searchIndex").where("weekId", "==", weekId).get(),
   ]);
-  if (!weekDocument.exists) {
+  if (!weekDocument.exists || weekDocument.get("archivedAt") != null) {
     const deleteIds = existing.docs.map(({ id }) => id);
     return executeSearchIndexPlan(db, { upserts: [], deleteIds });
   }
@@ -82,7 +83,7 @@ export async function refreshEntrySearchIndex(weekId: string, departmentId: stri
     db.doc(`weeks/${weekId}/entries/${departmentId}`).get(),
   ]);
   const indexReference = db.doc(`searchIndex/${searchIndexId(weekId, departmentId)}`);
-  if (!weekDocument.exists) {
+  if (!weekDocument.exists || weekDocument.get("archivedAt") != null) {
     await indexReference.delete();
     return;
   }

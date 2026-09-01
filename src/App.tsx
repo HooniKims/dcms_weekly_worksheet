@@ -24,6 +24,11 @@ const DemoPrintDialogPreview = lazy(() =>
     default: module.DemoPrintDialogPreview,
   })),
 );
+const DemoAdminWeekTrashPreview = lazy(() =>
+  import("./components/DemoAdminWeekTrashPreview").then((module) => ({
+    default: module.DemoAdminWeekTrashPreview,
+  })),
+);
 
 export function App() {
   const preview = new URLSearchParams(window.location.search);
@@ -94,6 +99,14 @@ export function App() {
     return (
       <Suspense fallback={null}>
         <DemoPrintDialogPreview />
+      </Suspense>
+    );
+  }
+
+  if (isLocalDemo && preview.has("admin-week-trash-preview")) {
+    return (
+      <Suspense fallback={<p className="loading-page">관리자 화면을 준비하는 중…</p>}>
+        <DemoAdminWeekTrashPreview />
       </Suspense>
     );
   }

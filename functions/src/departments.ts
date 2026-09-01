@@ -103,7 +103,8 @@ export function planDepartmentUpdate(
 
 type PersistResult =
   | { readonly kind: "updated"; readonly updated: number }
-  | { readonly kind: "missing" };
+  | { readonly kind: "missing" }
+  | { readonly kind: "archived" };
 
 export interface DepartmentUpdateGateway {
   persist(input: DepartmentUpdateInput): Promise<PersistResult>;
@@ -123,6 +124,14 @@ export class DepartmentWeekNotFoundError extends Error {
   }
 }
 
+export class DepartmentWeekArchivedError extends Error {
+  readonly name = "DepartmentWeekArchivedError";
+
+  constructor(readonly weekId: string) {
+    super(`week ${weekId} is archived`);
+  }
+}
+
 export async function executeDepartmentUpdate(
   input: DepartmentUpdateInput,
   gateway: DepartmentUpdateGateway,
@@ -130,6 +139,9 @@ export async function executeDepartmentUpdate(
   const persisted = await gateway.persist(input);
   if (persisted.kind === "missing") {
     throw new DepartmentWeekNotFoundError(input.weekId);
+  }
+  if (persisted.kind === "archived") {
+    throw new DepartmentWeekArchivedError(input.weekId);
   }
   const indexStatus = await gateway.refreshIndex(input.weekId).then(
     (): "fresh" => "fresh",

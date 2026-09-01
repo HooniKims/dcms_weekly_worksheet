@@ -49,6 +49,8 @@ const departmentUpdateResponseSchema = z
   .object({ updated: z.number().int().nonnegative(), indexStatus: z.enum(["fresh", "stale"]) })
   .strict();
 const createWeekResponseSchema = z.object({ created: z.boolean() }).strict();
+const archiveWeekResponseSchema = z.object({ status: z.enum(["archived", "unchanged"]) }).strict();
+const restoreWeekResponseSchema = z.object({ status: z.enum(["restored", "unchanged"]) }).strict();
 const rebuildSearchIndexResponseSchema = z
   .object({ indexed: z.number().int().nonnegative(), deleted: z.number().int().nonnegative() })
   .strict();
@@ -68,6 +70,7 @@ const rawWeekSchema = z
     meetingTitle: z.string(),
     createdBy: z.enum(["scheduler", "admin", "migration"]),
     createdAt: z.unknown(),
+    archivedAt: z.unknown().optional(),
     departmentSnapshot: z.array(departmentSnapshotSchema.strict()),
   })
   .strict();
@@ -116,7 +119,12 @@ function parseEntry(id: string, data: Readonly<Record<string, unknown>>): Entry 
 
 function parseWeek(id: string, data: Readonly<Record<string, unknown>>): Week {
   const raw = rawWeekSchema.parse(data);
-  return weekSchema.parse({ id, ...raw, createdAt: toIsoString(raw.createdAt) });
+  return weekSchema.parse({
+    id,
+    ...raw,
+    createdAt: toIsoString(raw.createdAt),
+    archivedAt: raw.archivedAt == null ? null : toIsoString(raw.archivedAt),
+  });
 }
 
 function parseSearchRecord(data: Readonly<Record<string, unknown>>) {
@@ -128,9 +136,11 @@ async function loadWorkspace(weekId?: WeekId): Promise<WorkspaceSnapshot> {
     getDocs(query(collection(db, "weeks"), orderBy("date", "desc"))),
     getDocs(query(collection(db, "departments"), orderBy("order"))),
   ]);
-  const weeks = weeksSnapshot.docs.map((weekDocument) =>
+  const allWeeks = weeksSnapshot.docs.map((weekDocument) =>
     parseWeek(weekDocument.id, weekDocument.data()),
   );
+  const weeks = allWeeks.filter((week) => week.archivedAt == null);
+  const archivedWeeks = allWeeks.filter((week) => week.archivedAt != null);
   const departments = departmentsSnapshot.empty
     ? defaultDepartments
     : departmentsSnapshot.docs
@@ -143,7 +153,7 @@ async function loadWorkspace(weekId?: WeekId): Promise<WorkspaceSnapshot> {
       : (await getDocs(collection(db, "weeks", selectedWeek.id, "entries"))).docs.map((entry) =>
           parseEntry(entry.id, entry.data()),
         );
-  return { weeks, departments, entries };
+  return { weeks, archivedWeeks, departments, entries };
 }
 
 function sortedSearchResults(
@@ -269,6 +279,16 @@ export const firebaseRepository: WorkspaceRepository = {
     const week = loaded.weeks.find((item) => item.id === weekId);
     if (week === undefined) throw new CreatedWeekUnavailableError(weekId);
     return week;
+  },
+  async archiveWeek(weekId) {
+    const result = await backendCall("archiveWeek", { weekId }, true);
+    archiveWeekResponseSchema.parse(result);
+    return loadWorkspace();
+  },
+  async restoreWeek(weekId) {
+    const result = await backendCall("restoreWeek", { weekId }, true);
+    restoreWeekResponseSchema.parse(result);
+    return loadWorkspace(weekId);
   },
   async search(queryText) {
     const normalizedQuery = normalizeSearchText(queryText);

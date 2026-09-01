@@ -10,7 +10,7 @@ import {
   weekSchema,
 } from "../domain/models";
 import { matchesSearch, searchExcerpt } from "../domain/search";
-import { formatKoreanDate, type WeekId } from "../domain/week";
+import { formatKoreanDate, type WeekId, weekIdSchema } from "../domain/week";
 import migrationIndex from "./migrated/index.json";
 import type {
   SaveEntryInput,
@@ -18,6 +18,7 @@ import type {
   WorkspaceRepository,
   WorkspaceSnapshot,
 } from "./repository";
+import { ArchivedWeekWriteError, LastActiveWeekError } from "./repository";
 
 const storageKey = "weekly-work-progress-demo-v2";
 const sessionKey = "weekly-access-v2";
@@ -26,18 +27,21 @@ const localAdminPassword = import.meta.env.VITE_LOCAL_ADMIN_PASSWORD;
 
 type LocalState = Readonly<{
   weeks: readonly Week[];
+  archivedWeekIds: readonly WeekId[];
   entriesByWeek: Readonly<Record<string, readonly Entry[]>>;
   departments: readonly Department[];
 }>;
 
 const initialState: LocalState = {
   weeks: [],
+  archivedWeekIds: [],
   entriesByWeek: {},
   departments: defaultDepartments,
 };
 
 const localStateSchema = z.object({
   weeks: z.array(weekSchema),
+  archivedWeekIds: z.array(weekIdSchema).default([]),
   entriesByWeek: z.record(z.string(), z.array(entrySchema)),
   departments: z.array(departmentSchema).optional(),
 });
@@ -52,6 +56,21 @@ function mergedWeeks(localWeeks: readonly Week[]): readonly Week[] {
   const unique = new Map(migratedWeeks.map((week) => [week.id, week]));
   for (const week of localWeeks) unique.set(week.id, week);
   return [...unique.values()].sort((left, right) => right.id.localeCompare(left.id));
+}
+
+function partitionWeeks(state: LocalState): Readonly<{
+  active: readonly Week[];
+  archived: readonly Week[];
+}> {
+  const archivedIds = new Set(state.archivedWeekIds);
+  const archivedAt = new Date(0).toISOString();
+  const active: Week[] = [];
+  const archived: Week[] = [];
+  for (const week of mergedWeeks(state.weeks)) {
+    if (archivedIds.has(week.id)) archived.push({ ...week, archivedAt });
+    else active.push({ ...week, archivedAt: null });
+  }
+  return { active, archived };
 }
 
 async function loadWeekEntries(state: LocalState, weekId: string): Promise<readonly Entry[]> {
@@ -117,12 +136,16 @@ export const localRepository: WorkspaceRepository = {
   },
   async load(weekId): Promise<WorkspaceSnapshot> {
     const state = readState();
-    const weeks = mergedWeeks(state.weeks);
+    const { active: weeks, archived: archivedWeeks } = partitionWeeks(state);
     const selectedId = weekId ?? weeks[0]?.id ?? "";
+    const activeSelectedId = weeks.some((week) => week.id === selectedId)
+      ? selectedId
+      : (weeks[0]?.id ?? "");
     return {
       weeks,
+      archivedWeeks,
       departments: activeDepartments(state),
-      entries: await loadWeekEntries(state, selectedId),
+      entries: await loadWeekEntries(state, activeSelectedId),
     };
   },
   subscribeToWeek() {
@@ -130,6 +153,9 @@ export const localRepository: WorkspaceRepository = {
   },
   async saveEntry(input: SaveEntryInput): Promise<SaveResult> {
     const state = readState();
+    if (state.archivedWeekIds.includes(input.weekId)) {
+      throw new ArchivedWeekWriteError(input.weekId);
+    }
     const weekEntries = await loadWeekEntries(state, input.weekId);
     const current = weekEntries.find((entry) => entry.departmentId === input.departmentId);
     const fallback: Entry = {
@@ -167,6 +193,7 @@ export const localRepository: WorkspaceRepository = {
     const updatedWeek: Week = { ...selectedWeek, departmentSnapshot: active };
     writeState({
       weeks: [updatedWeek, ...state.weeks.filter((week) => week.id !== weekId)],
+      archivedWeekIds: state.archivedWeekIds,
       entriesByWeek: state.entriesByWeek,
       departments: updatedMasterDepartments(state.departments, active),
     });
@@ -182,21 +209,39 @@ export const localRepository: WorkspaceRepository = {
       meetingTitle: "주간업무추진사항",
       createdBy: "admin",
       createdAt: new Date().toISOString(),
+      archivedAt: null,
       departmentSnapshot: activeDepartments(state),
     };
     writeState({
       weeks: [week, ...state.weeks],
+      archivedWeekIds: state.archivedWeekIds,
       entriesByWeek: { ...state.entriesByWeek, [week.id]: [] },
       departments: state.departments,
     });
     return week;
+  },
+  async archiveWeek(weekId) {
+    const state = readState();
+    const { active } = partitionWeeks(state);
+    if (!active.some((week) => week.id === weekId)) return this.load();
+    if (active.length === 1) throw new LastActiveWeekError(weekId);
+    writeState({ ...state, archivedWeekIds: [...state.archivedWeekIds, weekId] });
+    return this.load();
+  },
+  async restoreWeek(weekId) {
+    const state = readState();
+    writeState({
+      ...state,
+      archivedWeekIds: state.archivedWeekIds.filter((archivedId) => archivedId !== weekId),
+    });
+    return this.load(weekId);
   },
   async search(query): Promise<readonly SearchResult[]> {
     if (!matchesSearch(query, query)) return [];
 
     const state = readState();
     const results: SearchResult[] = [];
-    for (const week of mergedWeeks(state.weeks)) {
+    for (const week of partitionWeeks(state).active) {
       const entriesByDepartment = new Map(
         (await loadWeekEntries(state, week.id)).map((entry) => [entry.departmentId, entry]),
       );

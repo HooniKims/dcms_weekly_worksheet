@@ -13,6 +13,7 @@ export type DepartmentRecord = {
 export type WeekRecord = {
   readonly id: string;
   readonly dateLabel: string;
+  readonly archivedAt?: unknown;
   readonly departmentSnapshot: readonly DepartmentRecord[];
 };
 
@@ -174,7 +175,8 @@ export function planSearchIndexRebuild<TUpdatedAt>(
       entry.plainText,
     ]),
   );
-  const upserts = input.weeks.flatMap((week) =>
+  const activeWeeks = input.weeks.filter((week) => week.archivedAt == null);
+  const upserts = activeWeeks.flatMap((week) =>
     orderedSnapshotDepartments(week.departmentSnapshot).map((department) => {
       const id = searchIndexId(week.id, department.id);
       return {

@@ -4,6 +4,7 @@ import { appendEditorHtml, htmlToPlainText, sanitizeEditorHtml } from "../domain
 import type { Department, DepartmentSnapshot, Entry, Week } from "../domain/models";
 import type { WeekId } from "../domain/week";
 import type { SaveState } from "./WorkspaceContent";
+import { createWeekTrashActions } from "./weekTrashActions";
 
 function activeSnapshotDepartments(week: Week | undefined): readonly DepartmentSnapshot[] {
   return [...(week?.departmentSnapshot ?? [])]
@@ -33,6 +34,7 @@ export function useWorkspaceController(
   const selectionGeneration = useRef(0);
   const weekLoadGeneration = useRef(0);
   const createWeekGeneration = useRef(0);
+  const lifecycleGeneration = useRef(0);
   const selection = useRef({ weekId, departmentId });
 
   const selectedWeek = snapshot.weeks.find((week) => week.id === weekId) ?? snapshot.weeks[0];
@@ -187,7 +189,21 @@ export function useWorkspaceController(
 
   function cancelWeekCreation(): void {
     createWeekGeneration.current += 1;
+    lifecycleGeneration.current += 1;
   }
+
+  const { archiveWeek, restoreWeek } = createWeekTrashActions({
+    repository,
+    selection,
+    selectionGeneration,
+    weekLoadGeneration,
+    lifecycleGeneration,
+    setSnapshot,
+    setWeekId,
+    setDepartmentId,
+    setDraft,
+    setSaveState,
+  });
 
   async function saveDepartments(nextDepartments: readonly Department[]): Promise<void> {
     if (selectedWeek === undefined) return;
@@ -237,6 +253,8 @@ export function useWorkspaceController(
     save,
     createWeek,
     cancelWeekCreation,
+    archiveWeek,
+    restoreWeek,
     saveDepartments,
   };
 }

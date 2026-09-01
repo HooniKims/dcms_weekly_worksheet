@@ -208,6 +208,28 @@ describe("backend search index helpers", () => {
     expect(plan.upserts[0]?.record.plainText).toBe("");
   });
 
+  it("Given an archived week, when rebuilding search, then its existing records are deleted without upserts", () => {
+    // Given
+    const archivedWeek: WeekRecord = {
+      id: "2026-08-31",
+      dateLabel: "2026년 8월 31일",
+      archivedAt: "2026-09-01T00:00:00.000Z",
+      departmentSnapshot: [departmentA],
+    };
+
+    // When
+    const plan = planSearchIndexRebuild({
+      weeks: [archivedWeek],
+      entries: [{ weekId: archivedWeek.id, departmentId: departmentA.id, plainText: "보존 내용" }],
+      existingIds: ["2026-08-31__department-a"],
+      updatedAt: "now",
+    });
+
+    // Then
+    expect(plan.upserts).toEqual([]);
+    expect(plan.deleteIds).toEqual(["2026-08-31__department-a"]);
+  });
+
   it("splits rebuild writes below the batch limit and reports exact counts", () => {
     // Given
     const record = buildIndexRecord({

@@ -21,6 +21,7 @@ type WeekData<TUpdatedAt> = {
   readonly departmentSnapshot: readonly DepartmentRecord[];
   readonly createdBy: "admin";
   readonly createdAt: TUpdatedAt;
+  readonly archivedAt: null;
 };
 
 export type WeekWrite<TUpdatedAt> =
@@ -55,6 +56,7 @@ export function planWeekCreation<TUpdatedAt>(
       departmentSnapshot: departments,
       createdBy: "admin",
       createdAt: input.updatedAt,
+      archivedAt: null,
     },
   };
   const indexWrites: readonly WeekWrite<TUpdatedAt>[] = departments.map((department) => ({

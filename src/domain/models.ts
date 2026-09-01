@@ -32,6 +32,7 @@ export const weekSchema = z.object({
   meetingTitle: z.string(),
   createdBy: z.enum(["scheduler", "admin", "migration"]),
   createdAt: z.string(),
+  archivedAt: z.string().datetime().nullish(),
   departmentSnapshot: z.array(departmentSnapshotSchema).default([]),
 });
 

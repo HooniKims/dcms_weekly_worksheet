@@ -13,6 +13,10 @@ service cloud.firestore {
     }
     function maxSearchablePlainTextSize() { return 8000; }
     function maxHtmlContentSize() { return 200000; }
+    function activeWeek(weekId) {
+      return exists(/databases/$(database)/documents/weeks/$(weekId))
+        && get(/databases/$(database)/documents/weeks/$(weekId)).data.get('archivedAt', null) == null;
+    }
     function validEntry() {
       return request.resource.data.keys().hasOnly(['departmentId', 'htmlContent', 'plainText', 'version', 'updatedAt', 'updatedByRole'])
         && request.resource.data.departmentId == request.resource.id
@@ -37,12 +41,16 @@ service cloud.firestore {
     }
     match /weeks/{weekId} {
       allow read: if contributor();
-      allow create, update, delete: if admin();
+      allow create: if admin() && request.resource.data.get('archivedAt', null) == null;
+      allow update: if admin()
+        && resource.data.get('archivedAt', null) == null
+        && !request.resource.data.diff(resource.data).affectedKeys().hasAny(['archivedAt']);
+      allow delete: if false;
       match /entries/{departmentId} {
         allow read: if contributor();
-        allow create: if contributor() && validEntry() && request.resource.data.version == 1;
-        allow update: if contributor() && validEntry() && request.resource.data.version == resource.data.version + 1;
-        allow delete: if admin();
+        allow create: if contributor() && activeWeek(weekId) && validEntry() && request.resource.data.version == 1;
+        allow update: if contributor() && activeWeek(weekId) && validEntry() && request.resource.data.version == resource.data.version + 1;
+        allow delete: if admin() && activeWeek(weekId);
         match /revisions/{version} {
           allow read: if admin();
           allow write: if false;

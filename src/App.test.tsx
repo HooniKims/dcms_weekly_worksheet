@@ -29,6 +29,7 @@ const workspaceSnapshot: WorkspaceSnapshot = {
       ],
     },
   ],
+  archivedWeeks: [],
   departments: [
     {
       id: "department-01",
@@ -52,6 +53,8 @@ function repository(logout: () => Promise<void>): WorkspaceRepository {
     saveEntry: vi.fn(),
     saveDepartments: vi.fn(),
     createWeek: vi.fn(),
+    archiveWeek: vi.fn(),
+    restoreWeek: vi.fn(),
     search: vi.fn(),
     rebuildSearchIndex: vi.fn(),
   };
